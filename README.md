@@ -1,5 +1,5 @@
-## Programming in Scala for Big Data Systems, Fall 2025
-Scala Project for Harvard Extension course CSCI E-88C, Fall, 2025. See course details at [Scala for Big Data](https://courses.dce.harvard.edu/?details&srcdb=202601&crn=16769).
+## Programming in Scala for Big Data Systems, Fall 2026
+Scala Project for Harvard Extension course CSCI E-88C, Fall, 2026. See course details at [Scala for Big Data](https://courses.dce.harvard.edu/?details&srcdb=202601&crn=16769).
 
 
 This project is a multi-module setup for Scala applications that integrate with big data frameworks like Spark, Beam, and Kafka. It is designed to facilitate development in a structured manner, allowing for modular code organization and easy dependency management.
@@ -19,9 +19,9 @@ This project uses [SBT](https://www.scala-sbt.org/) (Scala Build Tool) for build
 ## Getting Started
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/esumitra/2025-fall-csci-e88c.git
+   git clone https://github.com/esumitra/2026-fall-csci-e88c.git
 
-   cd 2025-fall-csci-e88c
+   cd 2026-fall-csci-e88c
    ```
 2. **Build the project**:
    ```bash
@@ -47,7 +47,7 @@ This project uses [SBT](https://www.scala-sbt.org/) (Scala Build Tool) for build
 ## Running in Codespaces
 This project is configured to run in GitHub Codespaces, providing a ready-to-use development environment. Click the "Open in Github Codespaces" button below to start the developer IDE in the cloud.
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/esumitra/2025-fall-csci-e88c?quickstart=1)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/esumitra/2026-fall-csci-e88c?quickstart=1)
 
 
 ## Running in DevContainer
@@ -137,6 +137,6 @@ For test files.
 `sbt "test:scalafix RemoveUnused"`
 
 ## License
-Copyright 2025, Edward Sumitra
+Copyright 2026, Edward Sumitra
 
 Licensed under the MIT License.
