@@ -4,7 +4,7 @@ import org.cscie88c.core.testutils.StandardTest
 
 class VehicleTest extends StandardTest{
   "Car" when {
-    "started" should {
+    "starting regular classes" should {
       "drive around" in {
         val car1 =new Car(5)
         //save return value of drive into a new value 'car2'
@@ -19,7 +19,7 @@ class VehicleTest extends StandardTest{
 
       }
     }
-    "cloned" should {
+    "cloning case classes" should {
        "produce duplicate cars" in {
          val originalFord = CarCase(1, "Ford", "ModelT")
          //note how you can copy just the fields you want
