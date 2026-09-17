@@ -42,8 +42,9 @@ class PizzaToppingFunSuite extends AnyFunSuite with ScalaCheckPropertyChecks wit
         forAll(tupleGen) {
           (tuple) => {
             val delivery = scalaPizzeria.deliverPizzaWithForConstruct(tuple._1, tuple._2, tuple._3)
-            //note the functional assertion style
+            //get the topping of the 2nd tuple
             val deliveryArray = delivery.map(_._2.topping).toArray
+            //note the functional assertion style
             assert(deliveryArray.contains (ANCHOVIES)==false, "We don't want fish on our pizza!")
           }
         }        

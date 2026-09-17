@@ -9,6 +9,7 @@ object Toppings{
     val CHEESE="cheese"
     val PEPPERS="peppers"
     val OLIVES="olives"
+    val ONIONS="onions"
     val ANCHOVIES="anchovies"
 }
 

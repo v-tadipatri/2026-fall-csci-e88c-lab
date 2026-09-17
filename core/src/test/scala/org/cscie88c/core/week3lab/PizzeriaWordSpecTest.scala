@@ -11,13 +11,13 @@ import org.cscie88c.core.week3lab.Sizes._
  * And for each size pizza you can pick how many 1 topping pizzas you want
  * So you would get:
  *   Order 1 :
- *      Small :  Peppers, Olives, Olives
- *      Large :  Peppers, Olives, Olives
- *      XLarge :  Peppers, Olives, Olives
+ *      Small :  Peppers, Olives, Onions
+ *      Large :  Peppers, Olives, Onions
+ *      XLarge :  Peppers, Olives, Onions
  *   Order 2 :
- *      Small :  Peppers, Olives, Olives
- *      Large :  Peppers, Olives, Olives
- *      XLarge :  Peppers, Olives, Olives
+ *      Small :  Peppers, Olives, Onions
+ *      Large :  Peppers, Olives, Onions
+ *      XLarge :  Peppers, Olives, Onions
  *
  *  Let's compare the "Pizzerias" - one that uses the old iterative way
  *    and the other which uses the Scala way of doing things
@@ -25,7 +25,7 @@ import org.cscie88c.core.week3lab.Sizes._
 class PizzeriaWordSpecTest extends StandardTest {
   val orders = 2
   val pizza_sizes = Seq(S,L,XL).toList
-  val toppings = Seq(PEPPERS, OLIVES,OLIVES).toList
+  val toppings = Seq(PEPPERS, OLIVES, ONIONS).toList
   val expectedNumberOfPizzas = orders * pizza_sizes.size * toppings.size
 
   /**
@@ -58,6 +58,7 @@ class PizzeriaWordSpecTest extends StandardTest {
 
     "Scala Pizzeria is instantiated" should {
       "deliver pizzas in scala way, using flatmap" in {
+        val boxAndFlattenPizzas = scalaPizzeria.flattenOrders(5)
         val delivery = scalaPizzeria.deliverPizzaWithFlatMap(orders, pizza_sizes, toppings)
         println(s"=== got ${delivery.size} pizzas from scala pizzeria")
         delivery.size shouldBe (expectedNumberOfPizzas)

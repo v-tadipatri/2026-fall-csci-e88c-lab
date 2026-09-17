@@ -22,6 +22,18 @@ class ScalaPizzeria {
         sizes.map(s => PizzaType( s, CHEESE ))
     }
 
+    def flattenOrders(numOrders: Int): Unit = {
+        val orderList = makeOrderList(numOrders)
+        val boxedCheesePizzas = orderList.map(
+            o => List.fill(o)(PizzaType("S", CHEESE))
+        )
+        val flattenedPizzas = boxedCheesePizzas.flatten
+        val boxAndFlattenPizzas = orderList.flatMap(
+            o => List.fill(o)(PizzaType("S", CHEESE))
+        )
+        flattenedPizzas.toString()
+    }
+
     def deliverPizzaWithFlatMap(numOrders: Int, sizes: List[String], toppings: List[String]): List[(Int,PizzaType)] = {
          //this is how many orders we got
         val orders = makeOrderList(numOrders)
