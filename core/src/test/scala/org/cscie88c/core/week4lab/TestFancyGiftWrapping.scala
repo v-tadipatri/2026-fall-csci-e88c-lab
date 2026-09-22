@@ -13,7 +13,7 @@ class TestFancyGiftWrapping extends StandardTest {
         s1 + s"(${s2})"
     }
 
-    "Wrapping facility " when {
+    "Wrapping facility" when {
         "asked to wrap presents in fancy ways" should {
 
             "wrap like usual" in {

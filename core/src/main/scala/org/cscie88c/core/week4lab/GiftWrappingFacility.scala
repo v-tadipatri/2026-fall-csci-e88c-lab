@@ -14,6 +14,10 @@ class GiftWrappingFacility {
         gifts.fold(".")(func)
     }
 
+
+
+    //we'll view the remaining methods later
+
     //see the return value
     def watchGiftsGetWrapped(gifts: Seq[String], func: (String, String) => String): Array[String]  = {
         gifts.scan(".")(func).toArray

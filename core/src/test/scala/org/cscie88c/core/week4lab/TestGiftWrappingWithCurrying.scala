@@ -2,6 +2,9 @@ package org.cscie88c.core.week4lab
 
 import org.cscie88c.core.testutils.{StandardTest}
 
+/**
+ * 2. Let's explore how currying works
+ */
 class TestGiftWrappingWithCurrying extends StandardTest {
     val wrappingFacility = new GiftWrappingFacilityWithCurrying
     val presentsNum: Seq[String] = (1 to 5).toList.map("0" + _)
@@ -11,15 +14,32 @@ class TestGiftWrappingWithCurrying extends StandardTest {
         s1 + s"(${s2})"
     }
 
-    "Wrapping facility " when {
+    "Wrapping facility" when {
+
+        "asked to wrap presents with olde-fashioned list of params" should {
+            "wrap different presents with parentheses and a bow before it" in {
+
+                //NOT the curried function, so that means that we have to call it
+                val bowResultNum = wrappingFacility.wrapGiftsOldeStyle("=BOW=", presentsNum, parenthesesWrap)
+                val bowResultLetters = wrappingFacility.wrapGiftsOldeStyle("=BOW=", presentsAlpha, parenthesesWrap)
+
+                //will this work?
+                //val bowResultFail = wrappingFacility.wrapGiftsOldeStyle("=BOW=") _
+
+            }
+
+        }
+
         "asked to wrap presents using currying" should {
+
 
             "handle numeric Strings with parentheses" in {
                 //this looks similar to what we saw before
                 val dotResultLikeBefore = wrappingFacility.wrapGiftsWithCurrying(".")(presentsNum)(parenthesesWrap)
                 dotResultLikeBefore shouldBe ".(01)(02)(03)(04)(05)"
 
-                //but with currying, we can pass it just the 1st param, save that  
+                //but with currying, we can pass it just the 1st param, save that
+                //See the ETA expansion below
                 val dotWrapper = wrappingFacility.wrapGiftsWithCurrying(".") _
                 val dotResult = dotWrapper(presentsNum)(parenthesesWrap)
                 dotResult shouldBe ".(01)(02)(03)(04)(05)"
@@ -43,14 +63,6 @@ class TestGiftWrappingWithCurrying extends StandardTest {
 
             }
 
-            "handle like in the olden days, different presents with parentheses and a bow before it" in {
-
-                //NOT the curried function, so that means that we have to call it
-                val bowResultNum = wrappingFacility.wrapGiftsOldeStyle("=BOW=", presentsNum, parenthesesWrap)
-                val bowResultLetters = wrappingFacility.wrapGiftsOldeStyle("=BOW=", presentsAlpha, parenthesesWrap)
-
-                //val bowResultFail = wrappingFacility.wrapGiftsOldeStyle("=BOW=") _
-            }
 
         }
 

@@ -4,15 +4,18 @@ import org.cscie88c.core.testutils.StandardTest
 
 import scala.collection.mutable.ListBuffer
 
+/**
+ * 3. Lazy evaluation, including infinite lists!
+ */
 class TestLazyWrapping extends StandardTest {
 
 
-    "Wrapping facility " when {
+    "Wrapping facility" when {
         "asked to mutate lists" should {
 
             "be eager in checking presents" in {
                 val presentsNum: Seq[String] = (1 to 5).toList.map(g => {
-                    println("Opening present now...")
+                    println(s"Opening present ${g} now...")
                     "0" + g
                 })
                 println("Eager: Now we will see what's in the presents")
@@ -21,7 +24,7 @@ class TestLazyWrapping extends StandardTest {
             }
             "be lazy in checking presents" in {
                 lazy val lazyPresentsNum: Seq[String] = (1 to 5).toList.map(g => {
-                    println("Wait to open present...")
+                    println(s"Wait to open present ${g}...")
                     //maybe open a DB connection here?
                     //or call some API with a long response time?
                     "*0" + g

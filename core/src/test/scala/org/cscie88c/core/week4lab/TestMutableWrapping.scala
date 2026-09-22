@@ -4,11 +4,15 @@ import org.cscie88c.core.testutils.StandardTest
 
 import scala.collection.mutable.ListBuffer
 
+/**
+ * 4. Lists are immutable, but ListBuffers can be changed
+ */
 class TestMutableWrapping extends StandardTest {
     val presentsNum: Seq[String] = (1 to 5).toList.map("0" + _)
 
 
-    "Wrapping facility " when {
+    //what happens if we put a space here after string in Intellij?
+    "Wrapping facility" when {
         "asked to mutate lists" should {
 
             "add more presents" in {
