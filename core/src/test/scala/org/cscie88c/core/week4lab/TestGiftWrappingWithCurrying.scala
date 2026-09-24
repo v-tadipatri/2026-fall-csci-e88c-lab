@@ -22,6 +22,8 @@ class TestGiftWrappingWithCurrying extends StandardTest {
                 //NOT the curried function, so that means that we have to call it
                 val bowResultNum = wrappingFacility.wrapGiftsOldeStyle("=BOW=", presentsNum, parenthesesWrap)
                 val bowResultLetters = wrappingFacility.wrapGiftsOldeStyle("=BOW=", presentsAlpha, parenthesesWrap)
+                println(s"wrap numbers in () with bow: ${bowResultNum}")
+                println(s"wrap letters in () with bow: ${bowResultLetters}")
 
                 //will this work?
                 //val bowResultFail = wrappingFacility.wrapGiftsOldeStyle("=BOW=") _

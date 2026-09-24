@@ -10,7 +10,9 @@ class GiftWrappingFacilityWithCurrying {
      * @param func
      * @return
      */
-    def wrapGiftsOldeStyle(ribbon: String, gifts: Seq[String], func: (String, String) => String) : String = {
+    def wrapGiftsOldeStyle(ribbon: String,
+                           gifts: Seq[String],
+                           func: (String, String) => String) : String = {
         gifts.fold(ribbon)(func)
     }
 

@@ -17,9 +17,19 @@ class TestGiftWrapping extends StandardTest {
 
             "handle numeric Strings with parentheses" in {
                 //this function puts parentheses
-                val parenthesesWrap :   (String, String)  => String     = (s1: String, s2: String) =>  {
+                //function literal syntax
+                //val parenthesesWrap :   (String, String)  => String     = (s1: String, s2: String) =>  {
+                /*
+                val parenthesesWrap = (s1: String, s2: String) =>  {
                     s1 + s"(${s2})"
                 }
+                 */
+
+                //def syntax
+                def parenthesesWrap(s1: String, s2: String): String = {
+                    s1 + s"(${s2})"
+                }
+
                 //try different ways of wrapping gifts
                 //note the fold method takes a dot as the initial value
                 val result = wrappingFacility.wrapGifts(presentsNum, parenthesesWrap)
@@ -41,12 +51,12 @@ class TestGiftWrapping extends StandardTest {
             "handle numeric Strings with stars as a pure function" in {
                 //this is a different function we will pass
                 val starWrap :   (String, String)  => String     = (s1: String, s2: String) =>  {
-                    //println("Run an errand to get more stars")
+                    println(s"Run an errand to get more stars for ${s2}")
                     s1 + s" **| ${s2}"
                 }
 
                 val pctWrap :   (String, String)  => String     = (s1: String, s2: String) =>  {
-                    //println("Run an errand to get more percents")
+                    println(s"Run an errand to get more percents for ${s2}")
                     s1 + s" %%| ${s2}"
                 }
 
