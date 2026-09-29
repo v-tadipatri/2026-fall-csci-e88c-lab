@@ -30,13 +30,14 @@ class TestLazyWrapping extends StandardTest {
                     "*0" + g
                 })
                 println("Lazy: Now we will see what's in the presents")
-                lazyPresentsNum.foreach(println)
+                //lazyPresentsNum.foreach(println)
 
                 //we can make infinite Gifts!!
                 val infiniteGifts = LazyList.from(1).map(s => "gift-"+s)
                 //but you have to make it in a "real" list by calling toList
                 println(infiniteGifts.take(2).toList)
-                //println(infiniteGifts.take(200).toList)
+                println(infiniteGifts.take(200).toList)
+                println(infiniteGifts.take(2000).toList)
             }
 
         }

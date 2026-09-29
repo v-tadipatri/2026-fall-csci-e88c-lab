@@ -26,7 +26,7 @@ class TestGiftWrappingWithCurrying extends StandardTest {
                 println(s"wrap letters in () with bow: ${bowResultLetters}")
 
                 //will this work?
-                //val bowResultFail = wrappingFacility.wrapGiftsOldeStyle("=BOW=") _
+                //val bowResultFail = wrappingFacility.wrapGiftsOldeStyle("=BOW=")
 
             }
 
@@ -53,7 +53,9 @@ class TestGiftWrappingWithCurrying extends StandardTest {
                 //Here's how we can reuse it
                 //let's try wrapping with a bow
                 val bowWrapper = wrappingFacility.wrapGiftsWithCurrying("=BOW=") _
-                
+
+                val bowResultNum2 = wrappingFacility.wrapGiftsWithCurrying("=BOW=") (presentsNum)(parenthesesWrap)
+                val bowResultLetters2 = wrappingFacility.wrapGiftsWithCurrying("=BOW=") (presentsAlpha)(parenthesesWrap)
                 //we can wrap numbers with a bow
                 val bowResultNum = bowWrapper(presentsNum)(parenthesesWrap)
                 bowResultNum shouldBe "=BOW=(01)(02)(03)(04)(05)"

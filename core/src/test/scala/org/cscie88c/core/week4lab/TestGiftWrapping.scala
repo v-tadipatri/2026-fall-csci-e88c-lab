@@ -19,14 +19,12 @@ class TestGiftWrapping extends StandardTest {
                 //this function puts parentheses
                 //function literal syntax
                 //val parenthesesWrap :   (String, String)  => String     = (s1: String, s2: String) =>  {
-                /*
-                val parenthesesWrap = (s1: String, s2: String) =>  {
-                    s1 + s"(${s2})"
+                val parenthesesWrap = (s1: String, some2: String) =>  {
+                    s1 + s"(${some2})"
                 }
-                 */
 
                 //def syntax
-                def parenthesesWrap(s1: String, s2: String): String = {
+                def parenthesesWrapAsDef(s1: String, s2: String): String = {
                     s1 + s"(${s2})"
                 }
 
@@ -62,7 +60,8 @@ class TestGiftWrapping extends StandardTest {
 
 
                 println("===== combined result below =====")
-                val combined = wrappingFacility.wrapGifts(presentsNum, starWrap) + wrappingFacility.wrapGifts(presentsNum, pctWrap)
+                val starResult = wrappingFacility.wrapGifts(presentsNum, starWrap)
+                val combined = starResult + wrappingFacility.wrapGifts(presentsNum, pctWrap)
                 val combined_again = wrappingFacility.wrapGifts(presentsNum, starWrap) + wrappingFacility.wrapGifts(presentsNum, pctWrap)
                 println(s"combined: ${combined}")
                 val expected_result = ". **| 01 **| 02 **| 03 **| 04 **| 05. %%| 01 %%| 02 %%| 03 %%| 04 %%| 05"

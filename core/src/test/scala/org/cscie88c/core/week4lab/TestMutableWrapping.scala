@@ -18,14 +18,15 @@ class TestMutableWrapping extends StandardTest {
             "add more presents" in {
                 //try different ways of wrapping gifts
                 //presentsNum += "07"
-                val mutablePresents = ListBuffer(presentsNum : _*)
-                mutablePresents should not contain("007")
-                println(s"before: ${mutablePresents}")
-                mutablePresents +="007"
-                mutablePresents +="008"
-                mutablePresents +="009"
-                println(s"after: ${mutablePresents}")
-                mutablePresents should contain("007")
+                //Avoid this unless you absolutely have to use it!!
+                val badMutablePresents = ListBuffer(presentsNum : _*)
+                badMutablePresents should not contain("007")
+                println(s"before: ${badMutablePresents}")
+                badMutablePresents +="007"
+                badMutablePresents +="008"
+                badMutablePresents +="009"
+                println(s"after: ${badMutablePresents}")
+                badMutablePresents should contain("007")
 
             }
 
