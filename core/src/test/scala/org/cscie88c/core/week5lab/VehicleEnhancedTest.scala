@@ -68,6 +68,7 @@ class VehicleEnhancedTest extends StandardTest {
         //should we run the next line?
         //println(ObjectComplimenter.praise(infiniteList))
         //can we "reify" the list?
+        //println(ObjectComplimenter.praise(infiniteList.take(3)))
         println("======")
 
       }

@@ -15,8 +15,7 @@ class VehicleCaseClassTest extends StandardTest {
         val toyotacar = VehicleCase("toyota", "corolla")
         val hondacar = VehicleCase("honda", "accord")
 
-        val plane = Airplane("Boeing", "747")
-        val my_cars = Seq(VehicleCase("toyota", "camry"), toyotacar, hondacar, plane)
+        val my_cars = Seq(VehicleCase("toyota", "camry"), toyotacar, hondacar )
         println("These should be cars: "+my_cars)
         
         val found_toyota = my_cars.filter( vehicle => {
