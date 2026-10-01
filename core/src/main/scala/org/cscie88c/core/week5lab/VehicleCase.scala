@@ -10,5 +10,13 @@ case class VehicleCase (make: String, model: String)
 
 
 //Some other random objects
-case class Airplane (make: String, model: String)
-case class Refrigerator (make: String, model: String)
+case class Airplane (make: String, model: String) {
+  def hasInFlightService(): Boolean = false
+}
+
+case class Refrigerator (make: String, model: String) {
+  def checkFreezerCondition(): Unit = {
+
+  }
+
+}

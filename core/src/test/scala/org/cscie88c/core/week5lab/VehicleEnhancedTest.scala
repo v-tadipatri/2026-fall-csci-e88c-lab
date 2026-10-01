@@ -30,6 +30,7 @@ class VehicleEnhancedTest extends StandardTest {
         val all_cars = lastTest.my_cars
         //this only uses the defined values, and calls the apply method
         val modelsFound = all_cars.collect(isJapaneseWithoutCase)
+
         println("==== These are the Japanese car brands we found ===")
         modelsFound.foreach(println)
         println("====")
@@ -52,18 +53,21 @@ class VehicleEnhancedTest extends StandardTest {
 
         val lastTest = new VehicleRealClassTest()
         val all_cars = lastTest.my_cars
+        println(ObjectComplimenter.praise(all_cars))
+        println("======")
         println(ObjectComplimenter.praise(all_cars.map(c => VehicleCase(c.make, c.model))))
         println("======")
         println(ObjectComplimenter.praise(Seq("my_neighbor", "my_neighbors_dog", "stray_cat", "little_kitten")))
         println("======")
+        //what about an empty list?
+        println(ObjectComplimenter.praise(Seq()))
+        println("======")
+        //now let's look at number lists
         println(ObjectComplimenter.praise((0 to 5)))
         val infiniteList = LazyList.from(0).map(i => i *5)
         //should we run the next line?
         //println(ObjectComplimenter.praise(infiniteList))
         //can we "reify" the list?
-        println("======")
-        //what about an empty list?
-        println(ObjectComplimenter.praise(Seq()))
         println("======")
 
       }

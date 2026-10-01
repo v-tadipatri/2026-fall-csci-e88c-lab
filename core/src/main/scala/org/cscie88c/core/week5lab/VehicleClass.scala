@@ -10,7 +10,13 @@ package org.cscie88c.core.week5lab
 //Fold this at the beginning
 class VehicleClass (val make: String, val model: String) {
 
-  // Here are some methods  
+  //override def toString: String = s"This vehicle is ${make} ${model}"
+
+
+
+
+
+  // Here are some methods
 
     def toMilesMethod(km: Int) = (km  / 1.6).toInt
 
@@ -45,6 +51,7 @@ object VehicleClass {
     val arr = makemodel.split(" ")
     new VehicleClass(arr(0), arr(1) )
   }
+
   def unapply(vehicle: VehicleClass ): Option[(String, String)] = Some(vehicle.make, vehicle.model)
 
 }

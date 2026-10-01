@@ -15,11 +15,12 @@ class VehicleCaseClassTest extends StandardTest {
         val toyotacar = VehicleCase("toyota", "corolla")
         val hondacar = VehicleCase("honda", "accord")
 
-        val my_cars = Seq(VehicleCase("toyota", "camry"), toyotacar, hondacar)
+        val plane = Airplane("Boeing", "747")
+        val my_cars = Seq(VehicleCase("toyota", "camry"), toyotacar, hondacar, plane)
         println("These should be cars: "+my_cars)
         
-        val found_toyota = my_cars.filter( car => {
-          val result = car match {
+        val found_toyota = my_cars.filter( vehicle => {
+          val result = vehicle match {
             //which one will toyota camry match?
               case VehicleCase(make, model) if (make =="toyota" && model == "camry") => {
                 Result(true, "this is also a camry " )
@@ -28,7 +29,7 @@ class VehicleCaseClassTest extends StandardTest {
               case VehicleCase(_,_) => Result(false, s"is not a toyota")
               case _ => Result(false, "not even a car")
           }
-          println(s" === ${car} Is this a  Toyota car ? ${result}")
+          println(s" === ${vehicle} Is this a  Toyota car ? ${result}")
           result.flag 
         })
 
@@ -45,6 +46,7 @@ class VehicleCaseClassTest extends StandardTest {
   val samsung_fridge = Refrigerator("Samsung", "french-door")
   val ge_fridge = Refrigerator("GE", "stainless_steel")
 
+  case Airplane(make,_) => Result(true, s"this ${make} can fly, but service is "+ vehicle.asInstanceOf[Airplane].hasInFlightService() )
    */
 
 
