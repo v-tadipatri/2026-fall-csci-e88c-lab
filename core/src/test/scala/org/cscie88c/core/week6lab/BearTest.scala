@@ -20,7 +20,7 @@ class BearTest extends StandardTest {
     "wander through the woods" in {
       val bear = new Bear()
 
-      import Bear.idTag
+      import Bat.idTag
       bear.catchSomeFish(3)
       bear.enterCampsite()
     }
