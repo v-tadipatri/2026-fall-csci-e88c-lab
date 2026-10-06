@@ -1,7 +1,6 @@
 ThisBuild / organization := "org.cscie88c"
 ThisBuild / scalaVersion := "2.13.16"
 ThisBuild / version := "0.1.0-SNAPSHOT"
-ThisBuild / versionScheme := Some("semver-spec")
 
 val circeVersion = "0.13.0"
 val pureconfigVersion = "0.15.0"
@@ -58,12 +57,7 @@ lazy val commonSettings = Seq(
       "--add-opens=java.base/java.lang.invoke=ALL-UNNAMED"
     ),
     libraryDependencies ++= commonDependencies,
-    libraryDependencies ++= scalaTest,
-)
-
-lazy val dockerSettings = Seq(
-  dockerBaseImage := "docker.io/library/eclipse-temurin:17-jre",
-  Docker / version := "latest",
+    libraryDependencies ++= scalaTest
 )
 
 lazy val core = project
@@ -75,7 +69,7 @@ lazy val core = project
 
 lazy val cli = project
   .in(file("cli"))
-  .settings(commonSettings, dockerSettings)
+  .settings(commonSettings)
   .dependsOn(core)
   .enablePlugins(JavaAppPackaging)
 
@@ -125,3 +119,6 @@ zipHomework := {
     None
   )
 }
+
+// docker settings for packaging the application as a Docker container
+ThisBuild / dockerBaseImage := "eclipse-temurin:17-jdk"
