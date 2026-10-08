@@ -20,9 +20,12 @@ class BearTest extends StandardTest {
     "wander through the woods" in {
       val bear = new Bear()
 
+      //is this the right import?
       import Bat.idTag
+      //what if we want the IdTag to be available without any import or implicit val?
       bear.catchSomeFish(3)
       bear.enterCampsite()
+
     }
 
 

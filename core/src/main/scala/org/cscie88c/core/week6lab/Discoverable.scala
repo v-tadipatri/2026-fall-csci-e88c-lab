@@ -8,6 +8,6 @@ trait Discoverable {
     }
 
   //what happens without an implementation
-    //def water()
+    //def foundWater()
 
 }

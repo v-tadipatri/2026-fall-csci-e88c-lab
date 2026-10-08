@@ -3,6 +3,9 @@ package org.cscie88c.core.week6lab
 import org.cscie88c.core.testutils.StandardTest
 import org.scalacheck.Gen
 
+/**
+ * Let's start with testing out the bat
+ */
 class BatTest extends StandardTest {
 
   "bats" should {
@@ -15,9 +18,40 @@ class BatTest extends StandardTest {
       bat.showTemperature("after mod")
       bat.resetTemperature()
       bat.showTemperature("after reset")
-      //import Bat.idTag
-      //bat.catchInsects(3)
+
     }
+
+    "flap their wings like any Flyable" in {
+
+      val bat = new Bat()
+      bat.flapWings(3)
+
+      //what if takeoff is defined in another class (Mammal)?
+      bat.takeoff()
+
+      //what if land is defined in another trait (Discoverable)?
+      bat.land()
+    }
+
+
+
+
+    //let's look at the bird, before coming back to implicits
+
+
+
+    "be able to catch insects implicitly" in {
+      val bat = new Bat()
+      //what if the method needs to be enhanced to support IdTag?
+      bat.catchInsectsWithParams(4)
+
+      //how to specify implicit value here?
+      //bat.catchInsects(3)
+
+    }
+
+    //import Bat.idTag
+    //implicit val idTag = IdTag(2222, "BatCave")
 
 
     "be tracked when flying" in {
@@ -31,8 +65,8 @@ class BatTest extends StandardTest {
       val foundBats = List.fill(10)(new Bat)
       foundBats.foreach(bat => {
         implicit val id = idGen.sample.get
-        bat.takeoff()
-        bat.land()
+        bat.takeoffAndTag()
+        bat.landAndTag()
       })
 
     }
