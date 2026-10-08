@@ -13,11 +13,12 @@ class BatTest extends StandardTest {
 
     "maintain temperature" in {
       val bat = new Bat()
+      //call method on new object that's returned
       bat.showTemperature("before")
-      bat.changeTemperature(-5)
-      bat.showTemperature("after mod")
-      bat.resetTemperature()
-      bat.showTemperature("after reset")
+        .changeTemperature(15)
+        .showTemperature("after mod")
+        .resetTemperature()
+        .showTemperature("after reset")
 
     }
 

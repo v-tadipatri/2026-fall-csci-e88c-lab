@@ -3,7 +3,20 @@ package org.cscie88c.core.week6lab
 /**
  * Bears have a lot of implicit methods!
  */
-class Bear extends Mammal {
+class Bear(myBodyTemp: Int=99)
+  extends Mammal[Bear]( 99, 10, myBodyTemp ) {
+
+  val hibernatingTemp = baseBodyTemperature - tolerance
+
+  override def cloneWithTemperature(newTemperature: Int): Bear = {
+    if (newTemperature < hibernatingTemp){
+      println("I am currently hibernating!!")
+    }
+    if (newTemperature >= baseBodyTemperature && currBodyTemperature < hibernatingTemp){
+      println("I just woke up from hibernation and I'm hungry!!")
+    }
+    new Bear(newTemperature)
+  }
 
    def catchSomeFish(fishCaught: Int)  (implicit idTag: IdTag)= {
      println(s"Bear with id = ${idTag} caught ${fishCaught} fish")

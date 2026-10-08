@@ -10,11 +10,12 @@ class BearTest extends StandardTest {
 
     "maintain temperature" in {
       val bear = new Bear()
+      //same methods as for bat, but we have extra printlns
       bear.showTemperature("before")
-      bear.changeTemperature(-5)
-      bear.showTemperature("after mod")
-      bear.resetTemperature()
-      bear.showTemperature("after reset")
+        .changeTemperature(-15)
+        .showTemperature("after mod")
+        .resetTemperature()
+        .showTemperature("after reset")
     }
 
     "wander through the woods" in {
