@@ -12,7 +12,7 @@ class AddSpec extends AsyncFlatSpec {
   //This returns a future
   def addSoon(addends: Int*): Future[Int] = Future { Thread.sleep(5000); addends.sum }
 
-  behavior of "addSoon"
+  //behavior of "addSoon"
 
   it should "eventually compute a sum of passed Ints" in {
     val futureSum: Future[Int] = addSoon(1, 2)

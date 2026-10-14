@@ -9,7 +9,7 @@ import scala.util.{Try, Success, Failure}
  * @tparam A
  */
 case class FunctorBag[A](content: A) {
- def map[B](f: A => B): FunctorBag[B] = FunctorBag(f(content))
+ def map[B](func: A => B): FunctorBag[B] = FunctorBag(    func(content)   )
 }
 
 
@@ -26,8 +26,10 @@ object FunctionSet {
   // the guy who is expert at making flour half
   def half = (someflour: Flour) => Flour(someflour.weight / 2)
 
+  //region halfBagger
   //the guy who halfs the flour, then puts it in another bag
-  def halfBagger = (someflour: Flour) => FunctorBag(Flour(someflour.weight / 2))
+  def halfBagger = (someflour: Flour) => FunctorBag(  half(someflour)   )
+  //endregion
 
 }
 

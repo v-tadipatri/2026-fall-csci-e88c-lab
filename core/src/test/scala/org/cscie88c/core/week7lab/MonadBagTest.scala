@@ -10,9 +10,9 @@ import scala.util.{Try, Success, Failure}
  * @tparam A
  */
 case class MonadBag[A](content: A) {
- def map[B](f: A => B):         MonadBag[B] = MonadBag(f(content))
+ def map[B](func: A => B):         MonadBag[B] = MonadBag( func(content) )
 
- def flatMap[B](f: A => MonadBag[B]):       MonadBag[B] = f(content)
+ def flatMap[B](func: A => MonadBag[B]):       MonadBag[B] = func(content)
 
  def flatten = content
 
