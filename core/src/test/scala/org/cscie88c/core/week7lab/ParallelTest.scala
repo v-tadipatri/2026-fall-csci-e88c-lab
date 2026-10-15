@@ -7,6 +7,9 @@ import scala.collection.parallel.ForkJoinTaskSupport
 //MUST include this import
 import scala.collection.parallel.CollectionConverters._
 
+/**
+ * Advantage of using parallel collections
+ */
 class ParallelTest extends StandardTest{
   def slowPrint(line: String) = {
      Thread.sleep(1000)
@@ -30,6 +33,8 @@ class ParallelTest extends StandardTest{
     val lines_par = lines.par
     lines_par.tasksupport = new ForkJoinTaskSupport(forkJoinPool)
     lines_par.foreach(slowPrint(_) )
+
+    //now that we can use parallelism, let's look at Futures (AddFutureSpec)
   }
 
 

@@ -10,12 +10,20 @@ import scala.concurrent.Future
 class AddSpec extends AsyncFlatSpec {
 
   //This returns a future
-  def addSoon(addends: Int*): Future[Int] = Future { Thread.sleep(5000); addends.sum }
+  def addDelayed(addends: Int*): Future[Int] = Future {
+    Thread.sleep(5000);
+    addends.sum
+  }
+  //this blocks and returns
+  def addNow(addends: Int*): Int = {
+    Thread.sleep(5000)
+    addends.sum
+  }
 
   //behavior of "addSoon"
 
   it should "eventually compute a sum of passed Ints" in {
-    val futureSum: Future[Int] = addSoon(1, 2)
+    val futureSum: Future[Int] = addDelayed(1, 2)
     // You can map assertions onto a Future, then return
     // the resulting Future[Assertion] to ScalaTest:
     futureSum.map { sum => {
@@ -25,11 +33,6 @@ class AddSpec extends AsyncFlatSpec {
     }
   }
 
-  //this blocks and returns
-  def addNow(addends: Int*): Int = {
-    Thread.sleep(5000)
-    addends.sum
-  }
 
   "addNow" should "immediately compute a sum of passed Ints" in {
     val sum: Int = addNow(1, 2)
