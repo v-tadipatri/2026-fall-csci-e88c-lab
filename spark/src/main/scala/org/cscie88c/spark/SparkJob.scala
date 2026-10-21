@@ -7,24 +7,24 @@ import org.cscie88c.core.Utils
 import java.io.File
 import scala.util.Try
 
+/**
+ * Example of Spark Job using Movie dataset
+ */
 object SparkJob {
 
   def loadSparkCluster: SparkSession = {
-    println("Loading cluster config...")
-     SparkSession.builder()
+    println(s"Loading cluster config...")
+    SparkSession.builder()
       .appName("ClusterSparkJob")
-      .master("spark://spark-master:7077")  // connect to local Spark master in Docker
-      .config("spark.executor.memory", "1g")
-      .config("spark.driver.host", "localhost")
       .getOrCreate()
   }
 
   def loadSparkLocal: SparkSession = {
-    println("Loading local config...")
+    println(s"Loading local config...")
     SparkSession.builder()
-      .appName("SampleSparkJob")
+      .appName("LocalSparkJob")
+      .master("local[*]")
       .getOrCreate()
-
   }
 
   def loadResource(path: String) = {
@@ -38,14 +38,12 @@ object SparkJob {
   }
 
   def main(args: Array[String]): Unit = {
-    /*
-    val spark = sys.env.getOrElse("LOCAL_MODE", "0") match {
+    //Need to pass this as a sys prop in IDE
+    val spark = sys.props.getOrElse("LOCAL_MODE", "0") match {
       case "0" => loadSparkCluster
       case "1" => loadSparkLocal
 
     }
-    */
-   val spark = loadSparkLocal
 
     import spark.implicits._
 

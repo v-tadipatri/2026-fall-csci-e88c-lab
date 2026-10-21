@@ -1,27 +1,23 @@
+import sbt.librarymanagement.Configurations.Provided
+import sbt.librarymanagement.Configurations.Default
+
 name := "spark"
 //add this as VM option when running locally
 //--add-exports=java.base/sun.nio.ch=ALL-UNNAMED
-
 //flag to switch how spark libraries are included
-val isLocal = sys.env.get("LOCAL_MODE").contains("1")
+//Hard to set path in intellij, so override on cmdline
+val isLocal = sys.env.get("REMOTE_MODE").contains("1")==false
 
   libraryDependencies ++= {
     println("Local mode = "+isLocal)
-    if (isLocal) {
-      //In local mode (IDE), we want the spark libraries
-      //set LOCAL_MODE as env variable in your IDE
-      Seq(
-        "org.apache.spark" %% "spark-core" % "4.0.2", //% Provided,
-        "org.apache.spark" %% "spark-sql" % "4.0.2" //% Provided
-      )
-    } else {
-      //when building a jar to deploy, do not include spark
-      //turn off LOCAL_MODE when running sbt assembly!
-      Seq(
-        "org.apache.spark" %% "spark-core" % "4.0.2" % Provided,
-        "org.apache.spark" %% "spark-sql" % "4.0.2" % Provided
-      )
-    }
+    val scope = if (isLocal) Default else Provided
+    //In local mode (IDE), we want the spark libraries
+    //when building a jar to deploy, do not include spark
+    //export REMOTE_MODE=1 when running sbt assembly!
+    Seq(
+      "org.apache.spark" %% "spark-core" % "4.0.2" % scope,
+      "org.apache.spark" %% "spark-sql" % "4.0.2" % scope
+    )
   }
 //}
 
