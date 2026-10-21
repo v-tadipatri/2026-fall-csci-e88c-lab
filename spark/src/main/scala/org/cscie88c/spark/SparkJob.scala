@@ -23,7 +23,6 @@ object SparkJob {
     println("Loading local config...")
     SparkSession.builder()
       .appName("SampleSparkJob")
-      .master("local[*]")
       .getOrCreate()
 
   }

@@ -11,15 +11,15 @@ val isLocal = sys.env.get("LOCAL_MODE").contains("1")
       //In local mode (IDE), we want the spark libraries
       //set LOCAL_MODE as env variable in your IDE
       Seq(
-        "org.apache.spark" %% "spark-core" % "3.5.1", //% Provided,
-        "org.apache.spark" %% "spark-sql" % "3.5.1" //% Provided
+        "org.apache.spark" %% "spark-core" % "4.0.2", //% Provided,
+        "org.apache.spark" %% "spark-sql" % "4.0.2" //% Provided
       )
     } else {
       //when building a jar to deploy, do not include spark
       //turn off LOCAL_MODE when running sbt assembly!
       Seq(
-        "org.apache.spark" %% "spark-core" % "3.5.1" % Provided,
-        "org.apache.spark" %% "spark-sql" % "3.5.1" % Provided
+        "org.apache.spark" %% "spark-core" % "4.0.2" % Provided,
+        "org.apache.spark" %% "spark-sql" % "4.0.2" % Provided
       )
     }
   }
