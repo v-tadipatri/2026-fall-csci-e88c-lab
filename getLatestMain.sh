@@ -2,7 +2,7 @@
 
 set -x
 rm -Rf mainrepo
-git clone https://github.com/esumitra/2025-fall-csci-e88c.git mainrepo
+git clone https://github.com/esumitra/2026-fall-csci-e88c.git mainrepo
 set +x
 if [ -d "mainrepo" ]
 then
