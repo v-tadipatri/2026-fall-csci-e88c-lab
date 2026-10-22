@@ -5,8 +5,8 @@ name := "spark"
 //add this as VM option when running locally
 //--add-exports=java.base/sun.nio.ch=ALL-UNNAMED
 //flag to switch how spark libraries are included
-//Hard to set path in intellij, so override on cmdline
-val isLocal = sys.env.get("REMOTE_MODE").contains("1")==false
+//In Intellij, set in Build,Exec,Deployment -> BuildTools ->SBT -> VM params
+val isLocal = sys.props.get("LOCAL_MODE").contains("1")
 
   libraryDependencies ++= {
     println("Local mode = "+isLocal)
