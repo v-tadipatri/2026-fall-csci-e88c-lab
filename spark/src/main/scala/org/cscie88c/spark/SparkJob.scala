@@ -9,6 +9,19 @@ import scala.util.Try
 
 /**
  * Example of Spark Job using Movie dataset
+ * Intellij Run:
+ * In Intellij, set in Build,Exec,Deployment -> BuildTools ->SBT -> VM params : -DLOCAL_MODE=1
+ *  see build.sbt
+ *  In Run config, set working dir to spark
+ *  set LOCAL_MODE=1 in VMArgs
+ * Local Run:
+ * export LOCAL_MODE=1
+ *  sbt -DLOCAL_MODE=1 spark/run
+ *
+ * Docker Run:
+ *  unset LOCAL_MODE
+ *  sbt spark/assembly
+ *
  */
 object SparkJob {
 
@@ -27,23 +40,24 @@ object SparkJob {
       .getOrCreate()
   }
 
-  def loadResource(path: String) = {
-    //if local, get from path
-    //otherwise, copy to movies subdirectory in data folder (mounted in docker)
-    val fullpath = Try(this.getClass.getResource(s"/movies/${path}").toURI.toString)
-      .getOrElse(s"/opt/spark-data/movies/${path}")
+  def loadResource(path: String, isLocal: Boolean) = {
+    if (isLocal){
+      //working dir must be spark
+      new java.io.File(s"../data/movies/${path}").getAbsoluteFile.toURI.toString
+    }else {
+      s"/opt/spark-data/movies/${path}"
+    }
+  }
 
-    println(s"=== loading ${path} from : ${fullpath}")
-    fullpath
+  //Get prop for env or vm arg
+  def getProp(key: String): Option[String] = {
+     sys.props.get(key).orElse(sys.env.get(key))
   }
 
   def main(args: Array[String]): Unit = {
     //Need to pass this as a sys prop in IDE
-    val spark = sys.props.getOrElse("LOCAL_MODE", "0") match {
-      case "0" => loadSparkCluster
-      case "1" => loadSparkLocal
-
-    }
+    val isLocal = getProp("LOCAL_MODE").getOrElse("0") == "1"
+    val spark = if (isLocal) loadSparkLocal else loadSparkCluster
 
     import spark.implicits._
 
@@ -52,10 +66,10 @@ object SparkJob {
     greeted.show(false)
 
     //will only work on local paths
-    val title_path = loadResource("titles.csv")
+    val title_path = loadResource("titles.csv", isLocal)
     //use "file:" and absolute path on spark cluster
 
-    val genre_path = loadResource("genres.csv")
+    val genre_path = loadResource("genres.csv", isLocal)
 
     //work with dataframe
     val df_movies = spark.read.option("header", "true").csv(title_path)
