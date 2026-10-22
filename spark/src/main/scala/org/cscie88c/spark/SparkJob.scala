@@ -13,7 +13,8 @@ import scala.util.Try
  * In Intellij, set in Build,Exec,Deployment -> BuildTools ->SBT -> VM params : -DLOCAL_MODE=1
  *  see build.sbt
  *  In Run config, set working dir to spark
- *  set LOCAL_MODE=1 in VMArgs
+ *   and set LOCAL_MODE=1 in VMArgs
+ *
  * Local Run:
  * export LOCAL_MODE=1
  *  sbt -DLOCAL_MODE=1 spark/run
