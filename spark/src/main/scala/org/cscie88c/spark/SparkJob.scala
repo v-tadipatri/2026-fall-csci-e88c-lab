@@ -24,6 +24,8 @@ import scala.util.Try
  *  sbt spark/assembly
  *
  */
+case class Basepath(value: String)
+
 object SparkJob {
 
   def loadSparkCluster: SparkSession = {
@@ -41,12 +43,12 @@ object SparkJob {
       .getOrCreate()
   }
 
-  def loadResource(path: String, isLocal: Boolean) = {
+  def loadResource(path: String, isLocal: Boolean)(implicit basepath: Basepath) = {
     if (isLocal){
       //working dir must be spark
       new java.io.File(s"../data/movies/${path}").getAbsoluteFile.toURI.toString
     }else {
-      s"/opt/spark-data/movies/${path}"
+      s"${basepath.value}/${path}"
     }
   }
 
@@ -66,6 +68,8 @@ object SparkJob {
     val greeted = df.map(row => Utils.greet(row.getString(0)))
     greeted.show(false)
 
+    implicit val basepath = Basepath(if (args.length > 0) args(0) else "")
+    val outputPath = Try(args(1)).toOption
     //will only work on local paths
     val title_path = loadResource("titles.csv", isLocal)
     //use "file:" and absolute path on spark cluster
@@ -98,7 +102,6 @@ object SparkJob {
     val query = spark.sql("select genre, count(*) from movie_tbl group by genre")
     query.show()
 
-
     //or convert to a dataset
     val movie_set = df_movies.as[Movie]
     println("===show full data, as dataset")
@@ -118,6 +121,8 @@ object SparkJob {
       })
       .show(false)
 
+    //if output path defined, write movies
+    outputPath.foreach( movie_set.write.mode("overwrite").parquet(_))
     spark.stop()
   }
 }
