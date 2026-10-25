@@ -122,7 +122,10 @@ object SparkJob {
       .show(false)
 
     //if output path defined, write movies
-    outputPath.foreach( movie_set.write.mode("overwrite").parquet(_))
+    outputPath.foreach( o => {
+      println(s"Writing output to ${o}")
+      movie_set.write.mode("overwrite").parquet(o)
+    })
     spark.stop()
   }
 }
