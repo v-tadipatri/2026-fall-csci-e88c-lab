@@ -5,6 +5,8 @@ import org.apache.spark.sql.functions.{col, when}
 import org.cscie88c.core.Utils
 
 import java.io.File
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 import scala.util.Try
 
 /**
@@ -43,6 +45,12 @@ object SparkJob {
       .getOrCreate()
   }
 
+  def getTimestamp(): String = {
+    val currentDateTime = LocalDateTime.now()
+    val formatter = DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss")
+    currentDateTime.format(formatter)
+  }
+
   def loadResource(path: String, isLocal: Boolean)(implicit basepath: Basepath) = {
     if (isLocal){
       //working dir must be spark
@@ -61,6 +69,8 @@ object SparkJob {
     //Need to pass this as a sys prop in IDE
     val isLocal = getProp("LOCAL_MODE").getOrElse("0") == "1"
     val spark = if (isLocal) loadSparkLocal else loadSparkCluster
+    val dtime = getTimestamp()
+    println(s"Current time = ${dtime}")
 
     import spark.implicits._
 
@@ -124,7 +134,9 @@ object SparkJob {
     //if output path defined, write movies
     outputPath.foreach( o => {
       println(s"Writing output to ${o}")
-      movie_set.write.mode("overwrite").parquet(o)
+      val outdir = s"${o}/${dtime}"
+      new File(outdir).mkdirs()
+      movie_set.write.mode("overwrite").parquet(outdir)
     })
     spark.stop()
   }
