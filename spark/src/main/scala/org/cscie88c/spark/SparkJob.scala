@@ -1,6 +1,6 @@
 package org.cscie88c.spark
 
-import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.{DataFrame, SparkSession}
 import org.apache.spark.sql.functions.{col, when}
 import org.cscie88c.core.Utils
 
@@ -27,6 +27,7 @@ import scala.util.Try
  *
  */
 case class Basepath(value: String)
+
 
 object SparkJob {
 
@@ -65,14 +66,34 @@ object SparkJob {
      sys.props.get(key).orElse(sys.env.get(key))
   }
 
+  /**
+   * Example of implicit class, to wrap a DataFrame
+   * @param df
+   */
+  implicit class DebugDF (val df: DataFrame) {
+    def showDebug(truncate: Boolean): Unit = showDebug(10000, truncate)
+    def showDebug(numRows: Int, truncate: Boolean): Unit = {
+      if (checkLocal()) {
+        df.show(numRows, truncate)
+      }
+    }
+  }
+
+  def checkLocal(): Boolean = {
+    getProp("LOCAL_MODE").getOrElse("0") == "1"
+  }
+
+
   def main(args: Array[String]): Unit = {
+
     //Need to pass this as a sys prop in IDE
-    val isLocal = getProp("LOCAL_MODE").getOrElse("0") == "1"
+    val isLocal = checkLocal()
     val spark = if (isLocal) loadSparkLocal else loadSparkCluster
     val dtime = getTimestamp()
     println(s"Current time = ${dtime}")
 
     import spark.implicits._
+    import org.apache.spark.sql.functions._
 
     val df = Seq("Alice", "Bob", "Carol").toDF("name")
     val greeted = df.map(row => Utils.greet(row.getString(0)))
@@ -91,33 +112,33 @@ object SparkJob {
     val df_genre_tmp = spark.read.option("header", "true").csv(genre_path)
 
     println("===Show full movie data, as dataframe")
-    df_movies.show(false)
+    df_movies.showDebug(false)
 
     //example of adding a column
     val isKidFriendly = col("genre_title").equalTo("Family")
     val newcol = when(isKidFriendly, "yes").otherwise("no")
     val df_genre = df_genre_tmp.withColumn("kid_friendly", newcol)
     println("===Show full genre data, as dataframe")
-    df_genre.show(false)
+    df_genre.showDebug(false)
 
     val joined = df_movies.join(df_genre, df_movies("genre")===df_genre("genre_title"))
     println("===Show joined data, as dataframe")
-    joined.show(100, false)
+    joined.showDebug(100, false)
 
     println("===Show distinct genres")
-    df_movies.select("genre").distinct().show()
+    //df_movies.select("genre").distinct().show()
 
     df_movies.createOrReplaceTempView("movie_tbl")
     println("===Show counts by genre")
     val query = spark.sql("select genre, count(*) from movie_tbl group by genre")
-    query.show()
+    query.showDebug(false)
 
     //or convert to a dataset
     val movie_set = df_movies.as[Movie]
     println("===show full data, as dataset")
     movie_set.show(false)
     println("=== these are superhero movies")
-    movie_set.filter(_.isSuperhero).show(false)
+    movie_set.filter(_.isSuperhero)
 
     println("=== these are avenger movies")
     movie_set
@@ -127,16 +148,31 @@ object SparkJob {
           case i if i > 50 => m.description.substring(0,50)+"..."
           case _ => m.description
         }
-        MovieSnippet(m.title, m.year.toInt, short_desc)
+        MovieSnippet("avengers_snippet", m.title, m.year.toInt, short_desc)
       })
       .show(false)
+
+    // ===  new for week 9 ===
+    //a movie is a sequel if it contains letters and ends in a number
+    val movie_with_sequel = movie_set.withColumn("is_sequel", col("title").rlike("[a-z].*[0-9]$"))
+    //movie_with_sequel.select("title", "is_sequel").show(100,false)
+
+    val movie_by_year = movie_with_sequel
+      .groupBy("year")
+      .agg(
+        count("*").as("total_movies"),
+        countDistinct("genre").as("genre_count"),
+        sum(col("is_sequel").cast("int")).as("sequel_count")
+      ).orderBy("year")
+    movie_by_year.show(100, false)
 
     //if output path defined, write movies
     outputPath.foreach( o => {
       println(s"Writing ${movie_set.count()} rows of output to ${o}")
       val outdir = s"${o}/${dtime}"
+      println(s"Writing output to ${outdir}")
       new File(outdir).mkdirs()
-      movie_set.write.mode("overwrite").parquet(outdir)
+      movie_by_year.write.mode("overwrite").parquet(outdir)
     })
     spark.stop()
   }

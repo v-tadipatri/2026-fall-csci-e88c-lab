@@ -17,6 +17,7 @@ case class Movie(
 }
 
 case class MovieSnippet(
+                       snippet_desc: String,
                        title: String,
                        year: Int,
                        description: String
