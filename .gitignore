@@ -1,6 +1,7 @@
 *.class
 *.log
 mainrepo
+docker/output
 
 # sbt specific
 .cache

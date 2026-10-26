@@ -1,6 +1,7 @@
 services:
   spark-master:
     image: apache/spark:4.0.2-scala2.13-java17-python3-ubuntu
+    user: root
     container_name: spark-master
     environment:
       - SPARK_MODE=master
@@ -15,6 +16,7 @@ services:
       - "8080:8080"
     volumes:
       - ./data:/opt/spark-data
+      - ./docker/output:/opt/spark-results
       - ./docker/apps/spark:/opt/spark-apps
     networks:
       - spark-net
@@ -38,6 +40,7 @@ services:
     volumes:
       - ./data:/opt/spark-data
       - ./docker/apps/spark:/opt/spark-apps
+      - ./docker/output:/opt/spark-results
       - ./docker/apps/spark/logs:/opt/spark/work-dir/logs
     networks:
       - spark-net

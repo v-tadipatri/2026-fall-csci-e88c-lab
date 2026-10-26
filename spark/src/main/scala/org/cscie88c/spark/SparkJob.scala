@@ -133,7 +133,7 @@ object SparkJob {
 
     //if output path defined, write movies
     outputPath.foreach( o => {
-      println(s"Writing output to ${o}")
+      println(s"Writing ${movie_set.count()} rows of output to ${o}")
       val outdir = s"${o}/${dtime}"
       new File(outdir).mkdirs()
       movie_set.write.mode("overwrite").parquet(outdir)
