@@ -35,15 +35,17 @@ assembly / assemblyMergeStrategy := {
     val oldStrategy = (assembly / assemblyMergeStrategy).value
     oldStrategy(x)
 }
-assembly / run := {
+/*
+assembly  := {
   println("Starting assembly build...")
-  val result = (assembly / assembly).value
+  val result = assembly.value
   println(s"Assembly complete: ${result}")
   println("To run in docker: ")
   println("docker exec -it spark-master /bin/bash ")
   println("/opt/spark-apps/runSparkMovies.sh")
   result
 }
+ */
 // see shading feature at https://github.com/sbt/sbt-assembly#shading
 assembly / assemblyShadeRules := Seq(
   ShadeRule.rename("shapeless.**" -> "shadeshapeless.@1").inAll
