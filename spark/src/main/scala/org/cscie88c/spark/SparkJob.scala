@@ -23,7 +23,10 @@ import scala.util.Try
  *
  * Docker Run:
  *  unset LOCAL_MODE
+ *  sbt spark/clean
  *  sbt spark/assembly
+ *  docker exec -it spark-master /bin/bash
+ *  /opt/spark-apps/runSparkMovies.sh
  *
  */
 case class Basepath(value: String)
@@ -164,7 +167,7 @@ object SparkJob {
         countDistinct("genre").as("genre_count"),
         sum(col("is_sequel").cast("int")).as("sequel_count")
       ).orderBy("year")
-    movie_by_year.show(100, false)
+    movie_by_year.showDebug(100, false)
 
     //if output path defined, write movies
     outputPath.foreach( o => {
