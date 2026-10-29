@@ -25,6 +25,7 @@ import scala.util.Try
  *  unset LOCAL_MODE
  *  sbt spark/clean
  *  sbt spark/assembly
+ *  cp spark/target/scala-2.13/SparkJob.jar docker/apps/spark
  *  docker exec -it spark-master /bin/bash
  *  /opt/spark-apps/runSparkMovies.sh
  *
