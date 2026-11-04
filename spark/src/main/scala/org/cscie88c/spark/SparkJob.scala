@@ -158,9 +158,10 @@ object SparkJob {
 
     // ===  new for week 9 ===
     //a movie is a sequel if it contains letters and ends in a number
+    //why is this turning into a DataFrame, not a DataSet?
     val movie_with_sequel = movie_set.withColumn("is_sequel", col("title").rlike("[a-z].*[0-9]$"))
-    //movie_with_sequel.select("title", "is_sequel").show(100,false)
 
+    //Notice that multiple metrics are all grouped by the same year
     val movie_by_year = movie_with_sequel
       .groupBy("year")
       .agg(
@@ -168,6 +169,8 @@ object SparkJob {
         countDistinct("genre").as("genre_count"),
         sum(col("is_sequel").cast("int")).as("sequel_count")
       ).orderBy("year")
+
+    //see how implicit classes are used here
     movie_by_year.showDebug(100, false)
 
     //if output path defined, write movies
