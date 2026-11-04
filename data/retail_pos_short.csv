@@ -1,0 +1,2000 @@
+transaction_id,datetime,store_id,product,department,quantity,unit_price,line_total,payment
+500001,2026-08-05 17:25:00,S2,Bananas,Produce,1,1.59,1.59,Mobile
+500001,2026-08-05 17:25:00,S2,Spinach,Produce,2,2.99,5.98,Mobile
+500001,2026-08-05 17:25:00,S2,Burger Patties,Grilling,2,9.99,19.98,Mobile
+500001,2026-08-05 17:25:00,S2,Cheese Slices,Grilling,1,3.99,3.99,Mobile
+500001,2026-08-05 17:25:00,S2,Ketchup,Grilling,1,2.99,2.99,Mobile
+500002,2026-08-06 00:53:00,S1,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500002,2026-08-06 00:53:00,S1,Salsa,Snacks,2,3.99,7.98,Card
+500002,2026-08-06 00:53:00,S1,Bananas,Produce,1,1.59,1.59,Card
+500002,2026-08-06 00:53:00,S1,Apples,Produce,1,3.99,3.99,Card
+500002,2026-08-06 00:53:00,S1,Spinach,Produce,1,2.99,2.99,Card
+500003,2026-08-05 23:40:00,S2,Coffee,Breakfast,1,8.99,8.99,Cash
+500003,2026-08-05 23:40:00,S2,Cream Cheese,Breakfast,1,2.79,2.79,Cash
+500004,2026-08-05 16:29:00,S2,Spaghetti,Pasta Night,3,1.99,5.97,Cash
+500004,2026-08-05 16:29:00,S2,Marinara Sauce,Pasta Night,1,3.49,3.49,Cash
+500004,2026-08-05 16:29:00,S2,Paper Towels,Cleaning,2,7.99,15.98,Cash
+500004,2026-08-05 16:29:00,S2,Dish Soap,Cleaning,1,3.49,3.49,Cash
+500004,2026-08-05 16:29:00,S2,Sponges,Cleaning,1,2.49,2.49,Cash
+500004,2026-08-05 16:29:00,S2,Trash Bags,Cleaning,1,8.99,8.99,Cash
+500005,2026-08-05 14:26:00,S2,Bananas,Produce,1,1.59,1.59,Card
+500005,2026-08-05 14:26:00,S2,Apples,Produce,1,3.99,3.99,Card
+500005,2026-08-05 14:26:00,S2,Avocado,Produce,1,1.49,1.49,Card
+500006,2026-08-05 18:11:00,S3,Baby Wipes,Baby,1,6.49,6.49,Mobile
+500006,2026-08-05 18:11:00,S3,Lotion,Baby,1,5.99,5.99,Mobile
+500006,2026-08-05 18:11:00,S3,Coffee,Breakfast,2,8.99,17.98,Mobile
+500007,2026-08-05 23:33:00,S2,Bananas,Produce,1,1.59,1.59,Mobile
+500007,2026-08-05 23:33:00,S2,Apples,Produce,2,3.99,7.98,Mobile
+500007,2026-08-05 23:33:00,S2,Spinach,Produce,1,2.99,2.99,Mobile
+500007,2026-08-05 23:33:00,S2,Lotion,Baby,1,5.99,5.99,Mobile
+500008,2026-08-05 22:02:00,S2,Trash Bags,Cleaning,2,8.99,17.98,Cash
+500008,2026-08-05 22:02:00,S2,Bananas,Produce,2,1.59,3.18,Cash
+500008,2026-08-05 22:02:00,S2,Apples,Produce,1,3.99,3.99,Cash
+500008,2026-08-05 22:02:00,S2,Buns,Grilling,1,2.49,2.49,Cash
+500009,2026-08-05 15:53:00,S2,Spaghetti,Pasta Night,1,1.99,1.99,Mobile
+500009,2026-08-05 15:53:00,S2,Parmesan,Pasta Night,2,5.49,10.98,Mobile
+500009,2026-08-05 15:53:00,S2,Garlic Bread,Pasta Night,2,2.99,5.98,Mobile
+500010,2026-08-05 17:21:00,S2,Tortilla Chips,Snacks,1,3.49,3.49,Mobile
+500010,2026-08-05 17:21:00,S2,Guacamole,Snacks,1,4.49,4.49,Mobile
+500010,2026-08-05 17:21:00,S2,Soda 12pk,Snacks,1,6.99,6.99,Mobile
+500011,2026-08-05 17:01:00,S2,Bananas,Produce,1,1.59,1.59,Card
+500011,2026-08-05 17:01:00,S2,Paper Towels,Cleaning,1,7.99,7.99,Card
+500011,2026-08-05 17:01:00,S2,Dish Soap,Cleaning,2,3.49,6.98,Card
+500011,2026-08-05 17:01:00,S2,Sponges,Cleaning,3,2.49,7.47,Card
+500012,2026-08-05 15:55:00,S1,Coffee,Breakfast,1,8.99,8.99,Card
+500012,2026-08-05 15:55:00,S1,Creamer,Breakfast,1,3.29,3.29,Card
+500012,2026-08-05 15:55:00,S1,Cream Cheese,Breakfast,1,2.79,2.79,Card
+500012,2026-08-05 15:55:00,S1,Paper Towels,Cleaning,1,7.99,7.99,Card
+500013,2026-08-05 16:43:00,S2,Paper Towels,Cleaning,2,7.99,15.98,Card
+500013,2026-08-05 16:43:00,S2,Sponges,Cleaning,1,2.49,2.49,Card
+500013,2026-08-05 16:43:00,S2,Garlic Bread,Pasta Night,3,2.99,8.97,Card
+500014,2026-08-05 21:49:00,S1,Coffee,Breakfast,1,8.99,8.99,Card
+500014,2026-08-05 21:49:00,S1,Bagels,Breakfast,3,3.99,11.97,Card
+500014,2026-08-05 21:49:00,S1,Paper Towels,Cleaning,1,7.99,7.99,Card
+500015,2026-08-05 21:18:00,S4,Buns,Grilling,1,2.49,2.49,Cash
+500015,2026-08-05 21:18:00,S4,Cheese Slices,Grilling,2,3.99,7.98,Cash
+500015,2026-08-05 21:18:00,S4,Guacamole,Snacks,1,4.49,4.49,Cash
+500016,2026-08-06 14:44:00,S1,Ketchup,Grilling,3,2.99,8.97,Card
+500016,2026-08-06 14:44:00,S1,Avocado,Produce,3,1.49,4.47,Card
+500017,2026-08-06 17:16:00,S4,Garlic Bread,Pasta Night,2,2.99,5.98,Card
+500018,2026-08-06 22:36:00,S1,Paper Towels,Cleaning,1,7.99,7.99,Card
+500018,2026-08-06 22:36:00,S1,Dish Soap,Cleaning,1,3.49,3.49,Card
+500019,2026-08-07 00:01:00,S1,Burger Patties,Grilling,1,9.99,9.99,Cash
+500019,2026-08-07 00:01:00,S1,Buns,Grilling,3,2.49,7.47,Cash
+500019,2026-08-07 00:01:00,S1,Cheese Slices,Grilling,1,3.99,3.99,Cash
+500019,2026-08-07 00:01:00,S1,Ketchup,Grilling,1,2.99,2.99,Cash
+500020,2026-08-06 13:38:00,S3,Spinach,Produce,1,2.99,2.99,Card
+500020,2026-08-06 13:38:00,S3,Avocado,Produce,1,1.49,1.49,Card
+500020,2026-08-06 13:38:00,S3,Lotion,Baby,1,5.99,5.99,Card
+500021,2026-08-06 19:42:00,S1,Baby Wipes,Baby,1,6.49,6.49,Card
+500021,2026-08-06 19:42:00,S1,Baby Food,Baby,1,1.29,1.29,Card
+500021,2026-08-06 19:42:00,S1,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500021,2026-08-06 19:42:00,S1,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500021,2026-08-06 19:42:00,S1,Parmesan,Pasta Night,1,5.49,5.49,Card
+500021,2026-08-06 19:42:00,S1,Garlic Bread,Pasta Night,2,2.99,5.98,Card
+500022,2026-08-06 12:09:00,S2,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500022,2026-08-06 12:09:00,S2,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500022,2026-08-06 12:09:00,S2,Parmesan,Pasta Night,1,5.49,5.49,Card
+500022,2026-08-06 12:09:00,S2,Garlic Bread,Pasta Night,1,2.99,2.99,Card
+500022,2026-08-06 12:09:00,S2,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500023,2026-08-06 22:14:00,S3,Parmesan,Pasta Night,1,5.49,5.49,Mobile
+500023,2026-08-06 22:14:00,S3,Garlic Bread,Pasta Night,1,2.99,2.99,Mobile
+500023,2026-08-06 22:14:00,S3,Dish Soap,Cleaning,1,3.49,3.49,Mobile
+500024,2026-08-06 18:22:00,S2,Paper Towels,Cleaning,1,7.99,7.99,Card
+500024,2026-08-06 18:22:00,S2,Trash Bags,Cleaning,2,8.99,17.98,Card
+500025,2026-08-06 16:42:00,S4,Cheese Slices,Grilling,1,3.99,3.99,Cash
+500025,2026-08-06 16:42:00,S4,Paper Towels,Cleaning,1,7.99,7.99,Cash
+500025,2026-08-06 16:42:00,S4,Dish Soap,Cleaning,1,3.49,3.49,Cash
+500025,2026-08-06 16:42:00,S4,Sponges,Cleaning,1,2.49,2.49,Cash
+500026,2026-08-06 17:26:00,S1,Baby Wipes,Baby,1,6.49,6.49,Cash
+500026,2026-08-06 17:26:00,S1,Baby Food,Baby,1,1.29,1.29,Cash
+500027,2026-08-07 00:57:00,S4,Tortilla Chips,Snacks,2,3.49,6.98,Mobile
+500027,2026-08-07 00:57:00,S4,Soda 12pk,Snacks,1,6.99,6.99,Mobile
+500027,2026-08-07 00:57:00,S4,Paper Towels,Cleaning,1,7.99,7.99,Mobile
+500027,2026-08-07 00:57:00,S4,Sponges,Cleaning,1,2.49,2.49,Mobile
+500027,2026-08-07 00:57:00,S4,Trash Bags,Cleaning,1,8.99,8.99,Mobile
+500028,2026-08-06 16:20:00,S3,Buns,Grilling,1,2.49,2.49,Card
+500028,2026-08-06 16:20:00,S3,Diapers,Baby,1,24.99,24.99,Card
+500028,2026-08-06 16:20:00,S3,Baby Food,Baby,1,1.29,1.29,Card
+500028,2026-08-06 16:20:00,S3,Lotion,Baby,1,5.99,5.99,Card
+500028,2026-08-06 16:20:00,S3,Spinach,Produce,1,2.99,2.99,Card
+500029,2026-08-06 13:47:00,S2,Diapers,Baby,2,24.99,49.98,Card
+500029,2026-08-06 13:47:00,S2,Baby Wipes,Baby,1,6.49,6.49,Card
+500029,2026-08-06 13:47:00,S2,Bananas,Produce,1,1.59,1.59,Card
+500029,2026-08-06 13:47:00,S2,Avocado,Produce,3,1.49,4.47,Card
+500030,2026-08-06 21:51:00,S1,Burger Patties,Grilling,2,9.99,19.98,Card
+500030,2026-08-06 21:51:00,S1,Ketchup,Grilling,1,2.99,2.99,Card
+500030,2026-08-06 21:51:00,S1,Cheese Slices,Grilling,1,3.99,3.99,Card
+500030,2026-08-06 21:51:00,S1,Baby Wipes,Baby,1,6.49,6.49,Card
+500031,2026-08-06 15:02:00,S4,Parmesan,Pasta Night,1,5.49,5.49,Card
+500031,2026-08-06 15:02:00,S4,Baby Wipes,Baby,3,6.49,19.47,Card
+500031,2026-08-06 15:02:00,S4,Lotion,Baby,2,5.99,11.98,Card
+500032,2026-08-06 13:39:00,S3,Paper Towels,Cleaning,1,7.99,7.99,Card
+500032,2026-08-06 13:39:00,S3,Dish Soap,Cleaning,3,3.49,10.47,Card
+500032,2026-08-06 13:39:00,S3,Sponges,Cleaning,1,2.49,2.49,Card
+500033,2026-08-07 16:29:00,S1,Cream Cheese,Breakfast,1,2.79,2.79,Cash
+500033,2026-08-07 16:29:00,S1,Spaghetti,Pasta Night,3,1.99,5.97,Cash
+500033,2026-08-07 16:29:00,S1,Marinara Sauce,Pasta Night,1,3.49,3.49,Cash
+500033,2026-08-07 16:29:00,S1,Parmesan,Pasta Night,1,5.49,5.49,Cash
+500034,2026-08-07 18:33:00,S1,Cream Cheese,Breakfast,2,2.79,5.58,Mobile
+500035,2026-08-07 14:53:00,S3,Bananas,Produce,1,1.59,1.59,Card
+500035,2026-08-07 14:53:00,S3,Spinach,Produce,2,2.99,5.98,Card
+500035,2026-08-07 14:53:00,S3,Coffee,Breakfast,1,8.99,8.99,Card
+500035,2026-08-07 14:53:00,S3,Cream Cheese,Breakfast,1,2.79,2.79,Card
+500036,2026-08-07 15:16:00,S4,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500036,2026-08-07 15:16:00,S4,Guacamole,Snacks,1,4.49,4.49,Card
+500036,2026-08-07 15:16:00,S4,Soda 12pk,Snacks,1,6.99,6.99,Card
+500036,2026-08-07 15:16:00,S4,Trash Bags,Cleaning,1,8.99,8.99,Card
+500037,2026-08-07 18:11:00,S2,Bananas,Produce,1,1.59,1.59,Card
+500037,2026-08-07 18:11:00,S2,Avocado,Produce,1,1.49,1.49,Card
+500037,2026-08-07 18:11:00,S2,Burger Patties,Grilling,1,9.99,9.99,Card
+500037,2026-08-07 18:11:00,S2,Baby Food,Baby,1,1.29,1.29,Card
+500038,2026-08-07 14:46:00,S3,Spinach,Produce,1,2.99,2.99,Card
+500038,2026-08-07 14:46:00,S3,Avocado,Produce,1,1.49,1.49,Card
+500038,2026-08-07 14:46:00,S3,Dish Soap,Cleaning,1,3.49,3.49,Card
+500039,2026-08-07 17:20:00,S3,Salsa,Snacks,1,3.99,3.99,Card
+500039,2026-08-07 17:20:00,S3,Soda 12pk,Snacks,1,6.99,6.99,Card
+500040,2026-08-07 23:21:00,S1,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500040,2026-08-07 23:21:00,S1,Burger Patties,Grilling,1,9.99,9.99,Card
+500041,2026-08-07 13:23:00,S2,Ketchup,Grilling,1,2.99,2.99,Mobile
+500042,2026-08-07 18:27:00,S1,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500042,2026-08-07 18:27:00,S1,Guacamole,Snacks,1,4.49,4.49,Card
+500042,2026-08-07 18:27:00,S1,Paper Towels,Cleaning,3,7.99,23.97,Card
+500042,2026-08-07 18:27:00,S1,Dish Soap,Cleaning,1,3.49,3.49,Card
+500042,2026-08-07 18:27:00,S1,Trash Bags,Cleaning,3,8.99,26.97,Card
+500043,2026-08-07 22:08:00,S2,Paper Towels,Cleaning,1,7.99,7.99,Mobile
+500043,2026-08-07 22:08:00,S2,Trash Bags,Cleaning,1,8.99,8.99,Mobile
+500043,2026-08-07 22:08:00,S2,Coffee,Breakfast,1,8.99,8.99,Mobile
+500043,2026-08-07 22:08:00,S2,Cream Cheese,Breakfast,1,2.79,2.79,Mobile
+500044,2026-08-07 19:04:00,S2,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500044,2026-08-07 19:04:00,S2,Parmesan,Pasta Night,1,5.49,5.49,Card
+500044,2026-08-07 19:04:00,S2,Garlic Bread,Pasta Night,1,2.99,2.99,Card
+500045,2026-08-07 14:22:00,S4,Coffee,Breakfast,1,8.99,8.99,Card
+500045,2026-08-07 14:22:00,S4,Creamer,Breakfast,2,3.29,6.58,Card
+500046,2026-08-07 12:13:00,S4,Bananas,Produce,1,1.59,1.59,Cash
+500046,2026-08-07 12:13:00,S4,Avocado,Produce,1,1.49,1.49,Cash
+500047,2026-08-07 16:04:00,S1,Burger Patties,Grilling,3,9.99,29.97,Card
+500048,2026-08-08 00:12:00,S1,Diapers,Baby,1,24.99,24.99,Card
+500048,2026-08-08 00:12:00,S1,Baby Wipes,Baby,1,6.49,6.49,Card
+500048,2026-08-08 00:12:00,S1,Lotion,Baby,2,5.99,11.98,Card
+500049,2026-08-07 16:30:00,S1,Coffee,Breakfast,1,8.99,8.99,Mobile
+500049,2026-08-07 16:30:00,S1,Marinara Sauce,Pasta Night,2,3.49,6.98,Mobile
+500049,2026-08-07 16:30:00,S1,Garlic Bread,Pasta Night,3,2.99,8.97,Mobile
+500050,2026-08-07 15:09:00,S1,Salsa,Snacks,1,3.99,3.99,Cash
+500051,2026-08-07 16:51:00,S1,Burger Patties,Grilling,1,9.99,9.99,Card
+500051,2026-08-07 16:51:00,S1,Cheese Slices,Grilling,1,3.99,3.99,Card
+500051,2026-08-07 16:51:00,S1,Ketchup,Grilling,2,2.99,5.98,Card
+500051,2026-08-07 16:51:00,S1,Bananas,Produce,1,1.59,1.59,Card
+500051,2026-08-07 16:51:00,S1,Apples,Produce,1,3.99,3.99,Card
+500051,2026-08-07 16:51:00,S1,Spinach,Produce,3,2.99,8.97,Card
+500052,2026-08-07 20:40:00,S1,Tortilla Chips,Snacks,2,3.49,6.98,Cash
+500053,2026-08-08 19:03:00,S4,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500053,2026-08-08 19:03:00,S4,Salsa,Snacks,1,3.99,3.99,Card
+500053,2026-08-08 19:03:00,S4,Soda 12pk,Snacks,1,6.99,6.99,Card
+500054,2026-08-08 16:51:00,S2,Burger Patties,Grilling,2,9.99,19.98,Card
+500054,2026-08-08 16:51:00,S2,Buns,Grilling,2,2.49,4.98,Card
+500054,2026-08-08 16:51:00,S2,Cheese Slices,Grilling,1,3.99,3.99,Card
+500055,2026-08-08 21:21:00,S4,Creamer,Breakfast,1,3.29,3.29,Card
+500055,2026-08-08 21:21:00,S4,Cream Cheese,Breakfast,1,2.79,2.79,Card
+500056,2026-08-08 20:50:00,S4,Burger Patties,Grilling,1,9.99,9.99,Card
+500056,2026-08-08 20:50:00,S4,Buns,Grilling,1,2.49,2.49,Card
+500056,2026-08-08 20:50:00,S4,Cheese Slices,Grilling,1,3.99,3.99,Card
+500056,2026-08-08 20:50:00,S4,Ketchup,Grilling,1,2.99,2.99,Card
+500057,2026-08-08 23:12:00,S3,Guacamole,Snacks,1,4.49,4.49,Card
+500057,2026-08-08 23:12:00,S3,Bananas,Produce,1,1.59,1.59,Card
+500057,2026-08-08 23:12:00,S3,Apples,Produce,2,3.99,7.98,Card
+500057,2026-08-08 23:12:00,S3,Spinach,Produce,1,2.99,2.99,Card
+500057,2026-08-08 23:12:00,S3,Avocado,Produce,1,1.49,1.49,Card
+500058,2026-08-08 12:02:00,S2,Burger Patties,Grilling,2,9.99,19.98,Card
+500058,2026-08-08 12:02:00,S2,Bananas,Produce,1,1.59,1.59,Card
+500059,2026-08-09 00:11:00,S3,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500059,2026-08-09 00:11:00,S3,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500059,2026-08-09 00:11:00,S3,Garlic Bread,Pasta Night,3,2.99,8.97,Card
+500060,2026-08-08 16:41:00,S4,Soda 12pk,Snacks,1,6.99,6.99,Card
+500060,2026-08-08 16:41:00,S4,Bananas,Produce,3,1.59,4.77,Card
+500060,2026-08-08 16:41:00,S4,Avocado,Produce,2,1.49,2.98,Card
+500061,2026-08-08 17:09:00,S2,Paper Towels,Cleaning,1,7.99,7.99,Card
+500061,2026-08-08 17:09:00,S2,Dish Soap,Cleaning,2,3.49,6.98,Card
+500061,2026-08-08 17:09:00,S2,Sponges,Cleaning,1,2.49,2.49,Card
+500061,2026-08-08 17:09:00,S2,Trash Bags,Cleaning,1,8.99,8.99,Card
+500061,2026-08-08 17:09:00,S2,Soda 12pk,Snacks,1,6.99,6.99,Card
+500061,2026-08-08 17:09:00,S2,Guacamole,Snacks,1,4.49,4.49,Card
+500062,2026-08-08 14:42:00,S1,Coffee,Breakfast,1,8.99,8.99,Card
+500062,2026-08-08 14:42:00,S1,Bagels,Breakfast,1,3.99,3.99,Card
+500062,2026-08-08 14:42:00,S1,Baby Wipes,Baby,2,6.49,12.98,Card
+500062,2026-08-08 14:42:00,S1,Baby Food,Baby,2,1.29,2.58,Card
+500062,2026-08-08 14:42:00,S1,Spinach,Produce,1,2.99,2.99,Card
+500063,2026-08-08 17:28:00,S3,Bananas,Produce,1,1.59,1.59,Card
+500063,2026-08-08 17:28:00,S3,Spinach,Produce,1,2.99,2.99,Card
+500063,2026-08-08 17:28:00,S3,Paper Towels,Cleaning,1,7.99,7.99,Card
+500064,2026-08-08 16:26:00,S3,Diapers,Baby,2,24.99,49.98,Card
+500064,2026-08-08 16:26:00,S3,Burger Patties,Grilling,1,9.99,9.99,Card
+500064,2026-08-08 16:26:00,S3,Buns,Grilling,1,2.49,2.49,Card
+500064,2026-08-08 16:26:00,S3,Ketchup,Grilling,1,2.99,2.99,Card
+500065,2026-08-08 22:40:00,S3,Bagels,Breakfast,3,3.99,11.97,Mobile
+500065,2026-08-08 22:40:00,S3,Coffee,Breakfast,1,8.99,8.99,Mobile
+500065,2026-08-08 22:40:00,S3,Cream Cheese,Breakfast,1,2.79,2.79,Mobile
+500065,2026-08-08 22:40:00,S3,Sponges,Cleaning,1,2.49,2.49,Mobile
+500066,2026-08-08 17:32:00,S2,Diapers,Baby,2,24.99,49.98,Cash
+500066,2026-08-08 17:32:00,S2,Baby Wipes,Baby,1,6.49,6.49,Cash
+500066,2026-08-08 17:32:00,S2,Lotion,Baby,1,5.99,5.99,Cash
+500067,2026-08-09 00:28:00,S3,Trash Bags,Cleaning,1,8.99,8.99,Cash
+500068,2026-08-08 15:26:00,S4,Cheese Slices,Grilling,2,3.99,7.98,Card
+500068,2026-08-08 15:26:00,S4,Ketchup,Grilling,3,2.99,8.97,Card
+500068,2026-08-08 15:26:00,S4,Diapers,Baby,1,24.99,24.99,Card
+500068,2026-08-08 15:26:00,S4,Baby Food,Baby,1,1.29,1.29,Card
+500068,2026-08-08 15:26:00,S4,Lotion,Baby,1,5.99,5.99,Card
+500068,2026-08-08 15:26:00,S4,Cream Cheese,Breakfast,1,2.79,2.79,Card
+500069,2026-08-08 13:16:00,S1,Bagels,Breakfast,2,3.99,7.98,Cash
+500069,2026-08-08 13:16:00,S1,Cream Cheese,Breakfast,1,2.79,2.79,Cash
+500070,2026-08-08 19:11:00,S3,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500071,2026-08-08 19:40:00,S3,Salsa,Snacks,1,3.99,3.99,Card
+500071,2026-08-08 19:40:00,S3,Buns,Grilling,1,2.49,2.49,Card
+500071,2026-08-08 19:40:00,S3,Cheese Slices,Grilling,2,3.99,7.98,Card
+500071,2026-08-08 19:40:00,S3,Ketchup,Grilling,1,2.99,2.99,Card
+500072,2026-08-08 21:50:00,S4,Creamer,Breakfast,1,3.29,3.29,Card
+500073,2026-08-08 15:12:00,S1,Buns,Grilling,3,2.49,7.47,Cash
+500073,2026-08-08 15:12:00,S1,Cheese Slices,Grilling,1,3.99,3.99,Cash
+500073,2026-08-08 15:12:00,S1,Ketchup,Grilling,1,2.99,2.99,Cash
+500074,2026-08-10 00:17:00,S2,Tortilla Chips,Snacks,2,3.49,6.98,Mobile
+500074,2026-08-10 00:17:00,S2,Soda 12pk,Snacks,1,6.99,6.99,Mobile
+500074,2026-08-10 00:17:00,S2,Diapers,Baby,1,24.99,24.99,Mobile
+500075,2026-08-09 14:39:00,S4,Paper Towels,Cleaning,3,7.99,23.97,Card
+500075,2026-08-09 14:39:00,S4,Dish Soap,Cleaning,2,3.49,6.98,Card
+500075,2026-08-09 14:39:00,S4,Trash Bags,Cleaning,1,8.99,8.99,Card
+500075,2026-08-09 14:39:00,S4,Coffee,Breakfast,1,8.99,8.99,Card
+500075,2026-08-09 14:39:00,S4,Bagels,Breakfast,1,3.99,3.99,Card
+500075,2026-08-09 14:39:00,S4,Cream Cheese,Breakfast,1,2.79,2.79,Card
+500076,2026-08-09 20:08:00,S2,Burger Patties,Grilling,1,9.99,9.99,Card
+500076,2026-08-09 20:08:00,S2,Cheese Slices,Grilling,2,3.99,7.98,Card
+500076,2026-08-09 20:08:00,S2,Ketchup,Grilling,1,2.99,2.99,Card
+500076,2026-08-09 20:08:00,S2,Salsa,Snacks,1,3.99,3.99,Card
+500076,2026-08-09 20:08:00,S2,Guacamole,Snacks,1,4.49,4.49,Card
+500076,2026-08-09 20:08:00,S2,Soda 12pk,Snacks,1,6.99,6.99,Card
+500077,2026-08-09 20:45:00,S1,Dish Soap,Cleaning,1,3.49,3.49,Mobile
+500077,2026-08-09 20:45:00,S1,Sponges,Cleaning,2,2.49,4.98,Mobile
+500077,2026-08-09 20:45:00,S1,Trash Bags,Cleaning,1,8.99,8.99,Mobile
+500077,2026-08-09 20:45:00,S1,Bananas,Produce,1,1.59,1.59,Mobile
+500077,2026-08-09 20:45:00,S1,Apples,Produce,1,3.99,3.99,Mobile
+500078,2026-08-09 13:22:00,S1,Dish Soap,Cleaning,1,3.49,3.49,Mobile
+500078,2026-08-09 13:22:00,S1,Trash Bags,Cleaning,1,8.99,8.99,Mobile
+500078,2026-08-09 13:22:00,S1,Salsa,Snacks,1,3.99,3.99,Mobile
+500079,2026-08-09 23:33:00,S4,Salsa,Snacks,1,3.99,3.99,Mobile
+500079,2026-08-09 23:33:00,S4,Guacamole,Snacks,1,4.49,4.49,Mobile
+500079,2026-08-09 23:33:00,S4,Soda 12pk,Snacks,2,6.99,13.98,Mobile
+500080,2026-08-09 16:07:00,S1,Bagels,Breakfast,1,3.99,3.99,Cash
+500081,2026-08-09 13:52:00,S2,Paper Towels,Cleaning,1,7.99,7.99,Card
+500081,2026-08-09 13:52:00,S2,Dish Soap,Cleaning,1,3.49,3.49,Card
+500081,2026-08-09 13:52:00,S2,Sponges,Cleaning,1,2.49,2.49,Card
+500081,2026-08-09 13:52:00,S2,Trash Bags,Cleaning,1,8.99,8.99,Card
+500081,2026-08-09 13:52:00,S2,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500081,2026-08-09 13:52:00,S2,Garlic Bread,Pasta Night,2,2.99,5.98,Card
+500081,2026-08-09 13:52:00,S2,Soda 12pk,Snacks,1,6.99,6.99,Card
+500082,2026-08-09 14:52:00,S2,Coffee,Breakfast,3,8.99,26.97,Cash
+500082,2026-08-09 14:52:00,S2,Apples,Produce,2,3.99,7.98,Cash
+500082,2026-08-09 14:52:00,S2,Paper Towels,Cleaning,1,7.99,7.99,Cash
+500083,2026-08-09 14:38:00,S3,Diapers,Baby,1,24.99,24.99,Card
+500084,2026-08-09 21:50:00,S1,Buns,Grilling,1,2.49,2.49,Card
+500084,2026-08-09 21:50:00,S1,Cheese Slices,Grilling,1,3.99,3.99,Card
+500084,2026-08-09 21:50:00,S1,Ketchup,Grilling,1,2.99,2.99,Card
+500085,2026-08-09 22:07:00,S4,Bananas,Produce,1,1.59,1.59,Card
+500085,2026-08-09 22:07:00,S4,Apples,Produce,1,3.99,3.99,Card
+500085,2026-08-09 22:07:00,S4,Spinach,Produce,1,2.99,2.99,Card
+500085,2026-08-09 22:07:00,S4,Avocado,Produce,3,1.49,4.47,Card
+500085,2026-08-09 22:07:00,S4,Coffee,Breakfast,2,8.99,17.98,Card
+500085,2026-08-09 22:07:00,S4,Creamer,Breakfast,1,3.29,3.29,Card
+500085,2026-08-09 22:07:00,S4,Bagels,Breakfast,2,3.99,7.98,Card
+500086,2026-08-09 22:00:00,S2,Coffee,Breakfast,1,8.99,8.99,Card
+500086,2026-08-09 22:00:00,S2,Cheese Slices,Grilling,1,3.99,3.99,Card
+500087,2026-08-10 22:49:00,S2,Avocado,Produce,1,1.49,1.49,Mobile
+500088,2026-08-10 20:42:00,S4,Paper Towels,Cleaning,1,7.99,7.99,Card
+500088,2026-08-10 20:42:00,S4,Dish Soap,Cleaning,1,3.49,3.49,Card
+500088,2026-08-10 20:42:00,S4,Trash Bags,Cleaning,2,8.99,17.98,Card
+500089,2026-08-10 17:16:00,S2,Diapers,Baby,1,24.99,24.99,Card
+500089,2026-08-10 17:16:00,S2,Baby Wipes,Baby,2,6.49,12.98,Card
+500089,2026-08-10 17:16:00,S2,Baby Food,Baby,3,1.29,3.87,Card
+500089,2026-08-10 17:16:00,S2,Lotion,Baby,2,5.99,11.98,Card
+500090,2026-08-10 12:00:00,S4,Apples,Produce,1,3.99,3.99,Card
+500090,2026-08-10 12:00:00,S4,Avocado,Produce,1,1.49,1.49,Card
+500091,2026-08-10 15:43:00,S4,Paper Towels,Cleaning,1,7.99,7.99,Mobile
+500091,2026-08-10 15:43:00,S4,Dish Soap,Cleaning,1,3.49,3.49,Mobile
+500091,2026-08-10 15:43:00,S4,Tortilla Chips,Snacks,1,3.49,3.49,Mobile
+500091,2026-08-10 15:43:00,S4,Salsa,Snacks,1,3.99,3.99,Mobile
+500091,2026-08-10 15:43:00,S4,Soda 12pk,Snacks,1,6.99,6.99,Mobile
+500091,2026-08-10 15:43:00,S4,Apples,Produce,1,3.99,3.99,Mobile
+500092,2026-08-10 17:12:00,S4,Tortilla Chips,Snacks,1,3.49,3.49,Cash
+500092,2026-08-10 17:12:00,S4,Buns,Grilling,1,2.49,2.49,Cash
+500093,2026-08-10 20:56:00,S1,Cheese Slices,Grilling,1,3.99,3.99,Card
+500094,2026-08-10 15:30:00,S2,Ketchup,Grilling,1,2.99,2.99,Card
+500094,2026-08-10 15:30:00,S2,Diapers,Baby,1,24.99,24.99,Card
+500094,2026-08-10 15:30:00,S2,Baby Wipes,Baby,1,6.49,6.49,Card
+500094,2026-08-10 15:30:00,S2,Baby Food,Baby,1,1.29,1.29,Card
+500094,2026-08-10 15:30:00,S2,Lotion,Baby,1,5.99,5.99,Card
+500095,2026-08-10 21:45:00,S1,Diapers,Baby,1,24.99,24.99,Cash
+500095,2026-08-10 21:45:00,S1,Baby Wipes,Baby,1,6.49,6.49,Cash
+500095,2026-08-10 21:45:00,S1,Lotion,Baby,1,5.99,5.99,Cash
+500095,2026-08-10 21:45:00,S1,Coffee,Breakfast,1,8.99,8.99,Cash
+500095,2026-08-10 21:45:00,S1,Bagels,Breakfast,1,3.99,3.99,Cash
+500095,2026-08-10 21:45:00,S1,Cream Cheese,Breakfast,1,2.79,2.79,Cash
+500096,2026-08-11 00:36:00,S2,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500096,2026-08-11 00:36:00,S2,Creamer,Breakfast,1,3.29,3.29,Card
+500097,2026-08-10 13:44:00,S3,Tortilla Chips,Snacks,2,3.49,6.98,Card
+500097,2026-08-10 13:44:00,S3,Salsa,Snacks,1,3.99,3.99,Card
+500097,2026-08-10 13:44:00,S3,Guacamole,Snacks,1,4.49,4.49,Card
+500098,2026-08-10 23:32:00,S2,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500098,2026-08-10 23:32:00,S2,Parmesan,Pasta Night,1,5.49,5.49,Card
+500098,2026-08-10 23:32:00,S2,Garlic Bread,Pasta Night,1,2.99,2.99,Card
+500098,2026-08-10 23:32:00,S2,Paper Towels,Cleaning,1,7.99,7.99,Card
+500098,2026-08-10 23:32:00,S2,Sponges,Cleaning,1,2.49,2.49,Card
+500098,2026-08-10 23:32:00,S2,Trash Bags,Cleaning,1,8.99,8.99,Card
+500099,2026-08-10 20:34:00,S4,Apples,Produce,1,3.99,3.99,Mobile
+500099,2026-08-10 20:34:00,S4,Avocado,Produce,1,1.49,1.49,Mobile
+500100,2026-08-10 21:17:00,S3,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500100,2026-08-10 21:17:00,S3,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500100,2026-08-10 21:17:00,S3,Baby Wipes,Baby,1,6.49,6.49,Card
+500101,2026-08-10 20:35:00,S2,Spaghetti,Pasta Night,1,1.99,1.99,Mobile
+500101,2026-08-10 20:35:00,S2,Parmesan,Pasta Night,1,5.49,5.49,Mobile
+500101,2026-08-10 20:35:00,S2,Tortilla Chips,Snacks,1,3.49,3.49,Mobile
+500101,2026-08-10 20:35:00,S2,Salsa,Snacks,1,3.99,3.99,Mobile
+500101,2026-08-10 20:35:00,S2,Guacamole,Snacks,1,4.49,4.49,Mobile
+500101,2026-08-10 20:35:00,S2,Soda 12pk,Snacks,2,6.99,13.98,Mobile
+500102,2026-08-11 16:01:00,S1,Buns,Grilling,1,2.49,2.49,Card
+500102,2026-08-11 16:01:00,S1,Cheese Slices,Grilling,1,3.99,3.99,Card
+500102,2026-08-11 16:01:00,S1,Soda 12pk,Snacks,1,6.99,6.99,Card
+500103,2026-08-11 21:12:00,S3,Creamer,Breakfast,1,3.29,3.29,Card
+500103,2026-08-11 21:12:00,S3,Bagels,Breakfast,1,3.99,3.99,Card
+500103,2026-08-11 21:12:00,S3,Cream Cheese,Breakfast,1,2.79,2.79,Card
+500103,2026-08-11 21:12:00,S3,Bananas,Produce,1,1.59,1.59,Card
+500104,2026-08-11 16:05:00,S2,Bananas,Produce,1,1.59,1.59,Card
+500104,2026-08-11 16:05:00,S2,Apples,Produce,1,3.99,3.99,Card
+500104,2026-08-11 16:05:00,S2,Spinach,Produce,1,2.99,2.99,Card
+500104,2026-08-11 16:05:00,S2,Avocado,Produce,1,1.49,1.49,Card
+500105,2026-08-11 16:51:00,S3,Spaghetti,Pasta Night,1,1.99,1.99,Mobile
+500105,2026-08-11 16:51:00,S3,Marinara Sauce,Pasta Night,1,3.49,3.49,Mobile
+500105,2026-08-11 16:51:00,S3,Parmesan,Pasta Night,1,5.49,5.49,Mobile
+500105,2026-08-11 16:51:00,S3,Salsa,Snacks,2,3.99,7.98,Mobile
+500106,2026-08-11 22:57:00,S1,Bananas,Produce,1,1.59,1.59,Card
+500106,2026-08-11 22:57:00,S1,Spinach,Produce,1,2.99,2.99,Card
+500106,2026-08-11 22:57:00,S1,Lotion,Baby,1,5.99,5.99,Card
+500107,2026-08-11 22:54:00,S4,Dish Soap,Cleaning,1,3.49,3.49,Cash
+500107,2026-08-11 22:54:00,S4,Sponges,Cleaning,2,2.49,4.98,Cash
+500107,2026-08-11 22:54:00,S4,Trash Bags,Cleaning,3,8.99,26.97,Cash
+500108,2026-08-11 17:56:00,S1,Apples,Produce,1,3.99,3.99,Card
+500108,2026-08-11 17:56:00,S1,Spinach,Produce,1,2.99,2.99,Card
+500109,2026-08-11 20:18:00,S3,Diapers,Baby,1,24.99,24.99,Card
+500109,2026-08-11 20:18:00,S3,Lotion,Baby,1,5.99,5.99,Card
+500109,2026-08-11 20:18:00,S3,Spinach,Produce,2,2.99,5.98,Card
+500110,2026-08-11 18:18:00,S3,Apples,Produce,1,3.99,3.99,Card
+500110,2026-08-11 18:18:00,S3,Avocado,Produce,1,1.49,1.49,Card
+500110,2026-08-11 18:18:00,S3,Creamer,Breakfast,1,3.29,3.29,Card
+500110,2026-08-11 18:18:00,S3,Cream Cheese,Breakfast,1,2.79,2.79,Card
+500111,2026-08-11 16:28:00,S3,Burger Patties,Grilling,1,9.99,9.99,Mobile
+500111,2026-08-11 16:28:00,S3,Buns,Grilling,3,2.49,7.47,Mobile
+500111,2026-08-11 16:28:00,S3,Cheese Slices,Grilling,1,3.99,3.99,Mobile
+500111,2026-08-11 16:28:00,S3,Paper Towels,Cleaning,1,7.99,7.99,Mobile
+500111,2026-08-11 16:28:00,S3,Trash Bags,Cleaning,1,8.99,8.99,Mobile
+500112,2026-08-12 00:10:00,S4,Spaghetti,Pasta Night,1,1.99,1.99,Cash
+500112,2026-08-12 00:10:00,S4,Marinara Sauce,Pasta Night,1,3.49,3.49,Cash
+500112,2026-08-12 00:10:00,S4,Parmesan,Pasta Night,1,5.49,5.49,Cash
+500112,2026-08-12 00:10:00,S4,Garlic Bread,Pasta Night,1,2.99,2.99,Cash
+500112,2026-08-12 00:10:00,S4,Paper Towels,Cleaning,1,7.99,7.99,Cash
+500113,2026-08-11 13:46:00,S2,Lotion,Baby,1,5.99,5.99,Card
+500113,2026-08-11 13:46:00,S2,Parmesan,Pasta Night,1,5.49,5.49,Card
+500113,2026-08-11 13:46:00,S2,Sponges,Cleaning,2,2.49,4.98,Card
+500114,2026-08-11 16:58:00,S1,Spaghetti,Pasta Night,3,1.99,5.97,Card
+500114,2026-08-11 16:58:00,S1,Parmesan,Pasta Night,1,5.49,5.49,Card
+500114,2026-08-11 16:58:00,S1,Garlic Bread,Pasta Night,3,2.99,8.97,Card
+500114,2026-08-11 16:58:00,S1,Coffee,Breakfast,1,8.99,8.99,Card
+500114,2026-08-11 16:58:00,S1,Creamer,Breakfast,1,3.29,3.29,Card
+500114,2026-08-11 16:58:00,S1,Bagels,Breakfast,1,3.99,3.99,Card
+500114,2026-08-11 16:58:00,S1,Cream Cheese,Breakfast,1,2.79,2.79,Card
+500115,2026-08-11 16:44:00,S1,Bananas,Produce,1,1.59,1.59,Card
+500115,2026-08-11 16:44:00,S1,Spinach,Produce,1,2.99,2.99,Card
+500115,2026-08-11 16:44:00,S1,Avocado,Produce,1,1.49,1.49,Card
+500115,2026-08-11 16:44:00,S1,Buns,Grilling,3,2.49,7.47,Card
+500115,2026-08-11 16:44:00,S1,Coffee,Breakfast,2,8.99,17.98,Card
+500116,2026-08-11 21:28:00,S2,Soda 12pk,Snacks,1,6.99,6.99,Card
+500117,2026-08-11 19:58:00,S4,Baby Wipes,Baby,1,6.49,6.49,Card
+500117,2026-08-11 19:58:00,S4,Baby Food,Baby,1,1.29,1.29,Card
+500117,2026-08-11 19:58:00,S4,Lotion,Baby,1,5.99,5.99,Card
+500117,2026-08-11 19:58:00,S4,Buns,Grilling,1,2.49,2.49,Card
+500117,2026-08-11 19:58:00,S4,Cheese Slices,Grilling,2,3.99,7.98,Card
+500117,2026-08-11 19:58:00,S4,Ketchup,Grilling,2,2.99,5.98,Card
+500118,2026-08-11 21:08:00,S2,Sponges,Cleaning,1,2.49,2.49,Mobile
+500118,2026-08-11 21:08:00,S2,Trash Bags,Cleaning,1,8.99,8.99,Mobile
+500118,2026-08-11 21:08:00,S2,Parmesan,Pasta Night,3,5.49,16.47,Mobile
+500119,2026-08-12 20:37:00,S1,Coffee,Breakfast,1,8.99,8.99,Card
+500119,2026-08-12 20:37:00,S1,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500119,2026-08-12 20:37:00,S1,Marinara Sauce,Pasta Night,2,3.49,6.98,Card
+500119,2026-08-12 20:37:00,S1,Garlic Bread,Pasta Night,1,2.99,2.99,Card
+500120,2026-08-13 00:04:00,S2,Coffee,Breakfast,1,8.99,8.99,Card
+500120,2026-08-13 00:04:00,S2,Bagels,Breakfast,1,3.99,3.99,Card
+500121,2026-08-12 17:28:00,S4,Garlic Bread,Pasta Night,1,2.99,2.99,Cash
+500122,2026-08-12 22:07:00,S2,Buns,Grilling,1,2.49,2.49,Cash
+500123,2026-08-12 15:50:00,S4,Burger Patties,Grilling,1,9.99,9.99,Mobile
+500123,2026-08-12 15:50:00,S4,Cheese Slices,Grilling,1,3.99,3.99,Mobile
+500123,2026-08-12 15:50:00,S4,Ketchup,Grilling,1,2.99,2.99,Mobile
+500123,2026-08-12 15:50:00,S4,Tortilla Chips,Snacks,1,3.49,3.49,Mobile
+500123,2026-08-12 15:50:00,S4,Salsa,Snacks,1,3.99,3.99,Mobile
+500123,2026-08-12 15:50:00,S4,Soda 12pk,Snacks,1,6.99,6.99,Mobile
+500123,2026-08-12 15:50:00,S4,Creamer,Breakfast,3,3.29,9.87,Mobile
+500124,2026-08-12 21:08:00,S4,Burger Patties,Grilling,1,9.99,9.99,Card
+500124,2026-08-12 21:08:00,S4,Buns,Grilling,1,2.49,2.49,Card
+500124,2026-08-12 21:08:00,S4,Diapers,Baby,1,24.99,24.99,Card
+500124,2026-08-12 21:08:00,S4,Baby Food,Baby,1,1.29,1.29,Card
+500124,2026-08-12 21:08:00,S4,Bananas,Produce,1,1.59,1.59,Card
+500125,2026-08-12 16:39:00,S3,Guacamole,Snacks,1,4.49,4.49,Mobile
+500125,2026-08-12 16:39:00,S3,Soda 12pk,Snacks,1,6.99,6.99,Mobile
+500125,2026-08-12 16:39:00,S3,Sponges,Cleaning,1,2.49,2.49,Mobile
+500126,2026-08-12 22:33:00,S1,Diapers,Baby,1,24.99,24.99,Cash
+500126,2026-08-12 22:33:00,S1,Baby Wipes,Baby,1,6.49,6.49,Cash
+500126,2026-08-12 22:33:00,S1,Lotion,Baby,2,5.99,11.98,Cash
+500127,2026-08-12 14:23:00,S4,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500127,2026-08-12 14:23:00,S4,Salsa,Snacks,1,3.99,3.99,Card
+500127,2026-08-12 14:23:00,S4,Soda 12pk,Snacks,1,6.99,6.99,Card
+500128,2026-08-14 00:42:00,S4,Buns,Grilling,1,2.49,2.49,Card
+500128,2026-08-14 00:42:00,S4,Cheese Slices,Grilling,1,3.99,3.99,Card
+500129,2026-08-13 20:06:00,S4,Tortilla Chips,Snacks,1,3.49,3.49,Cash
+500129,2026-08-13 20:06:00,S4,Salsa,Snacks,1,3.99,3.99,Cash
+500130,2026-08-13 15:38:00,S1,Paper Towels,Cleaning,1,7.99,7.99,Card
+500130,2026-08-13 15:38:00,S1,Dish Soap,Cleaning,1,3.49,3.49,Card
+500131,2026-08-13 18:45:00,S1,Burger Patties,Grilling,1,9.99,9.99,Card
+500131,2026-08-13 18:45:00,S1,Buns,Grilling,1,2.49,2.49,Card
+500131,2026-08-13 18:45:00,S1,Ketchup,Grilling,1,2.99,2.99,Card
+500131,2026-08-13 18:45:00,S1,Coffee,Breakfast,3,8.99,26.97,Card
+500131,2026-08-13 18:45:00,S1,Creamer,Breakfast,1,3.29,3.29,Card
+500131,2026-08-13 18:45:00,S1,Cream Cheese,Breakfast,3,2.79,8.37,Card
+500132,2026-08-13 18:55:00,S3,Spinach,Produce,1,2.99,2.99,Cash
+500132,2026-08-13 18:55:00,S3,Avocado,Produce,2,1.49,2.98,Cash
+500133,2026-08-13 14:39:00,S1,Bananas,Produce,2,1.59,3.18,Card
+500133,2026-08-13 14:39:00,S1,Apples,Produce,2,3.99,7.98,Card
+500133,2026-08-13 14:39:00,S1,Spinach,Produce,1,2.99,2.99,Card
+500133,2026-08-13 14:39:00,S1,Avocado,Produce,1,1.49,1.49,Card
+500133,2026-08-13 14:39:00,S1,Paper Towels,Cleaning,1,7.99,7.99,Card
+500133,2026-08-13 14:39:00,S1,Dish Soap,Cleaning,1,3.49,3.49,Card
+500133,2026-08-13 14:39:00,S1,Sponges,Cleaning,2,2.49,4.98,Card
+500134,2026-08-13 17:18:00,S3,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500134,2026-08-13 17:18:00,S3,Garlic Bread,Pasta Night,2,2.99,5.98,Card
+500135,2026-08-13 17:52:00,S4,Guacamole,Snacks,1,4.49,4.49,Card
+500135,2026-08-13 17:52:00,S4,Soda 12pk,Snacks,1,6.99,6.99,Card
+500135,2026-08-13 17:52:00,S4,Paper Towels,Cleaning,1,7.99,7.99,Card
+500135,2026-08-13 17:52:00,S4,Dish Soap,Cleaning,1,3.49,3.49,Card
+500135,2026-08-13 17:52:00,S4,Sponges,Cleaning,1,2.49,2.49,Card
+500135,2026-08-13 17:52:00,S4,Trash Bags,Cleaning,2,8.99,17.98,Card
+500136,2026-08-14 13:09:00,S2,Buns,Grilling,1,2.49,2.49,Card
+500136,2026-08-14 13:09:00,S2,Cheese Slices,Grilling,1,3.99,3.99,Card
+500136,2026-08-14 13:09:00,S2,Ketchup,Grilling,1,2.99,2.99,Card
+500136,2026-08-14 13:09:00,S2,Trash Bags,Cleaning,3,8.99,26.97,Card
+500137,2026-08-14 13:37:00,S4,Guacamole,Snacks,1,4.49,4.49,Card
+500137,2026-08-14 13:37:00,S4,Coffee,Breakfast,1,8.99,8.99,Card
+500137,2026-08-14 13:37:00,S4,Creamer,Breakfast,2,3.29,6.58,Card
+500137,2026-08-14 13:37:00,S4,Bagels,Breakfast,1,3.99,3.99,Card
+500137,2026-08-14 13:37:00,S4,Diapers,Baby,1,24.99,24.99,Card
+500138,2026-08-14 23:46:00,S3,Creamer,Breakfast,1,3.29,3.29,Mobile
+500138,2026-08-14 23:46:00,S3,Bagels,Breakfast,2,3.99,7.98,Mobile
+500139,2026-08-15 00:51:00,S3,Spinach,Produce,1,2.99,2.99,Card
+500139,2026-08-15 00:51:00,S3,Paper Towels,Cleaning,1,7.99,7.99,Card
+500140,2026-08-14 21:55:00,S4,Cheese Slices,Grilling,1,3.99,3.99,Card
+500140,2026-08-14 21:55:00,S4,Ketchup,Grilling,1,2.99,2.99,Card
+500140,2026-08-14 21:55:00,S4,Sponges,Cleaning,1,2.49,2.49,Card
+500141,2026-08-14 22:53:00,S3,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500141,2026-08-14 22:53:00,S3,Paper Towels,Cleaning,1,7.99,7.99,Card
+500141,2026-08-14 22:53:00,S3,Dish Soap,Cleaning,1,3.49,3.49,Card
+500141,2026-08-14 22:53:00,S3,Sponges,Cleaning,1,2.49,2.49,Card
+500141,2026-08-14 22:53:00,S3,Trash Bags,Cleaning,1,8.99,8.99,Card
+500142,2026-08-14 22:15:00,S3,Creamer,Breakfast,1,3.29,3.29,Mobile
+500142,2026-08-14 22:15:00,S3,Bagels,Breakfast,1,3.99,3.99,Mobile
+500142,2026-08-14 22:15:00,S3,Cream Cheese,Breakfast,1,2.79,2.79,Mobile
+500143,2026-08-14 15:47:00,S1,Coffee,Breakfast,1,8.99,8.99,Card
+500143,2026-08-14 15:47:00,S1,Bagels,Breakfast,1,3.99,3.99,Card
+500143,2026-08-14 15:47:00,S1,Cream Cheese,Breakfast,1,2.79,2.79,Card
+500143,2026-08-14 15:47:00,S1,Guacamole,Snacks,1,4.49,4.49,Card
+500144,2026-08-14 12:35:00,S4,Bananas,Produce,2,1.59,3.18,Card
+500144,2026-08-14 12:35:00,S4,Apples,Produce,2,3.99,7.98,Card
+500144,2026-08-14 12:35:00,S4,Spinach,Produce,1,2.99,2.99,Card
+500144,2026-08-14 12:35:00,S4,Avocado,Produce,1,1.49,1.49,Card
+500145,2026-08-14 20:47:00,S4,Burger Patties,Grilling,1,9.99,9.99,Card
+500145,2026-08-14 20:47:00,S4,Cheese Slices,Grilling,1,3.99,3.99,Card
+500145,2026-08-14 20:47:00,S4,Ketchup,Grilling,1,2.99,2.99,Card
+500145,2026-08-14 20:47:00,S4,Avocado,Produce,1,1.49,1.49,Card
+500146,2026-08-14 17:25:00,S2,Cream Cheese,Breakfast,1,2.79,2.79,Card
+500146,2026-08-14 17:25:00,S2,Cheese Slices,Grilling,2,3.99,7.98,Card
+500147,2026-08-14 20:52:00,S3,Baby Wipes,Baby,1,6.49,6.49,Mobile
+500147,2026-08-14 20:52:00,S3,Baby Food,Baby,1,1.29,1.29,Mobile
+500147,2026-08-14 20:52:00,S3,Cheese Slices,Grilling,1,3.99,3.99,Mobile
+500148,2026-08-14 17:23:00,S2,Spinach,Produce,1,2.99,2.99,Card
+500148,2026-08-14 17:23:00,S2,Avocado,Produce,1,1.49,1.49,Card
+500148,2026-08-14 17:23:00,S2,Burger Patties,Grilling,1,9.99,9.99,Card
+500148,2026-08-14 17:23:00,S2,Buns,Grilling,1,2.49,2.49,Card
+500148,2026-08-14 17:23:00,S2,Ketchup,Grilling,1,2.99,2.99,Card
+500149,2026-08-14 16:44:00,S3,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500149,2026-08-14 16:44:00,S3,Salsa,Snacks,1,3.99,3.99,Card
+500149,2026-08-14 16:44:00,S3,Soda 12pk,Snacks,1,6.99,6.99,Card
+500149,2026-08-14 16:44:00,S3,Burger Patties,Grilling,1,9.99,9.99,Card
+500149,2026-08-14 16:44:00,S3,Ketchup,Grilling,1,2.99,2.99,Card
+500150,2026-08-14 14:07:00,S3,Diapers,Baby,1,24.99,24.99,Card
+500151,2026-08-15 19:45:00,S4,Paper Towels,Cleaning,2,7.99,15.98,Card
+500151,2026-08-15 19:45:00,S4,Dish Soap,Cleaning,1,3.49,3.49,Card
+500151,2026-08-15 19:45:00,S4,Sponges,Cleaning,1,2.49,2.49,Card
+500152,2026-08-15 16:03:00,S1,Tortilla Chips,Snacks,2,3.49,6.98,Card
+500152,2026-08-15 16:03:00,S1,Guacamole,Snacks,1,4.49,4.49,Card
+500152,2026-08-15 16:03:00,S1,Baby Wipes,Baby,2,6.49,12.98,Card
+500153,2026-08-15 15:23:00,S3,Bananas,Produce,1,1.59,1.59,Mobile
+500153,2026-08-15 15:23:00,S3,Spinach,Produce,1,2.99,2.99,Mobile
+500153,2026-08-15 15:23:00,S3,Spaghetti,Pasta Night,1,1.99,1.99,Mobile
+500154,2026-08-16 00:20:00,S1,Paper Towels,Cleaning,1,7.99,7.99,Card
+500154,2026-08-16 00:20:00,S1,Trash Bags,Cleaning,1,8.99,8.99,Card
+500154,2026-08-16 00:20:00,S1,Dish Soap,Cleaning,1,3.49,3.49,Card
+500154,2026-08-16 00:20:00,S1,Sponges,Cleaning,1,2.49,2.49,Card
+500154,2026-08-16 00:20:00,S1,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500155,2026-08-15 20:20:00,S4,Bananas,Produce,1,1.59,1.59,Card
+500155,2026-08-15 20:20:00,S4,Avocado,Produce,1,1.49,1.49,Card
+500155,2026-08-15 20:20:00,S4,Baby Wipes,Baby,1,6.49,6.49,Card
+500156,2026-08-15 13:07:00,S1,Diapers,Baby,1,24.99,24.99,Card
+500156,2026-08-15 13:07:00,S1,Baby Food,Baby,1,1.29,1.29,Card
+500156,2026-08-15 13:07:00,S1,Lotion,Baby,3,5.99,17.97,Card
+500156,2026-08-15 13:07:00,S1,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500156,2026-08-15 13:07:00,S1,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500156,2026-08-15 13:07:00,S1,Parmesan,Pasta Night,2,5.49,10.98,Card
+500156,2026-08-15 13:07:00,S1,Ketchup,Grilling,1,2.99,2.99,Card
+500157,2026-08-15 21:18:00,S2,Burger Patties,Grilling,1,9.99,9.99,Cash
+500157,2026-08-15 21:18:00,S2,Ketchup,Grilling,3,2.99,8.97,Cash
+500158,2026-08-15 22:11:00,S2,Guacamole,Snacks,1,4.49,4.49,Card
+500158,2026-08-15 22:11:00,S2,Soda 12pk,Snacks,1,6.99,6.99,Card
+500159,2026-08-15 15:59:00,S4,Spaghetti,Pasta Night,1,1.99,1.99,Cash
+500159,2026-08-15 15:59:00,S4,Garlic Bread,Pasta Night,1,2.99,2.99,Cash
+500159,2026-08-15 15:59:00,S4,Bananas,Produce,1,1.59,1.59,Cash
+500159,2026-08-15 15:59:00,S4,Apples,Produce,1,3.99,3.99,Cash
+500159,2026-08-15 15:59:00,S4,Spinach,Produce,1,2.99,2.99,Cash
+500159,2026-08-15 15:59:00,S4,Avocado,Produce,1,1.49,1.49,Cash
+500160,2026-08-15 18:59:00,S4,Guacamole,Snacks,1,4.49,4.49,Card
+500160,2026-08-15 18:59:00,S4,Soda 12pk,Snacks,1,6.99,6.99,Card
+500160,2026-08-15 18:59:00,S4,Diapers,Baby,1,24.99,24.99,Card
+500161,2026-08-15 12:57:00,S2,Bananas,Produce,1,1.59,1.59,Card
+500162,2026-08-15 16:11:00,S4,Paper Towels,Cleaning,1,7.99,7.99,Card
+500162,2026-08-15 16:11:00,S4,Dish Soap,Cleaning,3,3.49,10.47,Card
+500162,2026-08-15 16:11:00,S4,Sponges,Cleaning,1,2.49,2.49,Card
+500162,2026-08-15 16:11:00,S4,Coffee,Breakfast,1,8.99,8.99,Card
+500162,2026-08-15 16:11:00,S4,Creamer,Breakfast,2,3.29,6.58,Card
+500162,2026-08-15 16:11:00,S4,Cream Cheese,Breakfast,1,2.79,2.79,Card
+500163,2026-08-15 21:42:00,S3,Spaghetti,Pasta Night,1,1.99,1.99,Cash
+500163,2026-08-15 21:42:00,S3,Burger Patties,Grilling,1,9.99,9.99,Cash
+500163,2026-08-15 21:42:00,S3,Cheese Slices,Grilling,2,3.99,7.98,Cash
+500163,2026-08-15 21:42:00,S3,Ketchup,Grilling,1,2.99,2.99,Cash
+500164,2026-08-15 18:56:00,S1,Salsa,Snacks,2,3.99,7.98,Cash
+500164,2026-08-15 18:56:00,S1,Guacamole,Snacks,1,4.49,4.49,Cash
+500164,2026-08-15 18:56:00,S1,Soda 12pk,Snacks,1,6.99,6.99,Cash
+500164,2026-08-15 18:56:00,S1,Buns,Grilling,1,2.49,2.49,Cash
+500165,2026-08-15 14:18:00,S1,Lotion,Baby,3,5.99,17.97,Cash
+500165,2026-08-15 14:18:00,S1,Spaghetti,Pasta Night,1,1.99,1.99,Cash
+500165,2026-08-15 14:18:00,S1,Tortilla Chips,Snacks,2,3.49,6.98,Cash
+500166,2026-08-15 21:22:00,S1,Tortilla Chips,Snacks,1,3.49,3.49,Cash
+500167,2026-08-15 16:07:00,S1,Cheese Slices,Grilling,1,3.99,3.99,Card
+500167,2026-08-15 16:07:00,S1,Ketchup,Grilling,1,2.99,2.99,Card
+500168,2026-08-15 22:34:00,S3,Spaghetti,Pasta Night,1,1.99,1.99,Cash
+500168,2026-08-15 22:34:00,S3,Garlic Bread,Pasta Night,1,2.99,2.99,Cash
+500168,2026-08-15 22:34:00,S3,Dish Soap,Cleaning,1,3.49,3.49,Cash
+500169,2026-08-15 16:18:00,S2,Diapers,Baby,1,24.99,24.99,Card
+500169,2026-08-15 16:18:00,S2,Baby Food,Baby,3,1.29,3.87,Card
+500169,2026-08-15 16:18:00,S2,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500169,2026-08-15 16:18:00,S2,Salsa,Snacks,3,3.99,11.97,Card
+500169,2026-08-15 16:18:00,S2,Soda 12pk,Snacks,1,6.99,6.99,Card
+500170,2026-08-15 17:46:00,S2,Spinach,Produce,1,2.99,2.99,Card
+500170,2026-08-15 17:46:00,S2,Avocado,Produce,1,1.49,1.49,Card
+500170,2026-08-15 17:46:00,S2,Burger Patties,Grilling,1,9.99,9.99,Card
+500170,2026-08-15 17:46:00,S2,Cheese Slices,Grilling,1,3.99,3.99,Card
+500170,2026-08-15 17:46:00,S2,Ketchup,Grilling,1,2.99,2.99,Card
+500171,2026-08-16 21:35:00,S4,Sponges,Cleaning,1,2.49,2.49,Card
+500172,2026-08-16 22:50:00,S3,Tortilla Chips,Snacks,1,3.49,3.49,Mobile
+500172,2026-08-16 22:50:00,S3,Salsa,Snacks,1,3.99,3.99,Mobile
+500172,2026-08-16 22:50:00,S3,Guacamole,Snacks,1,4.49,4.49,Mobile
+500172,2026-08-16 22:50:00,S3,Soda 12pk,Snacks,1,6.99,6.99,Mobile
+500173,2026-08-16 15:42:00,S4,Diapers,Baby,1,24.99,24.99,Card
+500173,2026-08-16 15:42:00,S4,Baby Wipes,Baby,2,6.49,12.98,Card
+500173,2026-08-16 15:42:00,S4,Salsa,Snacks,2,3.99,7.98,Card
+500174,2026-08-16 19:47:00,S3,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500174,2026-08-16 19:47:00,S3,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500174,2026-08-16 19:47:00,S3,Garlic Bread,Pasta Night,1,2.99,2.99,Card
+500174,2026-08-16 19:47:00,S3,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500174,2026-08-16 19:47:00,S3,Guacamole,Snacks,1,4.49,4.49,Card
+500174,2026-08-16 19:47:00,S3,Soda 12pk,Snacks,1,6.99,6.99,Card
+500174,2026-08-16 19:47:00,S3,Parmesan,Pasta Night,1,5.49,5.49,Card
+500175,2026-08-16 15:47:00,S1,Buns,Grilling,1,2.49,2.49,Card
+500175,2026-08-16 15:47:00,S1,Cheese Slices,Grilling,1,3.99,3.99,Card
+500175,2026-08-16 15:47:00,S1,Ketchup,Grilling,1,2.99,2.99,Card
+500175,2026-08-16 15:47:00,S1,Bagels,Breakfast,1,3.99,3.99,Card
+500176,2026-08-16 15:53:00,S4,Burger Patties,Grilling,1,9.99,9.99,Cash
+500176,2026-08-16 15:53:00,S4,Buns,Grilling,2,2.49,4.98,Cash
+500176,2026-08-16 15:53:00,S4,Ketchup,Grilling,1,2.99,2.99,Cash
+500177,2026-08-16 15:52:00,S4,Spaghetti,Pasta Night,2,1.99,3.98,Card
+500177,2026-08-16 15:52:00,S4,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500177,2026-08-16 15:52:00,S4,Parmesan,Pasta Night,1,5.49,5.49,Card
+500177,2026-08-16 15:52:00,S4,Garlic Bread,Pasta Night,1,2.99,2.99,Card
+500178,2026-08-16 21:58:00,S3,Creamer,Breakfast,1,3.29,3.29,Card
+500178,2026-08-16 21:58:00,S3,Guacamole,Snacks,1,4.49,4.49,Card
+500178,2026-08-16 21:58:00,S3,Soda 12pk,Snacks,2,6.99,13.98,Card
+500179,2026-08-16 13:43:00,S3,Bananas,Produce,2,1.59,3.18,Card
+500179,2026-08-16 13:43:00,S3,Apples,Produce,3,3.99,11.97,Card
+500179,2026-08-16 13:43:00,S3,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500179,2026-08-16 13:43:00,S3,Guacamole,Snacks,1,4.49,4.49,Card
+500179,2026-08-16 13:43:00,S3,Soda 12pk,Snacks,1,6.99,6.99,Card
+500180,2026-08-16 12:27:00,S1,Apples,Produce,1,3.99,3.99,Mobile
+500180,2026-08-16 12:27:00,S1,Spinach,Produce,1,2.99,2.99,Mobile
+500180,2026-08-16 12:27:00,S1,Diapers,Baby,2,24.99,49.98,Mobile
+500180,2026-08-16 12:27:00,S1,Baby Wipes,Baby,1,6.49,6.49,Mobile
+500180,2026-08-16 12:27:00,S1,Baby Food,Baby,1,1.29,1.29,Mobile
+500180,2026-08-16 12:27:00,S1,Lotion,Baby,2,5.99,11.98,Mobile
+500181,2026-08-16 22:34:00,S4,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500181,2026-08-16 22:34:00,S4,Salsa,Snacks,1,3.99,3.99,Card
+500181,2026-08-16 22:34:00,S4,Guacamole,Snacks,1,4.49,4.49,Card
+500181,2026-08-16 22:34:00,S4,Soda 12pk,Snacks,2,6.99,13.98,Card
+500181,2026-08-16 22:34:00,S4,Bagels,Breakfast,1,3.99,3.99,Card
+500182,2026-08-16 22:10:00,S3,Tortilla Chips,Snacks,1,3.49,3.49,Mobile
+500182,2026-08-16 22:10:00,S3,Salsa,Snacks,1,3.99,3.99,Mobile
+500182,2026-08-16 22:10:00,S3,Guacamole,Snacks,1,4.49,4.49,Mobile
+500182,2026-08-16 22:10:00,S3,Soda 12pk,Snacks,2,6.99,13.98,Mobile
+500182,2026-08-16 22:10:00,S3,Trash Bags,Cleaning,1,8.99,8.99,Mobile
+500183,2026-08-17 19:18:00,S3,Spaghetti,Pasta Night,2,1.99,3.98,Card
+500183,2026-08-17 19:18:00,S3,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500183,2026-08-17 19:18:00,S3,Salsa,Snacks,3,3.99,11.97,Card
+500183,2026-08-17 19:18:00,S3,Guacamole,Snacks,1,4.49,4.49,Card
+500183,2026-08-17 19:18:00,S3,Soda 12pk,Snacks,1,6.99,6.99,Card
+500184,2026-08-17 16:43:00,S2,Diapers,Baby,1,24.99,24.99,Mobile
+500184,2026-08-17 16:43:00,S2,Baby Food,Baby,1,1.29,1.29,Mobile
+500184,2026-08-17 16:43:00,S2,Lotion,Baby,2,5.99,11.98,Mobile
+500184,2026-08-17 16:43:00,S2,Paper Towels,Cleaning,1,7.99,7.99,Mobile
+500184,2026-08-17 16:43:00,S2,Sponges,Cleaning,2,2.49,4.98,Mobile
+500184,2026-08-17 16:43:00,S2,Trash Bags,Cleaning,1,8.99,8.99,Mobile
+500184,2026-08-17 16:43:00,S2,Marinara Sauce,Pasta Night,1,3.49,3.49,Mobile
+500185,2026-08-17 22:55:00,S4,Marinara Sauce,Pasta Night,1,3.49,3.49,Cash
+500185,2026-08-17 22:55:00,S4,Parmesan,Pasta Night,2,5.49,10.98,Cash
+500185,2026-08-17 22:55:00,S4,Garlic Bread,Pasta Night,1,2.99,2.99,Cash
+500185,2026-08-17 22:55:00,S4,Coffee,Breakfast,1,8.99,8.99,Cash
+500185,2026-08-17 22:55:00,S4,Creamer,Breakfast,1,3.29,3.29,Cash
+500185,2026-08-17 22:55:00,S4,Bagels,Breakfast,1,3.99,3.99,Cash
+500186,2026-08-17 18:46:00,S2,Baby Wipes,Baby,1,6.49,6.49,Cash
+500186,2026-08-17 18:46:00,S2,Baby Food,Baby,1,1.29,1.29,Cash
+500186,2026-08-17 18:46:00,S2,Burger Patties,Grilling,2,9.99,19.98,Cash
+500186,2026-08-17 18:46:00,S2,Cheese Slices,Grilling,3,3.99,11.97,Cash
+500186,2026-08-17 18:46:00,S2,Ketchup,Grilling,2,2.99,5.98,Cash
+500187,2026-08-17 22:18:00,S4,Tortilla Chips,Snacks,3,3.49,10.47,Cash
+500188,2026-08-17 19:22:00,S4,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500188,2026-08-17 19:22:00,S4,Salsa,Snacks,1,3.99,3.99,Card
+500188,2026-08-17 19:22:00,S4,Buns,Grilling,1,2.49,2.49,Card
+500188,2026-08-17 19:22:00,S4,Cheese Slices,Grilling,1,3.99,3.99,Card
+500188,2026-08-17 19:22:00,S4,Spaghetti,Pasta Night,3,1.99,5.97,Card
+500189,2026-08-17 20:29:00,S4,Bananas,Produce,1,1.59,1.59,Mobile
+500189,2026-08-17 20:29:00,S4,Lotion,Baby,1,5.99,5.99,Mobile
+500190,2026-08-17 19:25:00,S4,Sponges,Cleaning,1,2.49,2.49,Card
+500190,2026-08-17 19:25:00,S4,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500190,2026-08-17 19:25:00,S4,Parmesan,Pasta Night,1,5.49,5.49,Card
+500190,2026-08-17 19:25:00,S4,Garlic Bread,Pasta Night,1,2.99,2.99,Card
+500191,2026-08-17 16:34:00,S4,Diapers,Baby,1,24.99,24.99,Mobile
+500191,2026-08-17 16:34:00,S4,Baby Wipes,Baby,1,6.49,6.49,Mobile
+500191,2026-08-17 16:34:00,S4,Baby Food,Baby,1,1.29,1.29,Mobile
+500191,2026-08-17 16:34:00,S4,Lotion,Baby,1,5.99,5.99,Mobile
+500192,2026-08-17 14:14:00,S3,Salsa,Snacks,1,3.99,3.99,Card
+500192,2026-08-17 14:14:00,S3,Burger Patties,Grilling,1,9.99,9.99,Card
+500192,2026-08-17 14:14:00,S3,Buns,Grilling,1,2.49,2.49,Card
+500192,2026-08-17 14:14:00,S3,Cheese Slices,Grilling,1,3.99,3.99,Card
+500192,2026-08-17 14:14:00,S3,Spinach,Produce,1,2.99,2.99,Card
+500193,2026-08-17 22:49:00,S4,Buns,Grilling,1,2.49,2.49,Card
+500193,2026-08-17 22:49:00,S4,Ketchup,Grilling,3,2.99,8.97,Card
+500194,2026-08-17 13:56:00,S2,Spaghetti,Pasta Night,1,1.99,1.99,Cash
+500194,2026-08-17 13:56:00,S2,Marinara Sauce,Pasta Night,1,3.49,3.49,Cash
+500194,2026-08-17 13:56:00,S2,Parmesan,Pasta Night,1,5.49,5.49,Cash
+500194,2026-08-17 13:56:00,S2,Garlic Bread,Pasta Night,1,2.99,2.99,Cash
+500195,2026-08-17 17:45:00,S4,Parmesan,Pasta Night,1,5.49,5.49,Card
+500195,2026-08-17 17:45:00,S4,Burger Patties,Grilling,1,9.99,9.99,Card
+500195,2026-08-17 17:45:00,S4,Creamer,Breakfast,1,3.29,3.29,Card
+500196,2026-08-17 16:54:00,S1,Marinara Sauce,Pasta Night,2,3.49,6.98,Cash
+500196,2026-08-17 16:54:00,S1,Garlic Bread,Pasta Night,1,2.99,2.99,Cash
+500197,2026-08-17 21:56:00,S4,Bagels,Breakfast,3,3.99,11.97,Card
+500197,2026-08-17 21:56:00,S4,Cream Cheese,Breakfast,1,2.79,2.79,Card
+500198,2026-08-17 16:51:00,S2,Bananas,Produce,1,1.59,1.59,Card
+500198,2026-08-17 16:51:00,S2,Apples,Produce,1,3.99,3.99,Card
+500199,2026-08-18 00:31:00,S4,Dish Soap,Cleaning,1,3.49,3.49,Card
+500199,2026-08-18 00:31:00,S4,Sponges,Cleaning,1,2.49,2.49,Card
+500199,2026-08-18 00:31:00,S4,Trash Bags,Cleaning,1,8.99,8.99,Card
+500199,2026-08-18 00:31:00,S4,Burger Patties,Grilling,1,9.99,9.99,Card
+500200,2026-08-18 15:56:00,S1,Burger Patties,Grilling,1,9.99,9.99,Mobile
+500200,2026-08-18 15:56:00,S1,Buns,Grilling,1,2.49,2.49,Mobile
+500200,2026-08-18 15:56:00,S1,Cheese Slices,Grilling,1,3.99,3.99,Mobile
+500201,2026-08-18 17:23:00,S4,Coffee,Breakfast,1,8.99,8.99,Card
+500201,2026-08-18 17:23:00,S4,Creamer,Breakfast,1,3.29,3.29,Card
+500201,2026-08-18 17:23:00,S4,Bagels,Breakfast,1,3.99,3.99,Card
+500201,2026-08-18 17:23:00,S4,Burger Patties,Grilling,1,9.99,9.99,Card
+500201,2026-08-18 17:23:00,S4,Buns,Grilling,1,2.49,2.49,Card
+500201,2026-08-18 17:23:00,S4,Ketchup,Grilling,1,2.99,2.99,Card
+500202,2026-08-18 19:01:00,S4,Apples,Produce,2,3.99,7.98,Card
+500202,2026-08-18 19:01:00,S4,Spinach,Produce,3,2.99,8.97,Card
+500203,2026-08-18 14:30:00,S2,Diapers,Baby,1,24.99,24.99,Card
+500203,2026-08-18 14:30:00,S2,Baby Wipes,Baby,1,6.49,6.49,Card
+500203,2026-08-18 14:30:00,S2,Baby Food,Baby,1,1.29,1.29,Card
+500203,2026-08-18 14:30:00,S2,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500204,2026-08-18 16:47:00,S2,Burger Patties,Grilling,1,9.99,9.99,Card
+500204,2026-08-18 16:47:00,S2,Buns,Grilling,1,2.49,2.49,Card
+500204,2026-08-18 16:47:00,S2,Cheese Slices,Grilling,1,3.99,3.99,Card
+500204,2026-08-18 16:47:00,S2,Ketchup,Grilling,1,2.99,2.99,Card
+500204,2026-08-18 16:47:00,S2,Diapers,Baby,1,24.99,24.99,Card
+500205,2026-08-18 16:09:00,S3,Burger Patties,Grilling,1,9.99,9.99,Card
+500205,2026-08-18 16:09:00,S3,Buns,Grilling,1,2.49,2.49,Card
+500205,2026-08-18 16:09:00,S3,Cheese Slices,Grilling,3,3.99,11.97,Card
+500205,2026-08-18 16:09:00,S3,Ketchup,Grilling,1,2.99,2.99,Card
+500206,2026-08-18 14:39:00,S4,Burger Patties,Grilling,2,9.99,19.98,Mobile
+500206,2026-08-18 14:39:00,S4,Cheese Slices,Grilling,1,3.99,3.99,Mobile
+500206,2026-08-18 14:39:00,S4,Ketchup,Grilling,1,2.99,2.99,Mobile
+500207,2026-08-18 17:43:00,S1,Bananas,Produce,1,1.59,1.59,Card
+500207,2026-08-18 17:43:00,S1,Spinach,Produce,1,2.99,2.99,Card
+500207,2026-08-18 17:43:00,S1,Avocado,Produce,1,1.49,1.49,Card
+500207,2026-08-18 17:43:00,S1,Creamer,Breakfast,1,3.29,3.29,Card
+500207,2026-08-18 17:43:00,S1,Garlic Bread,Pasta Night,1,2.99,2.99,Card
+500208,2026-08-18 14:07:00,S1,Dish Soap,Cleaning,2,3.49,6.98,Card
+500208,2026-08-18 14:07:00,S1,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500208,2026-08-18 14:07:00,S1,Garlic Bread,Pasta Night,1,2.99,2.99,Card
+500209,2026-08-18 21:25:00,S1,Baby Wipes,Baby,1,6.49,6.49,Cash
+500209,2026-08-18 21:25:00,S1,Baby Food,Baby,1,1.29,1.29,Cash
+500210,2026-08-18 18:37:00,S3,Diapers,Baby,1,24.99,24.99,Card
+500210,2026-08-18 18:37:00,S3,Baby Wipes,Baby,2,6.49,12.98,Card
+500210,2026-08-18 18:37:00,S3,Baby Food,Baby,1,1.29,1.29,Card
+500210,2026-08-18 18:37:00,S3,Lotion,Baby,1,5.99,5.99,Card
+500210,2026-08-18 18:37:00,S3,Salsa,Snacks,1,3.99,3.99,Card
+500211,2026-08-18 16:25:00,S4,Salsa,Snacks,2,3.99,7.98,Cash
+500212,2026-08-19 22:38:00,S1,Creamer,Breakfast,1,3.29,3.29,Mobile
+500212,2026-08-19 22:38:00,S1,Cream Cheese,Breakfast,2,2.79,5.58,Mobile
+500212,2026-08-19 22:38:00,S1,Paper Towels,Cleaning,2,7.99,15.98,Mobile
+500212,2026-08-19 22:38:00,S1,Sponges,Cleaning,1,2.49,2.49,Mobile
+500212,2026-08-19 22:38:00,S1,Trash Bags,Cleaning,1,8.99,8.99,Mobile
+500213,2026-08-19 18:11:00,S3,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500213,2026-08-19 18:11:00,S3,Garlic Bread,Pasta Night,3,2.99,8.97,Card
+500214,2026-08-19 15:58:00,S3,Coffee,Breakfast,1,8.99,8.99,Card
+500215,2026-08-19 22:53:00,S3,Bagels,Breakfast,1,3.99,3.99,Cash
+500215,2026-08-19 22:53:00,S3,Cream Cheese,Breakfast,1,2.79,2.79,Cash
+500216,2026-08-19 21:47:00,S4,Parmesan,Pasta Night,1,5.49,5.49,Card
+500216,2026-08-19 21:47:00,S4,Spinach,Produce,1,2.99,2.99,Card
+500217,2026-08-19 20:47:00,S4,Burger Patties,Grilling,1,9.99,9.99,Card
+500217,2026-08-19 20:47:00,S4,Buns,Grilling,1,2.49,2.49,Card
+500217,2026-08-19 20:47:00,S4,Cheese Slices,Grilling,1,3.99,3.99,Card
+500217,2026-08-19 20:47:00,S4,Ketchup,Grilling,1,2.99,2.99,Card
+500217,2026-08-19 20:47:00,S4,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500217,2026-08-19 20:47:00,S4,Salsa,Snacks,3,3.99,11.97,Card
+500217,2026-08-19 20:47:00,S4,Guacamole,Snacks,1,4.49,4.49,Card
+500217,2026-08-19 20:47:00,S4,Spinach,Produce,2,2.99,5.98,Card
+500218,2026-08-19 21:33:00,S4,Buns,Grilling,2,2.49,4.98,Cash
+500218,2026-08-19 21:33:00,S4,Cheese Slices,Grilling,2,3.99,7.98,Cash
+500218,2026-08-19 21:33:00,S4,Spaghetti,Pasta Night,1,1.99,1.99,Cash
+500218,2026-08-19 21:33:00,S4,Parmesan,Pasta Night,1,5.49,5.49,Cash
+500218,2026-08-19 21:33:00,S4,Garlic Bread,Pasta Night,1,2.99,2.99,Cash
+500219,2026-08-19 14:04:00,S2,Spaghetti,Pasta Night,2,1.99,3.98,Card
+500219,2026-08-19 14:04:00,S2,Bagels,Breakfast,1,3.99,3.99,Card
+500220,2026-08-19 17:15:00,S4,Bananas,Produce,2,1.59,3.18,Cash
+500220,2026-08-19 17:15:00,S4,Avocado,Produce,1,1.49,1.49,Cash
+500220,2026-08-19 17:15:00,S4,Creamer,Breakfast,2,3.29,6.58,Cash
+500221,2026-08-19 22:54:00,S2,Paper Towels,Cleaning,1,7.99,7.99,Card
+500222,2026-08-19 12:05:00,S3,Bananas,Produce,1,1.59,1.59,Card
+500222,2026-08-19 12:05:00,S3,Apples,Produce,1,3.99,3.99,Card
+500222,2026-08-19 12:05:00,S3,Avocado,Produce,1,1.49,1.49,Card
+500223,2026-08-19 17:55:00,S1,Coffee,Breakfast,1,8.99,8.99,Cash
+500223,2026-08-19 17:55:00,S1,Cream Cheese,Breakfast,1,2.79,2.79,Cash
+500224,2026-08-19 18:56:00,S1,Baby Wipes,Baby,1,6.49,6.49,Card
+500224,2026-08-19 18:56:00,S1,Baby Food,Baby,2,1.29,2.58,Card
+500224,2026-08-19 18:56:00,S1,Lotion,Baby,1,5.99,5.99,Card
+500225,2026-08-19 21:59:00,S3,Diapers,Baby,1,24.99,24.99,Cash
+500226,2026-08-19 17:42:00,S1,Paper Towels,Cleaning,1,7.99,7.99,Card
+500226,2026-08-19 17:42:00,S1,Sponges,Cleaning,1,2.49,2.49,Card
+500227,2026-08-20 00:00:00,S1,Bananas,Produce,1,1.59,1.59,Card
+500227,2026-08-20 00:00:00,S1,Apples,Produce,1,3.99,3.99,Card
+500227,2026-08-20 00:00:00,S1,Avocado,Produce,1,1.49,1.49,Card
+500227,2026-08-20 00:00:00,S1,Baby Wipes,Baby,1,6.49,6.49,Card
+500228,2026-08-19 18:39:00,S2,Tortilla Chips,Snacks,1,3.49,3.49,Cash
+500228,2026-08-19 18:39:00,S2,Salsa,Snacks,1,3.99,3.99,Cash
+500228,2026-08-19 18:39:00,S2,Guacamole,Snacks,1,4.49,4.49,Cash
+500229,2026-08-20 15:32:00,S1,Bananas,Produce,1,1.59,1.59,Card
+500229,2026-08-20 15:32:00,S1,Apples,Produce,1,3.99,3.99,Card
+500229,2026-08-20 15:32:00,S1,Spinach,Produce,1,2.99,2.99,Card
+500229,2026-08-20 15:32:00,S1,Avocado,Produce,3,1.49,4.47,Card
+500230,2026-08-20 18:45:00,S1,Paper Towels,Cleaning,1,7.99,7.99,Card
+500230,2026-08-20 18:45:00,S1,Dish Soap,Cleaning,1,3.49,3.49,Card
+500231,2026-08-20 23:30:00,S1,Baby Wipes,Baby,1,6.49,6.49,Card
+500231,2026-08-20 23:30:00,S1,Baby Food,Baby,1,1.29,1.29,Card
+500231,2026-08-20 23:30:00,S1,Lotion,Baby,3,5.99,17.97,Card
+500231,2026-08-20 23:30:00,S1,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500231,2026-08-20 23:30:00,S1,Parmesan,Pasta Night,1,5.49,5.49,Card
+500231,2026-08-20 23:30:00,S1,Garlic Bread,Pasta Night,1,2.99,2.99,Card
+500232,2026-08-20 17:57:00,S3,Paper Towels,Cleaning,1,7.99,7.99,Card
+500232,2026-08-20 17:57:00,S3,Dish Soap,Cleaning,2,3.49,6.98,Card
+500232,2026-08-20 17:57:00,S3,Lotion,Baby,3,5.99,17.97,Card
+500233,2026-08-20 21:40:00,S4,Burger Patties,Grilling,1,9.99,9.99,Card
+500233,2026-08-20 21:40:00,S4,Buns,Grilling,1,2.49,2.49,Card
+500233,2026-08-20 21:40:00,S4,Cheese Slices,Grilling,1,3.99,3.99,Card
+500233,2026-08-20 21:40:00,S4,Ketchup,Grilling,1,2.99,2.99,Card
+500233,2026-08-20 21:40:00,S4,Diapers,Baby,1,24.99,24.99,Card
+500234,2026-08-20 19:50:00,S4,Diapers,Baby,2,24.99,49.98,Card
+500234,2026-08-20 19:50:00,S4,Baby Food,Baby,1,1.29,1.29,Card
+500234,2026-08-20 19:50:00,S4,Lotion,Baby,1,5.99,5.99,Card
+500235,2026-08-20 22:56:00,S1,Baby Wipes,Baby,1,6.49,6.49,Card
+500235,2026-08-20 22:56:00,S1,Lotion,Baby,1,5.99,5.99,Card
+500236,2026-08-20 20:14:00,S2,Baby Food,Baby,1,1.29,1.29,Card
+500236,2026-08-20 20:14:00,S2,Lotion,Baby,1,5.99,5.99,Card
+500236,2026-08-20 20:14:00,S2,Burger Patties,Grilling,1,9.99,9.99,Card
+500236,2026-08-20 20:14:00,S2,Buns,Grilling,1,2.49,2.49,Card
+500236,2026-08-20 20:14:00,S2,Ketchup,Grilling,1,2.99,2.99,Card
+500237,2026-08-20 21:37:00,S3,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500238,2026-08-21 23:57:00,S4,Tortilla Chips,Snacks,1,3.49,3.49,Cash
+500238,2026-08-21 23:57:00,S4,Salsa,Snacks,1,3.99,3.99,Cash
+500238,2026-08-21 23:57:00,S4,Guacamole,Snacks,1,4.49,4.49,Cash
+500239,2026-08-22 00:32:00,S1,Coffee,Breakfast,1,8.99,8.99,Card
+500239,2026-08-22 00:32:00,S1,Buns,Grilling,1,2.49,2.49,Card
+500240,2026-08-21 17:22:00,S4,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500240,2026-08-21 17:22:00,S4,Garlic Bread,Pasta Night,1,2.99,2.99,Card
+500240,2026-08-21 17:22:00,S4,Creamer,Breakfast,1,3.29,3.29,Card
+500241,2026-08-21 19:51:00,S1,Marinara Sauce,Pasta Night,2,3.49,6.98,Card
+500241,2026-08-21 19:51:00,S1,Garlic Bread,Pasta Night,2,2.99,5.98,Card
+500241,2026-08-21 19:51:00,S1,Creamer,Breakfast,1,3.29,3.29,Card
+500241,2026-08-21 19:51:00,S1,Coffee,Breakfast,3,8.99,26.97,Card
+500242,2026-08-21 19:42:00,S2,Baby Food,Baby,2,1.29,2.58,Mobile
+500242,2026-08-21 19:42:00,S2,Sponges,Cleaning,1,2.49,2.49,Mobile
+500242,2026-08-21 19:42:00,S2,Trash Bags,Cleaning,1,8.99,8.99,Mobile
+500243,2026-08-21 14:10:00,S3,Tortilla Chips,Snacks,1,3.49,3.49,Cash
+500243,2026-08-21 14:10:00,S3,Soda 12pk,Snacks,2,6.99,13.98,Cash
+500243,2026-08-21 14:10:00,S3,Baby Wipes,Baby,1,6.49,6.49,Cash
+500244,2026-08-21 14:08:00,S3,Paper Towels,Cleaning,1,7.99,7.99,Card
+500244,2026-08-21 14:08:00,S3,Parmesan,Pasta Night,1,5.49,5.49,Card
+500245,2026-08-21 20:09:00,S1,Tortilla Chips,Snacks,3,3.49,10.47,Card
+500245,2026-08-21 20:09:00,S1,Salsa,Snacks,1,3.99,3.99,Card
+500245,2026-08-21 20:09:00,S1,Soda 12pk,Snacks,1,6.99,6.99,Card
+500245,2026-08-21 20:09:00,S1,Diapers,Baby,2,24.99,49.98,Card
+500245,2026-08-21 20:09:00,S1,Baby Wipes,Baby,1,6.49,6.49,Card
+500245,2026-08-21 20:09:00,S1,Lotion,Baby,1,5.99,5.99,Card
+500246,2026-08-21 12:00:00,S1,Diapers,Baby,1,24.99,24.99,Cash
+500246,2026-08-21 12:00:00,S1,Baby Wipes,Baby,1,6.49,6.49,Cash
+500246,2026-08-21 12:00:00,S1,Baby Food,Baby,1,1.29,1.29,Cash
+500246,2026-08-21 12:00:00,S1,Lotion,Baby,1,5.99,5.99,Cash
+500247,2026-08-21 14:43:00,S2,Baby Food,Baby,1,1.29,1.29,Card
+500247,2026-08-21 14:43:00,S2,Lotion,Baby,3,5.99,17.97,Card
+500247,2026-08-21 14:43:00,S2,Cheese Slices,Grilling,1,3.99,3.99,Card
+500247,2026-08-21 14:43:00,S2,Ketchup,Grilling,2,2.99,5.98,Card
+500247,2026-08-21 14:43:00,S2,Cream Cheese,Breakfast,1,2.79,2.79,Card
+500248,2026-08-21 19:41:00,S3,Diapers,Baby,3,24.99,74.97,Cash
+500248,2026-08-21 19:41:00,S3,Lotion,Baby,1,5.99,5.99,Cash
+500249,2026-08-21 16:16:00,S4,Bananas,Produce,1,1.59,1.59,Card
+500249,2026-08-21 16:16:00,S4,Apples,Produce,3,3.99,11.97,Card
+500249,2026-08-21 16:16:00,S4,Spinach,Produce,1,2.99,2.99,Card
+500249,2026-08-21 16:16:00,S4,Avocado,Produce,1,1.49,1.49,Card
+500249,2026-08-21 16:16:00,S4,Paper Towels,Cleaning,2,7.99,15.98,Card
+500249,2026-08-21 16:16:00,S4,Dish Soap,Cleaning,1,3.49,3.49,Card
+500249,2026-08-21 16:16:00,S4,Sponges,Cleaning,1,2.49,2.49,Card
+500250,2026-08-21 12:07:00,S4,Dish Soap,Cleaning,1,3.49,3.49,Card
+500250,2026-08-21 12:07:00,S4,Sponges,Cleaning,1,2.49,2.49,Card
+500250,2026-08-21 12:07:00,S4,Burger Patties,Grilling,2,9.99,19.98,Card
+500250,2026-08-21 12:07:00,S4,Cheese Slices,Grilling,1,3.99,3.99,Card
+500250,2026-08-21 12:07:00,S4,Soda 12pk,Snacks,1,6.99,6.99,Card
+500251,2026-08-21 13:00:00,S1,Tortilla Chips,Snacks,1,3.49,3.49,Cash
+500251,2026-08-21 13:00:00,S1,Guacamole,Snacks,2,4.49,8.98,Cash
+500251,2026-08-21 13:00:00,S1,Soda 12pk,Snacks,1,6.99,6.99,Cash
+500252,2026-08-21 22:53:00,S4,Diapers,Baby,1,24.99,24.99,Mobile
+500253,2026-08-21 18:47:00,S2,Bananas,Produce,1,1.59,1.59,Card
+500253,2026-08-21 18:47:00,S2,Spinach,Produce,1,2.99,2.99,Card
+500253,2026-08-21 18:47:00,S2,Avocado,Produce,1,1.49,1.49,Card
+500253,2026-08-21 18:47:00,S2,Apples,Produce,2,3.99,7.98,Card
+500254,2026-08-21 22:31:00,S2,Trash Bags,Cleaning,1,8.99,8.99,Card
+500255,2026-08-21 21:41:00,S3,Diapers,Baby,3,24.99,74.97,Cash
+500255,2026-08-21 21:41:00,S3,Baby Wipes,Baby,1,6.49,6.49,Cash
+500255,2026-08-21 21:41:00,S3,Baby Food,Baby,1,1.29,1.29,Cash
+500255,2026-08-21 21:41:00,S3,Lotion,Baby,1,5.99,5.99,Cash
+500255,2026-08-21 21:41:00,S3,Cheese Slices,Grilling,1,3.99,3.99,Cash
+500256,2026-08-21 14:58:00,S2,Burger Patties,Grilling,1,9.99,9.99,Card
+500256,2026-08-21 14:58:00,S2,Buns,Grilling,1,2.49,2.49,Card
+500256,2026-08-21 14:58:00,S2,Guacamole,Snacks,1,4.49,4.49,Card
+500257,2026-08-22 19:32:00,S1,Diapers,Baby,2,24.99,49.98,Cash
+500257,2026-08-22 19:32:00,S1,Baby Food,Baby,1,1.29,1.29,Cash
+500257,2026-08-22 19:32:00,S1,Lotion,Baby,2,5.99,11.98,Cash
+500257,2026-08-22 19:32:00,S1,Avocado,Produce,3,1.49,4.47,Cash
+500258,2026-08-22 19:16:00,S4,Baby Wipes,Baby,1,6.49,6.49,Card
+500259,2026-08-22 19:04:00,S1,Tortilla Chips,Snacks,1,3.49,3.49,Mobile
+500259,2026-08-22 19:04:00,S1,Soda 12pk,Snacks,1,6.99,6.99,Mobile
+500260,2026-08-22 12:25:00,S2,Marinara Sauce,Pasta Night,1,3.49,3.49,Cash
+500260,2026-08-22 12:25:00,S2,Garlic Bread,Pasta Night,1,2.99,2.99,Cash
+500261,2026-08-22 18:24:00,S2,Burger Patties,Grilling,1,9.99,9.99,Card
+500261,2026-08-22 18:24:00,S2,Cheese Slices,Grilling,1,3.99,3.99,Card
+500261,2026-08-22 18:24:00,S2,Ketchup,Grilling,1,2.99,2.99,Card
+500261,2026-08-22 18:24:00,S2,Bagels,Breakfast,1,3.99,3.99,Card
+500262,2026-08-22 16:02:00,S3,Paper Towels,Cleaning,1,7.99,7.99,Card
+500263,2026-08-22 23:09:00,S3,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500263,2026-08-22 23:09:00,S3,Parmesan,Pasta Night,1,5.49,5.49,Card
+500264,2026-08-22 20:27:00,S2,Soda 12pk,Snacks,1,6.99,6.99,Card
+500264,2026-08-22 20:27:00,S2,Trash Bags,Cleaning,1,8.99,8.99,Card
+500265,2026-08-22 16:01:00,S3,Creamer,Breakfast,1,3.29,3.29,Card
+500265,2026-08-22 16:01:00,S3,Bagels,Breakfast,3,3.99,11.97,Card
+500265,2026-08-22 16:01:00,S3,Cream Cheese,Breakfast,3,2.79,8.37,Card
+500266,2026-08-22 17:56:00,S2,Baby Wipes,Baby,1,6.49,6.49,Mobile
+500267,2026-08-22 22:45:00,S4,Burger Patties,Grilling,1,9.99,9.99,Mobile
+500267,2026-08-22 22:45:00,S4,Buns,Grilling,2,2.49,4.98,Mobile
+500267,2026-08-22 22:45:00,S4,Cheese Slices,Grilling,1,3.99,3.99,Mobile
+500267,2026-08-22 22:45:00,S4,Ketchup,Grilling,1,2.99,2.99,Mobile
+500267,2026-08-22 22:45:00,S4,Trash Bags,Cleaning,1,8.99,8.99,Mobile
+500268,2026-08-22 17:52:00,S3,Spaghetti,Pasta Night,1,1.99,1.99,Mobile
+500268,2026-08-22 17:52:00,S3,Marinara Sauce,Pasta Night,1,3.49,3.49,Mobile
+500268,2026-08-22 17:52:00,S3,Dish Soap,Cleaning,1,3.49,3.49,Mobile
+500268,2026-08-22 17:52:00,S3,Sponges,Cleaning,1,2.49,2.49,Mobile
+500268,2026-08-22 17:52:00,S3,Trash Bags,Cleaning,1,8.99,8.99,Mobile
+500268,2026-08-22 17:52:00,S3,Diapers,Baby,1,24.99,24.99,Mobile
+500269,2026-08-23 00:02:00,S3,Burger Patties,Grilling,1,9.99,9.99,Card
+500269,2026-08-23 00:02:00,S3,Cheese Slices,Grilling,2,3.99,7.98,Card
+500269,2026-08-23 00:02:00,S3,Ketchup,Grilling,1,2.99,2.99,Card
+500270,2026-08-22 12:49:00,S4,Sponges,Cleaning,2,2.49,4.98,Card
+500271,2026-08-22 15:40:00,S3,Creamer,Breakfast,1,3.29,3.29,Mobile
+500271,2026-08-22 15:40:00,S3,Salsa,Snacks,1,3.99,3.99,Mobile
+500272,2026-08-22 16:40:00,S4,Tortilla Chips,Snacks,1,3.49,3.49,Mobile
+500272,2026-08-22 16:40:00,S4,Salsa,Snacks,3,3.99,11.97,Mobile
+500272,2026-08-22 16:40:00,S4,Guacamole,Snacks,1,4.49,4.49,Mobile
+500272,2026-08-22 16:40:00,S4,Soda 12pk,Snacks,1,6.99,6.99,Mobile
+500273,2026-08-22 22:06:00,S3,Buns,Grilling,1,2.49,2.49,Card
+500273,2026-08-22 22:06:00,S3,Cheese Slices,Grilling,1,3.99,3.99,Card
+500273,2026-08-22 22:06:00,S3,Ketchup,Grilling,3,2.99,8.97,Card
+500274,2026-08-22 17:15:00,S2,Creamer,Breakfast,1,3.29,3.29,Mobile
+500274,2026-08-22 17:15:00,S2,Cream Cheese,Breakfast,2,2.79,5.58,Mobile
+500274,2026-08-22 17:15:00,S2,Coffee,Breakfast,1,8.99,8.99,Mobile
+500274,2026-08-22 17:15:00,S2,Bagels,Breakfast,1,3.99,3.99,Mobile
+500274,2026-08-22 17:15:00,S2,Bananas,Produce,1,1.59,1.59,Mobile
+500275,2026-08-22 19:25:00,S2,Baby Wipes,Baby,1,6.49,6.49,Card
+500275,2026-08-22 19:25:00,S2,Lotion,Baby,1,5.99,5.99,Card
+500276,2026-08-22 16:08:00,S2,Coffee,Breakfast,1,8.99,8.99,Cash
+500276,2026-08-22 16:08:00,S2,Creamer,Breakfast,1,3.29,3.29,Cash
+500276,2026-08-22 16:08:00,S2,Bagels,Breakfast,1,3.99,3.99,Cash
+500276,2026-08-22 16:08:00,S2,Sponges,Cleaning,1,2.49,2.49,Cash
+500277,2026-08-23 22:41:00,S1,Paper Towels,Cleaning,1,7.99,7.99,Cash
+500277,2026-08-23 22:41:00,S1,Dish Soap,Cleaning,1,3.49,3.49,Cash
+500277,2026-08-23 22:41:00,S1,Sponges,Cleaning,2,2.49,4.98,Cash
+500277,2026-08-23 22:41:00,S1,Trash Bags,Cleaning,1,8.99,8.99,Cash
+500277,2026-08-23 22:41:00,S1,Buns,Grilling,3,2.49,7.47,Cash
+500278,2026-08-23 19:06:00,S3,Guacamole,Snacks,1,4.49,4.49,Card
+500278,2026-08-23 19:06:00,S3,Soda 12pk,Snacks,1,6.99,6.99,Card
+500279,2026-08-23 18:50:00,S3,Spinach,Produce,1,2.99,2.99,Card
+500279,2026-08-23 18:50:00,S3,Avocado,Produce,1,1.49,1.49,Card
+500279,2026-08-23 18:50:00,S3,Baby Food,Baby,3,1.29,3.87,Card
+500280,2026-08-23 17:25:00,S2,Paper Towels,Cleaning,2,7.99,15.98,Cash
+500280,2026-08-23 17:25:00,S2,Bagels,Breakfast,1,3.99,3.99,Cash
+500280,2026-08-23 17:25:00,S2,Cream Cheese,Breakfast,1,2.79,2.79,Cash
+500281,2026-08-23 15:20:00,S2,Bananas,Produce,3,1.59,4.77,Card
+500281,2026-08-23 15:20:00,S2,Spinach,Produce,1,2.99,2.99,Card
+500281,2026-08-23 15:20:00,S2,Avocado,Produce,1,1.49,1.49,Card
+500282,2026-08-23 17:52:00,S1,Paper Towels,Cleaning,2,7.99,15.98,Mobile
+500282,2026-08-23 17:52:00,S1,Trash Bags,Cleaning,1,8.99,8.99,Mobile
+500283,2026-08-23 21:46:00,S2,Bananas,Produce,1,1.59,1.59,Mobile
+500283,2026-08-23 21:46:00,S2,Apples,Produce,1,3.99,3.99,Mobile
+500283,2026-08-23 21:46:00,S2,Spinach,Produce,1,2.99,2.99,Mobile
+500283,2026-08-23 21:46:00,S2,Avocado,Produce,2,1.49,2.98,Mobile
+500284,2026-08-23 15:40:00,S4,Coffee,Breakfast,1,8.99,8.99,Card
+500284,2026-08-23 15:40:00,S4,Creamer,Breakfast,3,3.29,9.87,Card
+500284,2026-08-23 15:40:00,S4,Bagels,Breakfast,1,3.99,3.99,Card
+500284,2026-08-23 15:40:00,S4,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500284,2026-08-23 15:40:00,S4,Salsa,Snacks,3,3.99,11.97,Card
+500284,2026-08-23 15:40:00,S4,Guacamole,Snacks,1,4.49,4.49,Card
+500284,2026-08-23 15:40:00,S4,Soda 12pk,Snacks,1,6.99,6.99,Card
+500285,2026-08-23 16:29:00,S1,Diapers,Baby,1,24.99,24.99,Card
+500285,2026-08-23 16:29:00,S1,Baby Food,Baby,1,1.29,1.29,Card
+500285,2026-08-23 16:29:00,S1,Lotion,Baby,1,5.99,5.99,Card
+500285,2026-08-23 16:29:00,S1,Trash Bags,Cleaning,1,8.99,8.99,Card
+500286,2026-08-23 18:39:00,S3,Sponges,Cleaning,1,2.49,2.49,Cash
+500286,2026-08-23 18:39:00,S3,Salsa,Snacks,1,3.99,3.99,Cash
+500287,2026-08-23 15:15:00,S3,Tortilla Chips,Snacks,2,3.49,6.98,Card
+500287,2026-08-23 15:15:00,S3,Salsa,Snacks,2,3.99,7.98,Card
+500287,2026-08-23 15:15:00,S3,Apples,Produce,1,3.99,3.99,Card
+500287,2026-08-23 15:15:00,S3,Spinach,Produce,1,2.99,2.99,Card
+500287,2026-08-23 15:15:00,S3,Avocado,Produce,1,1.49,1.49,Card
+500288,2026-08-23 20:15:00,S4,Buns,Grilling,1,2.49,2.49,Card
+500288,2026-08-23 20:15:00,S4,Cheese Slices,Grilling,1,3.99,3.99,Card
+500288,2026-08-23 20:15:00,S4,Marinara Sauce,Pasta Night,3,3.49,10.47,Card
+500289,2026-08-23 22:16:00,S4,Bananas,Produce,1,1.59,1.59,Card
+500289,2026-08-23 22:16:00,S4,Avocado,Produce,1,1.49,1.49,Card
+500290,2026-08-24 13:57:00,S3,Cheese Slices,Grilling,3,3.99,11.97,Cash
+500291,2026-08-24 23:20:00,S1,Coffee,Breakfast,2,8.99,17.98,Mobile
+500291,2026-08-24 23:20:00,S1,Bagels,Breakfast,1,3.99,3.99,Mobile
+500291,2026-08-24 23:20:00,S1,Cream Cheese,Breakfast,1,2.79,2.79,Mobile
+500291,2026-08-24 23:20:00,S1,Baby Food,Baby,1,1.29,1.29,Mobile
+500292,2026-08-24 13:45:00,S1,Bananas,Produce,1,1.59,1.59,Card
+500292,2026-08-24 13:45:00,S1,Avocado,Produce,1,1.49,1.49,Card
+500293,2026-08-24 14:33:00,S1,Burger Patties,Grilling,1,9.99,9.99,Cash
+500293,2026-08-24 14:33:00,S1,Cheese Slices,Grilling,1,3.99,3.99,Cash
+500293,2026-08-24 14:33:00,S1,Ketchup,Grilling,1,2.99,2.99,Cash
+500293,2026-08-24 14:33:00,S1,Diapers,Baby,1,24.99,24.99,Cash
+500293,2026-08-24 14:33:00,S1,Baby Food,Baby,1,1.29,1.29,Cash
+500293,2026-08-24 14:33:00,S1,Lotion,Baby,1,5.99,5.99,Cash
+500294,2026-08-24 12:03:00,S4,Paper Towels,Cleaning,1,7.99,7.99,Card
+500294,2026-08-24 12:03:00,S4,Sponges,Cleaning,1,2.49,2.49,Card
+500294,2026-08-24 12:03:00,S4,Trash Bags,Cleaning,2,8.99,17.98,Card
+500295,2026-08-24 17:08:00,S3,Tortilla Chips,Snacks,1,3.49,3.49,Cash
+500295,2026-08-24 17:08:00,S3,Salsa,Snacks,2,3.99,7.98,Cash
+500295,2026-08-24 17:08:00,S3,Guacamole,Snacks,1,4.49,4.49,Cash
+500295,2026-08-24 17:08:00,S3,Soda 12pk,Snacks,2,6.99,13.98,Cash
+500295,2026-08-24 17:08:00,S3,Diapers,Baby,1,24.99,24.99,Cash
+500296,2026-08-24 21:18:00,S1,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500296,2026-08-24 21:18:00,S1,Salsa,Snacks,2,3.99,7.98,Card
+500296,2026-08-24 21:18:00,S1,Soda 12pk,Snacks,3,6.99,20.97,Card
+500297,2026-08-25 14:38:00,S4,Lotion,Baby,1,5.99,5.99,Card
+500298,2026-08-25 12:30:00,S2,Tortilla Chips,Snacks,1,3.49,3.49,Cash
+500298,2026-08-25 12:30:00,S2,Salsa,Snacks,2,3.99,7.98,Cash
+500298,2026-08-25 12:30:00,S2,Bananas,Produce,1,1.59,1.59,Cash
+500299,2026-08-25 22:45:00,S3,Coffee,Breakfast,2,8.99,17.98,Card
+500299,2026-08-25 22:45:00,S3,Creamer,Breakfast,1,3.29,3.29,Card
+500299,2026-08-25 22:45:00,S3,Bagels,Breakfast,1,3.99,3.99,Card
+500300,2026-08-25 17:21:00,S1,Diapers,Baby,1,24.99,24.99,Cash
+500300,2026-08-25 17:21:00,S1,Lotion,Baby,1,5.99,5.99,Cash
+500301,2026-08-25 17:57:00,S2,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500301,2026-08-25 17:57:00,S2,Marinara Sauce,Pasta Night,3,3.49,10.47,Card
+500301,2026-08-25 17:57:00,S2,Garlic Bread,Pasta Night,1,2.99,2.99,Card
+500301,2026-08-25 17:57:00,S2,Baby Food,Baby,1,1.29,1.29,Card
+500302,2026-08-25 16:48:00,S3,Paper Towels,Cleaning,1,7.99,7.99,Card
+500302,2026-08-25 16:48:00,S3,Sponges,Cleaning,2,2.49,4.98,Card
+500302,2026-08-25 16:48:00,S3,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500302,2026-08-25 16:48:00,S3,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500302,2026-08-25 16:48:00,S3,Garlic Bread,Pasta Night,3,2.99,8.97,Card
+500303,2026-08-25 12:52:00,S2,Dish Soap,Cleaning,1,3.49,3.49,Card
+500303,2026-08-25 12:52:00,S2,Trash Bags,Cleaning,3,8.99,26.97,Card
+500303,2026-08-25 12:52:00,S2,Avocado,Produce,1,1.49,1.49,Card
+500304,2026-08-25 23:01:00,S2,Apples,Produce,1,3.99,3.99,Card
+500304,2026-08-25 23:01:00,S2,Spinach,Produce,1,2.99,2.99,Card
+500304,2026-08-25 23:01:00,S2,Avocado,Produce,2,1.49,2.98,Card
+500304,2026-08-25 23:01:00,S2,Dish Soap,Cleaning,1,3.49,3.49,Card
+500304,2026-08-25 23:01:00,S2,Sponges,Cleaning,1,2.49,2.49,Card
+500304,2026-08-25 23:01:00,S2,Trash Bags,Cleaning,1,8.99,8.99,Card
+500304,2026-08-25 23:01:00,S2,Baby Food,Baby,1,1.29,1.29,Card
+500305,2026-08-25 22:27:00,S4,Guacamole,Snacks,1,4.49,4.49,Card
+500305,2026-08-25 22:27:00,S4,Dish Soap,Cleaning,1,3.49,3.49,Card
+500306,2026-08-25 21:52:00,S2,Bananas,Produce,1,1.59,1.59,Mobile
+500307,2026-08-25 21:45:00,S2,Bagels,Breakfast,1,3.99,3.99,Card
+500307,2026-08-25 21:45:00,S2,Cream Cheese,Breakfast,1,2.79,2.79,Card
+500307,2026-08-25 21:45:00,S2,Garlic Bread,Pasta Night,1,2.99,2.99,Card
+500308,2026-08-25 16:05:00,S4,Coffee,Breakfast,1,8.99,8.99,Card
+500308,2026-08-25 16:05:00,S4,Cream Cheese,Breakfast,1,2.79,2.79,Card
+500309,2026-08-25 16:16:00,S4,Apples,Produce,2,3.99,7.98,Card
+500309,2026-08-25 16:16:00,S4,Spinach,Produce,1,2.99,2.99,Card
+500309,2026-08-25 16:16:00,S4,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500310,2026-08-25 19:17:00,S3,Bananas,Produce,1,1.59,1.59,Card
+500310,2026-08-25 19:17:00,S3,Apples,Produce,2,3.99,7.98,Card
+500310,2026-08-25 19:17:00,S3,Spinach,Produce,2,2.99,5.98,Card
+500310,2026-08-25 19:17:00,S3,Avocado,Produce,1,1.49,1.49,Card
+500310,2026-08-25 19:17:00,S3,Paper Towels,Cleaning,1,7.99,7.99,Card
+500311,2026-08-25 15:35:00,S2,Buns,Grilling,2,2.49,4.98,Mobile
+500311,2026-08-25 15:35:00,S2,Cheese Slices,Grilling,1,3.99,3.99,Mobile
+500312,2026-08-26 18:47:00,S1,Tortilla Chips,Snacks,1,3.49,3.49,Cash
+500312,2026-08-26 18:47:00,S1,Salsa,Snacks,3,3.99,11.97,Cash
+500312,2026-08-26 18:47:00,S1,Diapers,Baby,1,24.99,24.99,Cash
+500312,2026-08-26 18:47:00,S1,Baby Wipes,Baby,1,6.49,6.49,Cash
+500313,2026-08-26 15:24:00,S3,Spaghetti,Pasta Night,2,1.99,3.98,Card
+500313,2026-08-26 15:24:00,S3,Parmesan,Pasta Night,2,5.49,10.98,Card
+500313,2026-08-26 15:24:00,S3,Soda 12pk,Snacks,1,6.99,6.99,Card
+500314,2026-08-26 17:40:00,S2,Paper Towels,Cleaning,2,7.99,15.98,Card
+500314,2026-08-26 17:40:00,S2,Sponges,Cleaning,2,2.49,4.98,Card
+500314,2026-08-26 17:40:00,S2,Trash Bags,Cleaning,1,8.99,8.99,Card
+500315,2026-08-26 14:04:00,S3,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500315,2026-08-26 14:04:00,S3,Spinach,Produce,1,2.99,2.99,Card
+500316,2026-08-26 12:42:00,S4,Diapers,Baby,1,24.99,24.99,Card
+500317,2026-08-26 14:53:00,S3,Bananas,Produce,1,1.59,1.59,Card
+500317,2026-08-26 14:53:00,S3,Spinach,Produce,1,2.99,2.99,Card
+500318,2026-08-26 19:04:00,S3,Paper Towels,Cleaning,1,7.99,7.99,Mobile
+500318,2026-08-26 19:04:00,S3,Dish Soap,Cleaning,1,3.49,3.49,Mobile
+500318,2026-08-26 19:04:00,S3,Sponges,Cleaning,1,2.49,2.49,Mobile
+500319,2026-08-26 23:47:00,S1,Creamer,Breakfast,1,3.29,3.29,Card
+500319,2026-08-26 23:47:00,S1,Bagels,Breakfast,1,3.99,3.99,Card
+500319,2026-08-26 23:47:00,S1,Cream Cheese,Breakfast,1,2.79,2.79,Card
+500320,2026-08-26 16:19:00,S4,Sponges,Cleaning,1,2.49,2.49,Cash
+500320,2026-08-26 16:19:00,S4,Trash Bags,Cleaning,2,8.99,17.98,Cash
+500320,2026-08-26 16:19:00,S4,Spinach,Produce,2,2.99,5.98,Cash
+500321,2026-08-26 23:50:00,S4,Diapers,Baby,1,24.99,24.99,Cash
+500322,2026-08-26 17:38:00,S1,Creamer,Breakfast,1,3.29,3.29,Mobile
+500322,2026-08-26 17:38:00,S1,Bagels,Breakfast,2,3.99,7.98,Mobile
+500322,2026-08-26 17:38:00,S1,Cream Cheese,Breakfast,1,2.79,2.79,Mobile
+500322,2026-08-26 17:38:00,S1,Buns,Grilling,1,2.49,2.49,Mobile
+500322,2026-08-26 17:38:00,S1,Cheese Slices,Grilling,1,3.99,3.99,Mobile
+500322,2026-08-26 17:38:00,S1,Ketchup,Grilling,2,2.99,5.98,Mobile
+500322,2026-08-26 17:38:00,S1,Sponges,Cleaning,1,2.49,2.49,Mobile
+500323,2026-08-26 23:06:00,S2,Spaghetti,Pasta Night,1,1.99,1.99,Cash
+500323,2026-08-26 23:06:00,S2,Garlic Bread,Pasta Night,2,2.99,5.98,Cash
+500323,2026-08-26 23:06:00,S2,Burger Patties,Grilling,1,9.99,9.99,Cash
+500323,2026-08-26 23:06:00,S2,Buns,Grilling,1,2.49,2.49,Cash
+500324,2026-08-26 13:12:00,S2,Coffee,Breakfast,1,8.99,8.99,Card
+500324,2026-08-26 13:12:00,S2,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500324,2026-08-26 13:12:00,S2,Parmesan,Pasta Night,2,5.49,10.98,Card
+500324,2026-08-26 13:12:00,S2,Garlic Bread,Pasta Night,1,2.99,2.99,Card
+500325,2026-08-26 23:40:00,S3,Buns,Grilling,1,2.49,2.49,Mobile
+500325,2026-08-26 23:40:00,S3,Cheese Slices,Grilling,1,3.99,3.99,Mobile
+500325,2026-08-26 23:40:00,S3,Ketchup,Grilling,1,2.99,2.99,Mobile
+500326,2026-08-26 20:50:00,S4,Bananas,Produce,1,1.59,1.59,Mobile
+500326,2026-08-26 20:50:00,S4,Avocado,Produce,1,1.49,1.49,Mobile
+500326,2026-08-26 20:50:00,S4,Garlic Bread,Pasta Night,1,2.99,2.99,Mobile
+500327,2026-08-26 14:16:00,S4,Salsa,Snacks,1,3.99,3.99,Card
+500327,2026-08-26 14:16:00,S4,Guacamole,Snacks,1,4.49,4.49,Card
+500327,2026-08-26 14:16:00,S4,Buns,Grilling,2,2.49,4.98,Card
+500327,2026-08-26 14:16:00,S4,Ketchup,Grilling,1,2.99,2.99,Card
+500328,2026-08-26 22:48:00,S3,Avocado,Produce,1,1.49,1.49,Cash
+500328,2026-08-26 22:48:00,S3,Coffee,Breakfast,1,8.99,8.99,Cash
+500328,2026-08-26 22:48:00,S3,Cream Cheese,Breakfast,1,2.79,2.79,Cash
+500329,2026-08-27 16:42:00,S4,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500329,2026-08-27 16:42:00,S4,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500329,2026-08-27 16:42:00,S4,Parmesan,Pasta Night,1,5.49,5.49,Card
+500330,2026-08-27 20:50:00,S2,Diapers,Baby,1,24.99,24.99,Mobile
+500330,2026-08-27 20:50:00,S2,Baby Wipes,Baby,1,6.49,6.49,Mobile
+500330,2026-08-27 20:50:00,S2,Lotion,Baby,1,5.99,5.99,Mobile
+500330,2026-08-27 20:50:00,S2,Spaghetti,Pasta Night,1,1.99,1.99,Mobile
+500330,2026-08-27 20:50:00,S2,Marinara Sauce,Pasta Night,1,3.49,3.49,Mobile
+500330,2026-08-27 20:50:00,S2,Parmesan,Pasta Night,1,5.49,5.49,Mobile
+500330,2026-08-27 20:50:00,S2,Garlic Bread,Pasta Night,1,2.99,2.99,Mobile
+500331,2026-08-27 16:32:00,S2,Diapers,Baby,1,24.99,24.99,Card
+500331,2026-08-27 16:32:00,S2,Baby Food,Baby,1,1.29,1.29,Card
+500331,2026-08-27 16:32:00,S2,Lotion,Baby,3,5.99,17.97,Card
+500332,2026-08-27 14:23:00,S4,Burger Patties,Grilling,1,9.99,9.99,Card
+500332,2026-08-27 14:23:00,S4,Cheese Slices,Grilling,1,3.99,3.99,Card
+500333,2026-08-27 18:53:00,S1,Cheese Slices,Grilling,3,3.99,11.97,Cash
+500333,2026-08-27 18:53:00,S1,Ketchup,Grilling,2,2.99,5.98,Cash
+500333,2026-08-27 18:53:00,S1,Bagels,Breakfast,2,3.99,7.98,Cash
+500334,2026-08-27 21:48:00,S3,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500334,2026-08-27 21:48:00,S3,Parmesan,Pasta Night,1,5.49,5.49,Card
+500334,2026-08-27 21:48:00,S3,Garlic Bread,Pasta Night,1,2.99,2.99,Card
+500335,2026-08-27 15:04:00,S2,Creamer,Breakfast,1,3.29,3.29,Card
+500335,2026-08-27 15:04:00,S2,Bagels,Breakfast,1,3.99,3.99,Card
+500335,2026-08-27 15:04:00,S2,Bananas,Produce,1,1.59,1.59,Card
+500335,2026-08-27 15:04:00,S2,Apples,Produce,1,3.99,3.99,Card
+500336,2026-08-27 23:53:00,S1,Soda 12pk,Snacks,1,6.99,6.99,Card
+500337,2026-08-27 12:18:00,S2,Bananas,Produce,1,1.59,1.59,Card
+500337,2026-08-27 12:18:00,S2,Apples,Produce,1,3.99,3.99,Card
+500337,2026-08-27 12:18:00,S2,Diapers,Baby,1,24.99,24.99,Card
+500337,2026-08-27 12:18:00,S2,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500338,2026-08-27 16:32:00,S4,Bagels,Breakfast,1,3.99,3.99,Cash
+500338,2026-08-27 16:32:00,S4,Sponges,Cleaning,1,2.49,2.49,Cash
+500338,2026-08-27 16:32:00,S4,Trash Bags,Cleaning,1,8.99,8.99,Cash
+500339,2026-08-27 21:15:00,S4,Salsa,Snacks,1,3.99,3.99,Mobile
+500339,2026-08-27 21:15:00,S4,Guacamole,Snacks,1,4.49,4.49,Mobile
+500339,2026-08-27 21:15:00,S4,Baby Wipes,Baby,1,6.49,6.49,Mobile
+500340,2026-08-27 21:01:00,S2,Burger Patties,Grilling,2,9.99,19.98,Card
+500340,2026-08-27 21:01:00,S2,Cheese Slices,Grilling,1,3.99,3.99,Card
+500340,2026-08-27 21:01:00,S2,Ketchup,Grilling,1,2.99,2.99,Card
+500340,2026-08-27 21:01:00,S2,Paper Towels,Cleaning,3,7.99,23.97,Card
+500340,2026-08-27 21:01:00,S2,Sponges,Cleaning,1,2.49,2.49,Card
+500340,2026-08-27 21:01:00,S2,Trash Bags,Cleaning,1,8.99,8.99,Card
+500341,2026-08-27 16:18:00,S2,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500341,2026-08-27 16:18:00,S2,Baby Food,Baby,2,1.29,2.58,Card
+500342,2026-08-28 15:23:00,S2,Burger Patties,Grilling,1,9.99,9.99,Mobile
+500342,2026-08-28 15:23:00,S2,Cheese Slices,Grilling,1,3.99,3.99,Mobile
+500342,2026-08-28 15:23:00,S2,Ketchup,Grilling,1,2.99,2.99,Mobile
+500343,2026-08-28 16:24:00,S1,Parmesan,Pasta Night,1,5.49,5.49,Card
+500344,2026-08-28 16:08:00,S2,Burger Patties,Grilling,3,9.99,29.97,Card
+500344,2026-08-28 16:08:00,S2,Cheese Slices,Grilling,1,3.99,3.99,Card
+500344,2026-08-28 16:08:00,S2,Ketchup,Grilling,1,2.99,2.99,Card
+500345,2026-08-28 21:21:00,S1,Buns,Grilling,1,2.49,2.49,Card
+500346,2026-08-28 15:25:00,S4,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500346,2026-08-28 15:25:00,S4,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500346,2026-08-28 15:25:00,S4,Garlic Bread,Pasta Night,1,2.99,2.99,Card
+500347,2026-08-29 00:55:00,S4,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500347,2026-08-29 00:55:00,S4,Parmesan,Pasta Night,1,5.49,5.49,Card
+500347,2026-08-29 00:55:00,S4,Garlic Bread,Pasta Night,1,2.99,2.99,Card
+500347,2026-08-29 00:55:00,S4,Burger Patties,Grilling,1,9.99,9.99,Card
+500347,2026-08-29 00:55:00,S4,Buns,Grilling,1,2.49,2.49,Card
+500348,2026-08-28 14:48:00,S4,Coffee,Breakfast,1,8.99,8.99,Card
+500348,2026-08-28 14:48:00,S4,Creamer,Breakfast,2,3.29,6.58,Card
+500349,2026-08-29 13:27:00,S3,Bananas,Produce,1,1.59,1.59,Card
+500349,2026-08-29 13:27:00,S3,Apples,Produce,1,3.99,3.99,Card
+500349,2026-08-29 13:27:00,S3,Spinach,Produce,1,2.99,2.99,Card
+500349,2026-08-29 13:27:00,S3,Avocado,Produce,1,1.49,1.49,Card
+500349,2026-08-29 13:27:00,S3,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500350,2026-08-29 16:22:00,S4,Tortilla Chips,Snacks,2,3.49,6.98,Card
+500350,2026-08-29 16:22:00,S4,Salsa,Snacks,1,3.99,3.99,Card
+500350,2026-08-29 16:22:00,S4,Coffee,Breakfast,1,8.99,8.99,Card
+500350,2026-08-29 16:22:00,S4,Creamer,Breakfast,1,3.29,3.29,Card
+500350,2026-08-29 16:22:00,S4,Bagels,Breakfast,2,3.99,7.98,Card
+500350,2026-08-29 16:22:00,S4,Cream Cheese,Breakfast,1,2.79,2.79,Card
+500351,2026-08-29 20:19:00,S2,Spinach,Produce,1,2.99,2.99,Cash
+500351,2026-08-29 20:19:00,S2,Cheese Slices,Grilling,1,3.99,3.99,Cash
+500352,2026-08-29 16:00:00,S1,Baby Food,Baby,1,1.29,1.29,Card
+500353,2026-08-29 21:31:00,S3,Spaghetti,Pasta Night,1,1.99,1.99,Mobile
+500353,2026-08-29 21:31:00,S3,Marinara Sauce,Pasta Night,1,3.49,3.49,Mobile
+500353,2026-08-29 21:31:00,S3,Parmesan,Pasta Night,1,5.49,5.49,Mobile
+500353,2026-08-29 21:31:00,S3,Apples,Produce,1,3.99,3.99,Mobile
+500353,2026-08-29 21:31:00,S3,Spinach,Produce,1,2.99,2.99,Mobile
+500354,2026-08-29 15:10:00,S4,Salsa,Snacks,1,3.99,3.99,Mobile
+500354,2026-08-29 15:10:00,S4,Guacamole,Snacks,1,4.49,4.49,Mobile
+500355,2026-08-29 22:18:00,S2,Paper Towels,Cleaning,3,7.99,23.97,Card
+500355,2026-08-29 22:18:00,S2,Trash Bags,Cleaning,1,8.99,8.99,Card
+500356,2026-08-29 15:27:00,S3,Spaghetti,Pasta Night,1,1.99,1.99,Cash
+500356,2026-08-29 15:27:00,S3,Parmesan,Pasta Night,1,5.49,5.49,Cash
+500356,2026-08-29 15:27:00,S3,Garlic Bread,Pasta Night,1,2.99,2.99,Cash
+500356,2026-08-29 15:27:00,S3,Bananas,Produce,1,1.59,1.59,Cash
+500356,2026-08-29 15:27:00,S3,Apples,Produce,1,3.99,3.99,Cash
+500356,2026-08-29 15:27:00,S3,Spinach,Produce,1,2.99,2.99,Cash
+500356,2026-08-29 15:27:00,S3,Avocado,Produce,1,1.49,1.49,Cash
+500356,2026-08-29 15:27:00,S3,Cheese Slices,Grilling,1,3.99,3.99,Cash
+500357,2026-08-29 19:29:00,S2,Lotion,Baby,1,5.99,5.99,Mobile
+500358,2026-08-29 19:07:00,S4,Coffee,Breakfast,1,8.99,8.99,Card
+500358,2026-08-29 19:07:00,S4,Creamer,Breakfast,1,3.29,3.29,Card
+500358,2026-08-29 19:07:00,S4,Cream Cheese,Breakfast,1,2.79,2.79,Card
+500359,2026-08-29 16:11:00,S3,Salsa,Snacks,2,3.99,7.98,Card
+500359,2026-08-29 16:11:00,S3,Diapers,Baby,2,24.99,49.98,Card
+500359,2026-08-29 16:11:00,S3,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500360,2026-08-29 14:42:00,S3,Baby Wipes,Baby,1,6.49,6.49,Cash
+500360,2026-08-29 14:42:00,S3,Lotion,Baby,1,5.99,5.99,Cash
+500360,2026-08-29 14:42:00,S3,Dish Soap,Cleaning,1,3.49,3.49,Cash
+500361,2026-08-29 21:44:00,S1,Tortilla Chips,Snacks,1,3.49,3.49,Mobile
+500361,2026-08-29 21:44:00,S1,Guacamole,Snacks,3,4.49,13.47,Mobile
+500361,2026-08-29 21:44:00,S1,Soda 12pk,Snacks,1,6.99,6.99,Mobile
+500361,2026-08-29 21:44:00,S1,Coffee,Breakfast,2,8.99,17.98,Mobile
+500361,2026-08-29 21:44:00,S1,Cream Cheese,Breakfast,1,2.79,2.79,Mobile
+500362,2026-08-29 17:18:00,S2,Coffee,Breakfast,1,8.99,8.99,Card
+500362,2026-08-29 17:18:00,S2,Creamer,Breakfast,1,3.29,3.29,Card
+500362,2026-08-29 17:18:00,S2,Cream Cheese,Breakfast,1,2.79,2.79,Card
+500362,2026-08-29 17:18:00,S2,Guacamole,Snacks,2,4.49,8.98,Card
+500363,2026-08-29 22:38:00,S2,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500363,2026-08-29 22:38:00,S2,Soda 12pk,Snacks,1,6.99,6.99,Card
+500363,2026-08-29 22:38:00,S2,Diapers,Baby,1,24.99,24.99,Card
+500363,2026-08-29 22:38:00,S2,Baby Wipes,Baby,2,6.49,12.98,Card
+500363,2026-08-29 22:38:00,S2,Baby Food,Baby,1,1.29,1.29,Card
+500363,2026-08-29 22:38:00,S2,Lotion,Baby,1,5.99,5.99,Card
+500364,2026-08-29 19:48:00,S1,Apples,Produce,2,3.99,7.98,Cash
+500364,2026-08-29 19:48:00,S1,Spinach,Produce,1,2.99,2.99,Cash
+500364,2026-08-29 19:48:00,S1,Paper Towels,Cleaning,1,7.99,7.99,Cash
+500365,2026-08-29 23:55:00,S4,Cheese Slices,Grilling,3,3.99,11.97,Card
+500365,2026-08-29 23:55:00,S4,Ketchup,Grilling,2,2.99,5.98,Card
+500365,2026-08-29 23:55:00,S4,Coffee,Breakfast,3,8.99,26.97,Card
+500365,2026-08-29 23:55:00,S4,Creamer,Breakfast,1,3.29,3.29,Card
+500366,2026-08-30 17:43:00,S3,Garlic Bread,Pasta Night,1,2.99,2.99,Cash
+500367,2026-08-30 12:06:00,S4,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500367,2026-08-30 12:06:00,S4,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500367,2026-08-30 12:06:00,S4,Bagels,Breakfast,1,3.99,3.99,Card
+500367,2026-08-30 12:06:00,S4,Cream Cheese,Breakfast,1,2.79,2.79,Card
+500367,2026-08-30 12:06:00,S4,Avocado,Produce,1,1.49,1.49,Card
+500368,2026-08-30 15:00:00,S4,Cream Cheese,Breakfast,1,2.79,2.79,Cash
+500369,2026-08-30 16:58:00,S3,Spaghetti,Pasta Night,2,1.99,3.98,Mobile
+500369,2026-08-30 16:58:00,S3,Marinara Sauce,Pasta Night,1,3.49,3.49,Mobile
+500369,2026-08-30 16:58:00,S3,Tortilla Chips,Snacks,1,3.49,3.49,Mobile
+500369,2026-08-30 16:58:00,S3,Salsa,Snacks,1,3.99,3.99,Mobile
+500369,2026-08-30 16:58:00,S3,Guacamole,Snacks,1,4.49,4.49,Mobile
+500369,2026-08-30 16:58:00,S3,Soda 12pk,Snacks,1,6.99,6.99,Mobile
+500370,2026-08-30 18:37:00,S2,Bananas,Produce,1,1.59,1.59,Card
+500370,2026-08-30 18:37:00,S2,Apples,Produce,1,3.99,3.99,Card
+500370,2026-08-30 18:37:00,S2,Avocado,Produce,1,1.49,1.49,Card
+500371,2026-08-30 20:15:00,S1,Salsa,Snacks,1,3.99,3.99,Card
+500371,2026-08-30 20:15:00,S1,Soda 12pk,Snacks,3,6.99,20.97,Card
+500372,2026-08-30 18:20:00,S3,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500372,2026-08-30 18:20:00,S3,Parmesan,Pasta Night,1,5.49,5.49,Card
+500372,2026-08-30 18:20:00,S3,Garlic Bread,Pasta Night,1,2.99,2.99,Card
+500373,2026-08-30 13:31:00,S4,Burger Patties,Grilling,1,9.99,9.99,Mobile
+500373,2026-08-30 13:31:00,S4,Cheese Slices,Grilling,1,3.99,3.99,Mobile
+500373,2026-08-30 13:31:00,S4,Creamer,Breakfast,1,3.29,3.29,Mobile
+500373,2026-08-30 13:31:00,S4,Bagels,Breakfast,1,3.99,3.99,Mobile
+500374,2026-08-30 14:56:00,S2,Tortilla Chips,Snacks,1,3.49,3.49,Mobile
+500374,2026-08-30 14:56:00,S2,Sponges,Cleaning,1,2.49,2.49,Mobile
+500374,2026-08-30 14:56:00,S2,Trash Bags,Cleaning,1,8.99,8.99,Mobile
+500375,2026-08-30 19:55:00,S2,Bananas,Produce,1,1.59,1.59,Cash
+500375,2026-08-30 19:55:00,S2,Apples,Produce,1,3.99,3.99,Cash
+500375,2026-08-30 19:55:00,S2,Avocado,Produce,1,1.49,1.49,Cash
+500375,2026-08-30 19:55:00,S2,Spaghetti,Pasta Night,1,1.99,1.99,Cash
+500375,2026-08-30 19:55:00,S2,Garlic Bread,Pasta Night,1,2.99,2.99,Cash
+500376,2026-08-30 20:56:00,S3,Spinach,Produce,1,2.99,2.99,Card
+500376,2026-08-30 20:56:00,S3,Avocado,Produce,1,1.49,1.49,Card
+500377,2026-08-30 21:32:00,S1,Coffee,Breakfast,1,8.99,8.99,Mobile
+500377,2026-08-30 21:32:00,S1,Creamer,Breakfast,1,3.29,3.29,Mobile
+500377,2026-08-30 21:32:00,S1,Bagels,Breakfast,1,3.99,3.99,Mobile
+500377,2026-08-30 21:32:00,S1,Cream Cheese,Breakfast,1,2.79,2.79,Mobile
+500378,2026-08-30 12:09:00,S2,Spaghetti,Pasta Night,2,1.99,3.98,Card
+500378,2026-08-30 12:09:00,S2,Creamer,Breakfast,2,3.29,6.58,Card
+500379,2026-08-30 22:26:00,S4,Diapers,Baby,1,24.99,24.99,Mobile
+500379,2026-08-30 22:26:00,S4,Baby Wipes,Baby,1,6.49,6.49,Mobile
+500379,2026-08-30 22:26:00,S4,Lotion,Baby,1,5.99,5.99,Mobile
+500380,2026-08-30 17:11:00,S1,Bananas,Produce,1,1.59,1.59,Card
+500380,2026-08-30 17:11:00,S1,Apples,Produce,1,3.99,3.99,Card
+500381,2026-08-30 13:44:00,S3,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500381,2026-08-30 13:44:00,S3,Garlic Bread,Pasta Night,1,2.99,2.99,Card
+500381,2026-08-30 13:44:00,S3,Buns,Grilling,3,2.49,7.47,Card
+500381,2026-08-30 13:44:00,S3,Ketchup,Grilling,2,2.99,5.98,Card
+500381,2026-08-30 13:44:00,S3,Trash Bags,Cleaning,1,8.99,8.99,Card
+500382,2026-08-30 17:53:00,S1,Spinach,Produce,1,2.99,2.99,Cash
+500382,2026-08-30 17:53:00,S1,Avocado,Produce,1,1.49,1.49,Cash
+500383,2026-08-30 16:50:00,S2,Burger Patties,Grilling,1,9.99,9.99,Card
+500383,2026-08-30 16:50:00,S2,Cheese Slices,Grilling,1,3.99,3.99,Card
+500384,2026-08-31 15:28:00,S2,Burger Patties,Grilling,1,9.99,9.99,Mobile
+500384,2026-08-31 15:28:00,S2,Buns,Grilling,1,2.49,2.49,Mobile
+500384,2026-08-31 15:28:00,S2,Cheese Slices,Grilling,1,3.99,3.99,Mobile
+500384,2026-08-31 15:28:00,S2,Lotion,Baby,1,5.99,5.99,Mobile
+500385,2026-08-31 16:10:00,S3,Bananas,Produce,1,1.59,1.59,Cash
+500385,2026-08-31 16:10:00,S3,Apples,Produce,1,3.99,3.99,Cash
+500385,2026-08-31 16:10:00,S3,Spinach,Produce,1,2.99,2.99,Cash
+500385,2026-08-31 16:10:00,S3,Avocado,Produce,1,1.49,1.49,Cash
+500386,2026-08-31 21:29:00,S4,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500386,2026-08-31 21:29:00,S4,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500386,2026-08-31 21:29:00,S4,Parmesan,Pasta Night,1,5.49,5.49,Card
+500386,2026-08-31 21:29:00,S4,Garlic Bread,Pasta Night,3,2.99,8.97,Card
+500386,2026-08-31 21:29:00,S4,Paper Towels,Cleaning,2,7.99,15.98,Card
+500386,2026-08-31 21:29:00,S4,Sponges,Cleaning,1,2.49,2.49,Card
+500386,2026-08-31 21:29:00,S4,Trash Bags,Cleaning,2,8.99,17.98,Card
+500387,2026-08-31 14:47:00,S4,Diapers,Baby,1,24.99,24.99,Mobile
+500387,2026-08-31 14:47:00,S4,Baby Wipes,Baby,1,6.49,6.49,Mobile
+500387,2026-08-31 14:47:00,S4,Lotion,Baby,1,5.99,5.99,Mobile
+500387,2026-08-31 14:47:00,S4,Spaghetti,Pasta Night,1,1.99,1.99,Mobile
+500388,2026-09-01 00:53:00,S4,Diapers,Baby,1,24.99,24.99,Card
+500388,2026-09-01 00:53:00,S4,Baby Wipes,Baby,2,6.49,12.98,Card
+500388,2026-09-01 00:53:00,S4,Baby Food,Baby,1,1.29,1.29,Card
+500389,2026-08-31 21:11:00,S4,Bagels,Breakfast,1,3.99,3.99,Mobile
+500389,2026-08-31 21:11:00,S4,Cream Cheese,Breakfast,1,2.79,2.79,Mobile
+500389,2026-08-31 21:11:00,S4,Dish Soap,Cleaning,1,3.49,3.49,Mobile
+500389,2026-08-31 21:11:00,S4,Trash Bags,Cleaning,1,8.99,8.99,Mobile
+500390,2026-08-31 16:01:00,S2,Creamer,Breakfast,1,3.29,3.29,Card
+500390,2026-08-31 16:01:00,S2,Cream Cheese,Breakfast,2,2.79,5.58,Card
+500391,2026-08-31 16:55:00,S2,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500391,2026-08-31 16:55:00,S2,Marinara Sauce,Pasta Night,3,3.49,10.47,Card
+500391,2026-08-31 16:55:00,S2,Parmesan,Pasta Night,1,5.49,5.49,Card
+500391,2026-08-31 16:55:00,S2,Baby Food,Baby,2,1.29,2.58,Card
+500392,2026-08-31 13:31:00,S2,Diapers,Baby,1,24.99,24.99,Mobile
+500392,2026-08-31 13:31:00,S2,Baby Wipes,Baby,1,6.49,6.49,Mobile
+500393,2026-09-01 20:37:00,S3,Apples,Produce,1,3.99,3.99,Card
+500393,2026-09-01 20:37:00,S3,Avocado,Produce,1,1.49,1.49,Card
+500394,2026-09-01 19:34:00,S2,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500395,2026-09-01 22:25:00,S2,Coffee,Breakfast,1,8.99,8.99,Card
+500395,2026-09-01 22:25:00,S2,Bagels,Breakfast,1,3.99,3.99,Card
+500395,2026-09-01 22:25:00,S2,Paper Towels,Cleaning,1,7.99,7.99,Card
+500395,2026-09-01 22:25:00,S2,Dish Soap,Cleaning,1,3.49,3.49,Card
+500395,2026-09-01 22:25:00,S2,Sponges,Cleaning,2,2.49,4.98,Card
+500395,2026-09-01 22:25:00,S2,Baby Wipes,Baby,2,6.49,12.98,Card
+500396,2026-09-01 14:29:00,S1,Guacamole,Snacks,1,4.49,4.49,Card
+500396,2026-09-01 14:29:00,S1,Soda 12pk,Snacks,1,6.99,6.99,Card
+500397,2026-09-01 17:01:00,S2,Tortilla Chips,Snacks,1,3.49,3.49,Mobile
+500397,2026-09-01 17:01:00,S2,Guacamole,Snacks,1,4.49,4.49,Mobile
+500397,2026-09-01 17:01:00,S2,Soda 12pk,Snacks,3,6.99,20.97,Mobile
+500398,2026-09-01 18:27:00,S3,Guacamole,Snacks,1,4.49,4.49,Card
+500398,2026-09-01 18:27:00,S3,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500398,2026-09-01 18:27:00,S3,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500398,2026-09-01 18:27:00,S3,Garlic Bread,Pasta Night,1,2.99,2.99,Card
+500399,2026-09-01 14:23:00,S3,Guacamole,Snacks,3,4.49,13.47,Mobile
+500399,2026-09-01 14:23:00,S3,Soda 12pk,Snacks,1,6.99,6.99,Mobile
+500399,2026-09-01 14:23:00,S3,Marinara Sauce,Pasta Night,2,3.49,6.98,Mobile
+500400,2026-09-01 21:59:00,S2,Paper Towels,Cleaning,1,7.99,7.99,Card
+500400,2026-09-01 21:59:00,S2,Dish Soap,Cleaning,1,3.49,3.49,Card
+500400,2026-09-01 21:59:00,S2,Sponges,Cleaning,1,2.49,2.49,Card
+500400,2026-09-01 21:59:00,S2,Trash Bags,Cleaning,1,8.99,8.99,Card
+500401,2026-09-01 14:16:00,S3,Baby Wipes,Baby,1,6.49,6.49,Mobile
+500401,2026-09-01 14:16:00,S3,Lotion,Baby,1,5.99,5.99,Mobile
+500402,2026-09-01 13:25:00,S2,Parmesan,Pasta Night,2,5.49,10.98,Cash
+500402,2026-09-01 13:25:00,S2,Diapers,Baby,1,24.99,24.99,Cash
+500402,2026-09-01 13:25:00,S2,Lotion,Baby,1,5.99,5.99,Cash
+500403,2026-09-01 21:38:00,S2,Burger Patties,Grilling,1,9.99,9.99,Card
+500403,2026-09-01 21:38:00,S2,Cheese Slices,Grilling,1,3.99,3.99,Card
+500403,2026-09-01 21:38:00,S2,Ketchup,Grilling,1,2.99,2.99,Card
+500404,2026-09-01 21:08:00,S4,Burger Patties,Grilling,1,9.99,9.99,Card
+500404,2026-09-01 21:08:00,S4,Buns,Grilling,1,2.49,2.49,Card
+500405,2026-09-01 13:46:00,S1,Spaghetti,Pasta Night,1,1.99,1.99,Mobile
+500405,2026-09-01 13:46:00,S1,Parmesan,Pasta Night,1,5.49,5.49,Mobile
+500405,2026-09-01 13:46:00,S1,Garlic Bread,Pasta Night,2,2.99,5.98,Mobile
+500405,2026-09-01 13:46:00,S1,Paper Towels,Cleaning,1,7.99,7.99,Mobile
+500405,2026-09-01 13:46:00,S1,Sponges,Cleaning,1,2.49,2.49,Mobile
+500405,2026-09-01 13:46:00,S1,Spinach,Produce,1,2.99,2.99,Mobile
+500406,2026-09-01 15:38:00,S1,Burger Patties,Grilling,1,9.99,9.99,Cash
+500406,2026-09-01 15:38:00,S1,Buns,Grilling,1,2.49,2.49,Cash
+500406,2026-09-01 15:38:00,S1,Cheese Slices,Grilling,1,3.99,3.99,Cash
+500406,2026-09-01 15:38:00,S1,Ketchup,Grilling,1,2.99,2.99,Cash
+500406,2026-09-01 15:38:00,S1,Salsa,Snacks,3,3.99,11.97,Cash
+500406,2026-09-01 15:38:00,S1,Guacamole,Snacks,1,4.49,4.49,Cash
+500407,2026-09-01 17:55:00,S4,Coffee,Breakfast,1,8.99,8.99,Card
+500407,2026-09-01 17:55:00,S4,Creamer,Breakfast,1,3.29,3.29,Card
+500407,2026-09-01 17:55:00,S4,Bagels,Breakfast,1,3.99,3.99,Card
+500408,2026-09-01 18:06:00,S2,Buns,Grilling,2,2.49,4.98,Card
+500408,2026-09-01 18:06:00,S2,Cheese Slices,Grilling,1,3.99,3.99,Card
+500408,2026-09-01 18:06:00,S2,Lotion,Baby,1,5.99,5.99,Card
+500409,2026-09-01 18:46:00,S1,Burger Patties,Grilling,1,9.99,9.99,Card
+500409,2026-09-01 18:46:00,S1,Cheese Slices,Grilling,1,3.99,3.99,Card
+500409,2026-09-01 18:46:00,S1,Ketchup,Grilling,1,2.99,2.99,Card
+500410,2026-09-01 23:01:00,S2,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500410,2026-09-01 23:01:00,S2,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500410,2026-09-01 23:01:00,S2,Garlic Bread,Pasta Night,1,2.99,2.99,Card
+500410,2026-09-01 23:01:00,S2,Baby Food,Baby,1,1.29,1.29,Card
+500411,2026-09-01 20:18:00,S1,Avocado,Produce,1,1.49,1.49,Mobile
+500411,2026-09-01 20:18:00,S1,Diapers,Baby,1,24.99,24.99,Mobile
+500411,2026-09-01 20:18:00,S1,Baby Wipes,Baby,1,6.49,6.49,Mobile
+500412,2026-09-02 23:00:00,S4,Parmesan,Pasta Night,1,5.49,5.49,Card
+500412,2026-09-02 23:00:00,S4,Garlic Bread,Pasta Night,1,2.99,2.99,Card
+500413,2026-09-02 22:11:00,S1,Bananas,Produce,1,1.59,1.59,Card
+500413,2026-09-02 22:11:00,S1,Apples,Produce,1,3.99,3.99,Card
+500413,2026-09-02 22:11:00,S1,Spinach,Produce,1,2.99,2.99,Card
+500413,2026-09-02 22:11:00,S1,Trash Bags,Cleaning,3,8.99,26.97,Card
+500414,2026-09-02 21:42:00,S3,Creamer,Breakfast,1,3.29,3.29,Card
+500414,2026-09-02 21:42:00,S3,Cream Cheese,Breakfast,1,2.79,2.79,Card
+500414,2026-09-02 21:42:00,S3,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500414,2026-09-02 21:42:00,S3,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500414,2026-09-02 21:42:00,S3,Parmesan,Pasta Night,1,5.49,5.49,Card
+500414,2026-09-02 21:42:00,S3,Garlic Bread,Pasta Night,1,2.99,2.99,Card
+500415,2026-09-02 20:52:00,S3,Salsa,Snacks,1,3.99,3.99,Card
+500415,2026-09-02 20:52:00,S3,Guacamole,Snacks,2,4.49,8.98,Card
+500415,2026-09-02 20:52:00,S3,Soda 12pk,Snacks,1,6.99,6.99,Card
+500416,2026-09-02 23:18:00,S3,Dish Soap,Cleaning,1,3.49,3.49,Card
+500416,2026-09-02 23:18:00,S3,Sponges,Cleaning,1,2.49,2.49,Card
+500416,2026-09-02 23:18:00,S3,Trash Bags,Cleaning,1,8.99,8.99,Card
+500416,2026-09-02 23:18:00,S3,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500416,2026-09-02 23:18:00,S3,Salsa,Snacks,1,3.99,3.99,Card
+500416,2026-09-02 23:18:00,S3,Soda 12pk,Snacks,1,6.99,6.99,Card
+500417,2026-09-02 13:35:00,S1,Burger Patties,Grilling,2,9.99,19.98,Card
+500417,2026-09-02 13:35:00,S1,Cheese Slices,Grilling,2,3.99,7.98,Card
+500418,2026-09-02 16:08:00,S1,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500418,2026-09-02 16:08:00,S1,Guacamole,Snacks,1,4.49,4.49,Card
+500419,2026-09-02 14:02:00,S4,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500419,2026-09-02 14:02:00,S4,Guacamole,Snacks,1,4.49,4.49,Card
+500419,2026-09-02 14:02:00,S4,Soda 12pk,Snacks,1,6.99,6.99,Card
+500419,2026-09-02 14:02:00,S4,Creamer,Breakfast,2,3.29,6.58,Card
+500420,2026-09-02 23:59:00,S3,Spinach,Produce,1,2.99,2.99,Cash
+500420,2026-09-02 23:59:00,S3,Avocado,Produce,1,1.49,1.49,Cash
+500420,2026-09-02 23:59:00,S3,Bananas,Produce,1,1.59,1.59,Cash
+500421,2026-09-02 16:24:00,S2,Burger Patties,Grilling,1,9.99,9.99,Cash
+500421,2026-09-02 16:24:00,S2,Buns,Grilling,1,2.49,2.49,Cash
+500421,2026-09-02 16:24:00,S2,Ketchup,Grilling,1,2.99,2.99,Cash
+500422,2026-09-02 22:07:00,S3,Salsa,Snacks,2,3.99,7.98,Card
+500422,2026-09-02 22:07:00,S3,Guacamole,Snacks,1,4.49,4.49,Card
+500422,2026-09-02 22:07:00,S3,Soda 12pk,Snacks,1,6.99,6.99,Card
+500423,2026-09-02 12:28:00,S2,Diapers,Baby,2,24.99,49.98,Mobile
+500423,2026-09-02 12:28:00,S2,Avocado,Produce,1,1.49,1.49,Mobile
+500424,2026-09-02 19:42:00,S3,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500424,2026-09-02 19:42:00,S3,Parmesan,Pasta Night,2,5.49,10.98,Card
+500424,2026-09-02 19:42:00,S3,Sponges,Cleaning,2,2.49,4.98,Card
+500425,2026-09-02 21:45:00,S4,Diapers,Baby,1,24.99,24.99,Card
+500425,2026-09-02 21:45:00,S4,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500425,2026-09-02 21:45:00,S4,Coffee,Breakfast,2,8.99,17.98,Card
+500426,2026-09-02 19:37:00,S4,Parmesan,Pasta Night,1,5.49,5.49,Card
+500426,2026-09-02 19:37:00,S4,Coffee,Breakfast,3,8.99,26.97,Card
+500427,2026-09-02 12:22:00,S3,Burger Patties,Grilling,1,9.99,9.99,Cash
+500427,2026-09-02 12:22:00,S3,Cheese Slices,Grilling,1,3.99,3.99,Cash
+500427,2026-09-02 12:22:00,S3,Ketchup,Grilling,2,2.99,5.98,Cash
+500428,2026-09-03 23:16:00,S2,Paper Towels,Cleaning,2,7.99,15.98,Cash
+500428,2026-09-03 23:16:00,S2,Dish Soap,Cleaning,1,3.49,3.49,Cash
+500428,2026-09-03 23:16:00,S2,Sponges,Cleaning,1,2.49,2.49,Cash
+500429,2026-09-03 13:07:00,S2,Avocado,Produce,1,1.49,1.49,Card
+500429,2026-09-03 13:07:00,S2,Buns,Grilling,2,2.49,4.98,Card
+500429,2026-09-03 13:07:00,S2,Cheese Slices,Grilling,1,3.99,3.99,Card
+500430,2026-09-04 00:12:00,S3,Cheese Slices,Grilling,1,3.99,3.99,Card
+500431,2026-09-03 13:33:00,S1,Buns,Grilling,1,2.49,2.49,Mobile
+500431,2026-09-03 13:33:00,S1,Cheese Slices,Grilling,2,3.99,7.98,Mobile
+500431,2026-09-03 13:33:00,S1,Ketchup,Grilling,1,2.99,2.99,Mobile
+500432,2026-09-03 22:29:00,S2,Lotion,Baby,1,5.99,5.99,Card
+500432,2026-09-03 22:29:00,S2,Apples,Produce,1,3.99,3.99,Card
+500432,2026-09-03 22:29:00,S2,Spinach,Produce,1,2.99,2.99,Card
+500432,2026-09-03 22:29:00,S2,Avocado,Produce,1,1.49,1.49,Card
+500432,2026-09-03 22:29:00,S2,Garlic Bread,Pasta Night,1,2.99,2.99,Card
+500433,2026-09-04 00:38:00,S3,Diapers,Baby,1,24.99,24.99,Card
+500433,2026-09-04 00:38:00,S3,Baby Wipes,Baby,1,6.49,6.49,Card
+500433,2026-09-04 00:38:00,S3,Baby Food,Baby,1,1.29,1.29,Card
+500433,2026-09-04 00:38:00,S3,Garlic Bread,Pasta Night,1,2.99,2.99,Card
+500434,2026-09-03 15:21:00,S1,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500434,2026-09-03 15:21:00,S1,Parmesan,Pasta Night,1,5.49,5.49,Card
+500434,2026-09-03 15:21:00,S1,Garlic Bread,Pasta Night,1,2.99,2.99,Card
+500434,2026-09-03 15:21:00,S1,Ketchup,Grilling,1,2.99,2.99,Card
+500435,2026-09-03 12:47:00,S4,Paper Towels,Cleaning,1,7.99,7.99,Card
+500435,2026-09-03 12:47:00,S4,Dish Soap,Cleaning,3,3.49,10.47,Card
+500435,2026-09-03 12:47:00,S4,Trash Bags,Cleaning,1,8.99,8.99,Card
+500436,2026-09-04 17:55:00,S1,Spaghetti,Pasta Night,1,1.99,1.99,Cash
+500436,2026-09-04 17:55:00,S1,Parmesan,Pasta Night,1,5.49,5.49,Cash
+500436,2026-09-04 17:55:00,S1,Bananas,Produce,1,1.59,1.59,Cash
+500436,2026-09-04 17:55:00,S1,Apples,Produce,1,3.99,3.99,Cash
+500436,2026-09-04 17:55:00,S1,Avocado,Produce,1,1.49,1.49,Cash
+500437,2026-09-04 21:15:00,S1,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500437,2026-09-04 21:15:00,S1,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500437,2026-09-04 21:15:00,S1,Parmesan,Pasta Night,1,5.49,5.49,Card
+500437,2026-09-04 21:15:00,S1,Garlic Bread,Pasta Night,1,2.99,2.99,Card
+500437,2026-09-04 21:15:00,S1,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500437,2026-09-04 21:15:00,S1,Guacamole,Snacks,1,4.49,4.49,Card
+500437,2026-09-04 21:15:00,S1,Soda 12pk,Snacks,2,6.99,13.98,Card
+500438,2026-09-04 22:24:00,S1,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500438,2026-09-04 22:24:00,S1,Guacamole,Snacks,1,4.49,4.49,Card
+500438,2026-09-04 22:24:00,S1,Soda 12pk,Snacks,1,6.99,6.99,Card
+500439,2026-09-04 21:47:00,S1,Burger Patties,Grilling,1,9.99,9.99,Card
+500439,2026-09-04 21:47:00,S1,Cheese Slices,Grilling,1,3.99,3.99,Card
+500439,2026-09-04 21:47:00,S1,Ketchup,Grilling,1,2.99,2.99,Card
+500440,2026-09-04 21:49:00,S1,Guacamole,Snacks,1,4.49,4.49,Cash
+500441,2026-09-04 13:15:00,S1,Salsa,Snacks,1,3.99,3.99,Card
+500441,2026-09-04 13:15:00,S1,Guacamole,Snacks,1,4.49,4.49,Card
+500441,2026-09-04 13:15:00,S1,Soda 12pk,Snacks,2,6.99,13.98,Card
+500441,2026-09-04 13:15:00,S1,Baby Food,Baby,1,1.29,1.29,Card
+500442,2026-09-04 22:24:00,S3,Sponges,Cleaning,1,2.49,2.49,Card
+500442,2026-09-04 22:24:00,S3,Burger Patties,Grilling,1,9.99,9.99,Card
+500442,2026-09-04 22:24:00,S3,Buns,Grilling,1,2.49,2.49,Card
+500442,2026-09-04 22:24:00,S3,Cheese Slices,Grilling,2,3.99,7.98,Card
+500442,2026-09-04 22:24:00,S3,Ketchup,Grilling,1,2.99,2.99,Card
+500443,2026-09-04 12:54:00,S1,Spinach,Produce,1,2.99,2.99,Cash
+500443,2026-09-04 12:54:00,S1,Marinara Sauce,Pasta Night,1,3.49,3.49,Cash
+500443,2026-09-04 12:54:00,S1,Parmesan,Pasta Night,1,5.49,5.49,Cash
+500443,2026-09-04 12:54:00,S1,Garlic Bread,Pasta Night,2,2.99,5.98,Cash
+500444,2026-09-04 14:39:00,S1,Coffee,Breakfast,2,8.99,17.98,Mobile
+500444,2026-09-04 14:39:00,S1,Cream Cheese,Breakfast,2,2.79,5.58,Mobile
+500444,2026-09-04 14:39:00,S1,Baby Wipes,Baby,1,6.49,6.49,Mobile
+500444,2026-09-04 14:39:00,S1,Lotion,Baby,1,5.99,5.99,Mobile
+500445,2026-09-04 22:14:00,S1,Bananas,Produce,2,1.59,3.18,Card
+500445,2026-09-04 22:14:00,S1,Apples,Produce,1,3.99,3.99,Card
+500445,2026-09-04 22:14:00,S1,Avocado,Produce,1,1.49,1.49,Card
+500446,2026-09-05 15:01:00,S1,Bananas,Produce,2,1.59,3.18,Card
+500446,2026-09-05 15:01:00,S1,Apples,Produce,2,3.99,7.98,Card
+500446,2026-09-05 15:01:00,S1,Spinach,Produce,1,2.99,2.99,Card
+500447,2026-09-05 13:01:00,S1,Paper Towels,Cleaning,1,7.99,7.99,Card
+500447,2026-09-05 13:01:00,S1,Dish Soap,Cleaning,1,3.49,3.49,Card
+500447,2026-09-05 13:01:00,S1,Sponges,Cleaning,1,2.49,2.49,Card
+500447,2026-09-05 13:01:00,S1,Trash Bags,Cleaning,1,8.99,8.99,Card
+500447,2026-09-05 13:01:00,S1,Diapers,Baby,2,24.99,49.98,Card
+500448,2026-09-05 21:49:00,S4,Buns,Grilling,1,2.49,2.49,Card
+500448,2026-09-05 21:49:00,S4,Cheese Slices,Grilling,1,3.99,3.99,Card
+500448,2026-09-05 21:49:00,S4,Ketchup,Grilling,2,2.99,5.98,Card
+500449,2026-09-05 22:07:00,S4,Creamer,Breakfast,1,3.29,3.29,Card
+500449,2026-09-05 22:07:00,S4,Cream Cheese,Breakfast,1,2.79,2.79,Card
+500450,2026-09-05 13:44:00,S4,Baby Wipes,Baby,3,6.49,19.47,Card
+500450,2026-09-05 13:44:00,S4,Lotion,Baby,1,5.99,5.99,Card
+500450,2026-09-05 13:44:00,S4,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500450,2026-09-05 13:44:00,S4,Parmesan,Pasta Night,1,5.49,5.49,Card
+500450,2026-09-05 13:44:00,S4,Garlic Bread,Pasta Night,3,2.99,8.97,Card
+500450,2026-09-05 13:44:00,S4,Paper Towels,Cleaning,1,7.99,7.99,Card
+500451,2026-09-05 13:53:00,S2,Creamer,Breakfast,1,3.29,3.29,Card
+500451,2026-09-05 13:53:00,S2,Bagels,Breakfast,1,3.99,3.99,Card
+500452,2026-09-05 18:29:00,S1,Burger Patties,Grilling,1,9.99,9.99,Card
+500453,2026-09-05 12:51:00,S1,Burger Patties,Grilling,1,9.99,9.99,Card
+500453,2026-09-05 12:51:00,S1,Cheese Slices,Grilling,1,3.99,3.99,Card
+500454,2026-09-05 16:30:00,S2,Salsa,Snacks,1,3.99,3.99,Card
+500454,2026-09-05 16:30:00,S2,Guacamole,Snacks,3,4.49,13.47,Card
+500454,2026-09-05 16:30:00,S2,Soda 12pk,Snacks,1,6.99,6.99,Card
+500454,2026-09-05 16:30:00,S2,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500454,2026-09-05 16:30:00,S2,Avocado,Produce,1,1.49,1.49,Card
+500455,2026-09-05 19:02:00,S1,Coffee,Breakfast,2,8.99,17.98,Card
+500455,2026-09-05 19:02:00,S1,Creamer,Breakfast,1,3.29,3.29,Card
+500455,2026-09-05 19:02:00,S1,Cream Cheese,Breakfast,1,2.79,2.79,Card
+500455,2026-09-05 19:02:00,S1,Baby Wipes,Baby,1,6.49,6.49,Card
+500456,2026-09-05 23:26:00,S4,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500456,2026-09-05 23:26:00,S4,Salsa,Snacks,1,3.99,3.99,Card
+500456,2026-09-05 23:26:00,S4,Soda 12pk,Snacks,1,6.99,6.99,Card
+500457,2026-09-05 20:00:00,S2,Creamer,Breakfast,2,3.29,6.58,Mobile
+500457,2026-09-05 20:00:00,S2,Cream Cheese,Breakfast,1,2.79,2.79,Mobile
+500458,2026-09-05 15:19:00,S1,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500458,2026-09-05 15:19:00,S1,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500458,2026-09-05 15:19:00,S1,Parmesan,Pasta Night,1,5.49,5.49,Card
+500458,2026-09-05 15:19:00,S1,Garlic Bread,Pasta Night,1,2.99,2.99,Card
+500458,2026-09-05 15:19:00,S1,Apples,Produce,1,3.99,3.99,Card
+500458,2026-09-05 15:19:00,S1,Spinach,Produce,1,2.99,2.99,Card
+500459,2026-09-05 16:29:00,S3,Burger Patties,Grilling,1,9.99,9.99,Cash
+500459,2026-09-05 16:29:00,S3,Cheese Slices,Grilling,1,3.99,3.99,Cash
+500459,2026-09-05 16:29:00,S3,Avocado,Produce,1,1.49,1.49,Cash
+500460,2026-09-06 15:32:00,S4,Dish Soap,Cleaning,2,3.49,6.98,Card
+500460,2026-09-06 15:32:00,S4,Sponges,Cleaning,1,2.49,2.49,Card
+500461,2026-09-06 15:07:00,S2,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500461,2026-09-06 15:07:00,S2,Salsa,Snacks,1,3.99,3.99,Card
+500461,2026-09-06 15:07:00,S2,Guacamole,Snacks,1,4.49,4.49,Card
+500461,2026-09-06 15:07:00,S2,Soda 12pk,Snacks,1,6.99,6.99,Card
+500462,2026-09-06 23:47:00,S2,Apples,Produce,1,3.99,3.99,Cash
+500462,2026-09-06 23:47:00,S2,Spinach,Produce,1,2.99,2.99,Cash
+500462,2026-09-06 23:47:00,S2,Diapers,Baby,1,24.99,24.99,Cash
+500462,2026-09-06 23:47:00,S2,Baby Wipes,Baby,1,6.49,6.49,Cash
+500462,2026-09-06 23:47:00,S2,Baby Food,Baby,1,1.29,1.29,Cash
+500463,2026-09-06 15:17:00,S3,Diapers,Baby,1,24.99,24.99,Card
+500463,2026-09-06 15:17:00,S3,Baby Food,Baby,2,1.29,2.58,Card
+500463,2026-09-06 15:17:00,S3,Lotion,Baby,1,5.99,5.99,Card
+500464,2026-09-06 15:44:00,S2,Spaghetti,Pasta Night,1,1.99,1.99,Cash
+500464,2026-09-06 15:44:00,S2,Parmesan,Pasta Night,1,5.49,5.49,Cash
+500464,2026-09-06 15:44:00,S2,Garlic Bread,Pasta Night,1,2.99,2.99,Cash
+500464,2026-09-06 15:44:00,S2,Creamer,Breakfast,1,3.29,3.29,Cash
+500465,2026-09-06 22:51:00,S3,Diapers,Baby,1,24.99,24.99,Cash
+500465,2026-09-06 22:51:00,S3,Baby Wipes,Baby,1,6.49,6.49,Cash
+500465,2026-09-06 22:51:00,S3,Baby Food,Baby,1,1.29,1.29,Cash
+500466,2026-09-06 21:42:00,S1,Bananas,Produce,1,1.59,1.59,Card
+500466,2026-09-06 21:42:00,S1,Apples,Produce,1,3.99,3.99,Card
+500466,2026-09-06 21:42:00,S1,Avocado,Produce,3,1.49,4.47,Card
+500467,2026-09-06 20:11:00,S1,Diapers,Baby,1,24.99,24.99,Card
+500467,2026-09-06 20:11:00,S1,Spinach,Produce,1,2.99,2.99,Card
+500468,2026-09-06 16:23:00,S2,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500468,2026-09-06 16:23:00,S2,Soda 12pk,Snacks,1,6.99,6.99,Card
+500468,2026-09-06 16:23:00,S2,Paper Towels,Cleaning,1,7.99,7.99,Card
+500468,2026-09-06 16:23:00,S2,Dish Soap,Cleaning,1,3.49,3.49,Card
+500468,2026-09-06 16:23:00,S2,Trash Bags,Cleaning,1,8.99,8.99,Card
+500469,2026-09-06 20:11:00,S1,Burger Patties,Grilling,1,9.99,9.99,Cash
+500469,2026-09-06 20:11:00,S1,Buns,Grilling,1,2.49,2.49,Cash
+500469,2026-09-06 20:11:00,S1,Ketchup,Grilling,2,2.99,5.98,Cash
+500469,2026-09-06 20:11:00,S1,Spaghetti,Pasta Night,1,1.99,1.99,Cash
+500469,2026-09-06 20:11:00,S1,Parmesan,Pasta Night,1,5.49,5.49,Cash
+500469,2026-09-06 20:11:00,S1,Garlic Bread,Pasta Night,1,2.99,2.99,Cash
+500470,2026-09-06 22:02:00,S4,Cream Cheese,Breakfast,3,2.79,8.37,Card
+500470,2026-09-06 22:02:00,S4,Guacamole,Snacks,1,4.49,4.49,Card
+500471,2026-09-06 19:38:00,S3,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500471,2026-09-06 19:38:00,S3,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500471,2026-09-06 19:38:00,S3,Parmesan,Pasta Night,1,5.49,5.49,Card
+500471,2026-09-06 19:38:00,S3,Garlic Bread,Pasta Night,2,2.99,5.98,Card
+500472,2026-09-06 20:17:00,S4,Tortilla Chips,Snacks,1,3.49,3.49,Mobile
+500472,2026-09-06 20:17:00,S4,Guacamole,Snacks,1,4.49,4.49,Mobile
+500472,2026-09-06 20:17:00,S4,Soda 12pk,Snacks,2,6.99,13.98,Mobile
+500472,2026-09-06 20:17:00,S4,Coffee,Breakfast,1,8.99,8.99,Mobile
+500473,2026-09-06 14:39:00,S1,Apples,Produce,1,3.99,3.99,Card
+500473,2026-09-06 14:39:00,S1,Spinach,Produce,1,2.99,2.99,Card
+500473,2026-09-06 14:39:00,S1,Avocado,Produce,3,1.49,4.47,Card
+500473,2026-09-06 14:39:00,S1,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500473,2026-09-06 14:39:00,S1,Salsa,Snacks,1,3.99,3.99,Card
+500473,2026-09-06 14:39:00,S1,Guacamole,Snacks,2,4.49,8.98,Card
+500473,2026-09-06 14:39:00,S1,Soda 12pk,Snacks,1,6.99,6.99,Card
+500474,2026-09-06 13:01:00,S1,Baby Wipes,Baby,1,6.49,6.49,Card
+500475,2026-09-06 20:06:00,S1,Avocado,Produce,1,1.49,1.49,Card
+500476,2026-09-06 18:50:00,S4,Burger Patties,Grilling,3,9.99,29.97,Card
+500476,2026-09-06 18:50:00,S4,Ketchup,Grilling,1,2.99,2.99,Card
+500477,2026-09-06 16:17:00,S1,Diapers,Baby,1,24.99,24.99,Card
+500477,2026-09-06 16:17:00,S1,Baby Wipes,Baby,1,6.49,6.49,Card
+500477,2026-09-06 16:17:00,S1,Baby Food,Baby,2,1.29,2.58,Card
+500477,2026-09-06 16:17:00,S1,Lotion,Baby,1,5.99,5.99,Card
+500477,2026-09-06 16:17:00,S1,Paper Towels,Cleaning,1,7.99,7.99,Card
+500477,2026-09-06 16:17:00,S1,Dish Soap,Cleaning,1,3.49,3.49,Card
+500477,2026-09-06 16:17:00,S1,Sponges,Cleaning,1,2.49,2.49,Card
+500477,2026-09-06 16:17:00,S1,Trash Bags,Cleaning,2,8.99,17.98,Card
+500478,2026-09-06 15:23:00,S4,Creamer,Breakfast,1,3.29,3.29,Card
+500478,2026-09-06 15:23:00,S4,Cream Cheese,Breakfast,1,2.79,2.79,Card
+500479,2026-09-07 00:23:00,S1,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500479,2026-09-07 00:23:00,S1,Parmesan,Pasta Night,1,5.49,5.49,Card
+500479,2026-09-07 00:23:00,S1,Garlic Bread,Pasta Night,1,2.99,2.99,Card
+500480,2026-09-06 20:19:00,S2,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500481,2026-09-06 20:56:00,S4,Spaghetti,Pasta Night,1,1.99,1.99,Mobile
+500481,2026-09-06 20:56:00,S4,Marinara Sauce,Pasta Night,1,3.49,3.49,Mobile
+500481,2026-09-06 20:56:00,S4,Garlic Bread,Pasta Night,2,2.99,5.98,Mobile
+500481,2026-09-06 20:56:00,S4,Burger Patties,Grilling,1,9.99,9.99,Mobile
+500481,2026-09-06 20:56:00,S4,Ketchup,Grilling,1,2.99,2.99,Mobile
+500482,2026-09-07 17:43:00,S3,Marinara Sauce,Pasta Night,1,3.49,3.49,Mobile
+500482,2026-09-07 17:43:00,S3,Parmesan,Pasta Night,1,5.49,5.49,Mobile
+500482,2026-09-07 17:43:00,S3,Garlic Bread,Pasta Night,1,2.99,2.99,Mobile
+500482,2026-09-07 17:43:00,S3,Bananas,Produce,1,1.59,1.59,Mobile
+500483,2026-09-07 21:55:00,S4,Bananas,Produce,2,1.59,3.18,Card
+500483,2026-09-07 21:55:00,S4,Spinach,Produce,1,2.99,2.99,Card
+500483,2026-09-07 21:55:00,S4,Avocado,Produce,1,1.49,1.49,Card
+500483,2026-09-07 21:55:00,S4,Spaghetti,Pasta Night,2,1.99,3.98,Card
+500483,2026-09-07 21:55:00,S4,Parmesan,Pasta Night,1,5.49,5.49,Card
+500484,2026-09-07 22:32:00,S2,Marinara Sauce,Pasta Night,3,3.49,10.47,Card
+500484,2026-09-07 22:32:00,S2,Cream Cheese,Breakfast,2,2.79,5.58,Card
+500485,2026-09-07 22:22:00,S4,Spaghetti,Pasta Night,3,1.99,5.97,Cash
+500485,2026-09-07 22:22:00,S4,Marinara Sauce,Pasta Night,1,3.49,3.49,Cash
+500485,2026-09-07 22:22:00,S4,Parmesan,Pasta Night,1,5.49,5.49,Cash
+500485,2026-09-07 22:22:00,S4,Garlic Bread,Pasta Night,1,2.99,2.99,Cash
+500486,2026-09-07 15:50:00,S4,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500486,2026-09-07 15:50:00,S4,Parmesan,Pasta Night,1,5.49,5.49,Card
+500486,2026-09-07 15:50:00,S4,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500486,2026-09-07 15:50:00,S4,Salsa,Snacks,1,3.99,3.99,Card
+500486,2026-09-07 15:50:00,S4,Guacamole,Snacks,1,4.49,4.49,Card
+500486,2026-09-07 15:50:00,S4,Avocado,Produce,1,1.49,1.49,Card
+500487,2026-09-07 23:36:00,S2,Cheese Slices,Grilling,1,3.99,3.99,Mobile
+500487,2026-09-07 23:36:00,S2,Ketchup,Grilling,1,2.99,2.99,Mobile
+500487,2026-09-07 23:36:00,S2,Burger Patties,Grilling,1,9.99,9.99,Mobile
+500487,2026-09-07 23:36:00,S2,Buns,Grilling,1,2.49,2.49,Mobile
+500488,2026-09-07 16:47:00,S4,Burger Patties,Grilling,1,9.99,9.99,Mobile
+500488,2026-09-07 16:47:00,S4,Buns,Grilling,1,2.49,2.49,Mobile
+500488,2026-09-07 16:47:00,S4,Cheese Slices,Grilling,1,3.99,3.99,Mobile
+500488,2026-09-07 16:47:00,S4,Bananas,Produce,1,1.59,1.59,Mobile
+500488,2026-09-07 16:47:00,S4,Spinach,Produce,1,2.99,2.99,Mobile
+500489,2026-09-07 14:31:00,S3,Bagels,Breakfast,1,3.99,3.99,Card
+500489,2026-09-07 14:31:00,S3,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500489,2026-09-07 14:31:00,S3,Bananas,Produce,1,1.59,1.59,Card
+500490,2026-09-07 14:07:00,S2,Baby Wipes,Baby,1,6.49,6.49,Card
+500490,2026-09-07 14:07:00,S2,Baby Food,Baby,1,1.29,1.29,Card
+500490,2026-09-07 14:07:00,S2,Lotion,Baby,2,5.99,11.98,Card
+500491,2026-09-07 15:25:00,S2,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500491,2026-09-07 15:25:00,S2,Salsa,Snacks,1,3.99,3.99,Card
+500491,2026-09-07 15:25:00,S2,Guacamole,Snacks,1,4.49,4.49,Card
+500491,2026-09-07 15:25:00,S2,Soda 12pk,Snacks,1,6.99,6.99,Card
+500492,2026-09-07 23:39:00,S4,Burger Patties,Grilling,1,9.99,9.99,Card
+500492,2026-09-07 23:39:00,S4,Buns,Grilling,1,2.49,2.49,Card
+500492,2026-09-07 23:39:00,S4,Ketchup,Grilling,1,2.99,2.99,Card
+500492,2026-09-07 23:39:00,S4,Apples,Produce,1,3.99,3.99,Card
+500492,2026-09-07 23:39:00,S4,Avocado,Produce,3,1.49,4.47,Card
+500492,2026-09-07 23:39:00,S4,Baby Food,Baby,1,1.29,1.29,Card
+500493,2026-09-07 20:40:00,S3,Trash Bags,Cleaning,2,8.99,17.98,Card
+500493,2026-09-07 20:40:00,S3,Bananas,Produce,2,1.59,3.18,Card
+500493,2026-09-07 20:40:00,S3,Spinach,Produce,2,2.99,5.98,Card
+500494,2026-09-07 20:07:00,S4,Paper Towels,Cleaning,1,7.99,7.99,Mobile
+500494,2026-09-07 20:07:00,S4,Dish Soap,Cleaning,1,3.49,3.49,Mobile
+500494,2026-09-07 20:07:00,S4,Trash Bags,Cleaning,1,8.99,8.99,Mobile
+500494,2026-09-07 20:07:00,S4,Diapers,Baby,1,24.99,24.99,Mobile
+500494,2026-09-07 20:07:00,S4,Baby Wipes,Baby,2,6.49,12.98,Mobile
+500494,2026-09-07 20:07:00,S4,Lotion,Baby,1,5.99,5.99,Mobile
+500495,2026-09-07 12:22:00,S1,Paper Towels,Cleaning,1,7.99,7.99,Card
+500495,2026-09-07 12:22:00,S1,Dish Soap,Cleaning,1,3.49,3.49,Card
+500495,2026-09-07 12:22:00,S1,Sponges,Cleaning,2,2.49,4.98,Card
+500495,2026-09-07 12:22:00,S1,Baby Wipes,Baby,2,6.49,12.98,Card
+500495,2026-09-07 12:22:00,S1,Baby Food,Baby,1,1.29,1.29,Card
+500495,2026-09-07 12:22:00,S1,Lotion,Baby,1,5.99,5.99,Card
+500496,2026-09-07 13:16:00,S1,Diapers,Baby,1,24.99,24.99,Card
+500496,2026-09-07 13:16:00,S1,Baby Wipes,Baby,1,6.49,6.49,Card
+500496,2026-09-07 13:16:00,S1,Coffee,Breakfast,1,8.99,8.99,Card
+500497,2026-09-08 15:50:00,S3,Coffee,Breakfast,1,8.99,8.99,Card
+500497,2026-09-08 15:50:00,S3,Creamer,Breakfast,2,3.29,6.58,Card
+500497,2026-09-08 15:50:00,S3,Bagels,Breakfast,1,3.99,3.99,Card
+500497,2026-09-08 15:50:00,S3,Cream Cheese,Breakfast,1,2.79,2.79,Card
+500497,2026-09-08 15:50:00,S3,Buns,Grilling,3,2.49,7.47,Card
+500497,2026-09-08 15:50:00,S3,Cheese Slices,Grilling,1,3.99,3.99,Card
+500497,2026-09-08 15:50:00,S3,Ketchup,Grilling,1,2.99,2.99,Card
+500498,2026-09-08 21:11:00,S2,Salsa,Snacks,1,3.99,3.99,Card
+500498,2026-09-08 21:11:00,S2,Soda 12pk,Snacks,1,6.99,6.99,Card
+500498,2026-09-08 21:11:00,S2,Guacamole,Snacks,1,4.49,4.49,Card
+500498,2026-09-08 21:11:00,S2,Coffee,Breakfast,1,8.99,8.99,Card
+500499,2026-09-08 22:29:00,S1,Diapers,Baby,1,24.99,24.99,Card
+500499,2026-09-08 22:29:00,S1,Baby Wipes,Baby,3,6.49,19.47,Card
+500500,2026-09-08 21:18:00,S3,Bananas,Produce,1,1.59,1.59,Mobile
+500500,2026-09-08 21:18:00,S3,Apples,Produce,1,3.99,3.99,Mobile
+500501,2026-09-08 22:56:00,S1,Diapers,Baby,1,24.99,24.99,Card
+500501,2026-09-08 22:56:00,S1,Baby Food,Baby,2,1.29,2.58,Card
+500501,2026-09-08 22:56:00,S1,Lotion,Baby,1,5.99,5.99,Card
+500501,2026-09-08 22:56:00,S1,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500502,2026-09-08 17:50:00,S4,Tortilla Chips,Snacks,1,3.49,3.49,Mobile
+500502,2026-09-08 17:50:00,S4,Soda 12pk,Snacks,1,6.99,6.99,Mobile
+500503,2026-09-08 15:53:00,S2,Salsa,Snacks,1,3.99,3.99,Card
+500504,2026-09-08 14:53:00,S4,Baby Wipes,Baby,1,6.49,6.49,Card
+500504,2026-09-08 14:53:00,S4,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500504,2026-09-08 14:53:00,S4,Soda 12pk,Snacks,1,6.99,6.99,Card
+500504,2026-09-08 14:53:00,S4,Cheese Slices,Grilling,3,3.99,11.97,Card
+500505,2026-09-08 23:19:00,S4,Diapers,Baby,1,24.99,24.99,Card
+500505,2026-09-08 23:19:00,S4,Baby Wipes,Baby,2,6.49,12.98,Card
+500505,2026-09-08 23:19:00,S4,Baby Food,Baby,3,1.29,3.87,Card
+500505,2026-09-08 23:19:00,S4,Lotion,Baby,1,5.99,5.99,Card
+500505,2026-09-08 23:19:00,S4,Dish Soap,Cleaning,1,3.49,3.49,Card
+500506,2026-09-08 18:25:00,S2,Diapers,Baby,1,24.99,24.99,Mobile
+500506,2026-09-08 18:25:00,S2,Baby Food,Baby,1,1.29,1.29,Mobile
+500506,2026-09-08 18:25:00,S2,Lotion,Baby,1,5.99,5.99,Mobile
+500507,2026-09-08 20:20:00,S4,Guacamole,Snacks,1,4.49,4.49,Cash
+500508,2026-09-08 20:56:00,S1,Marinara Sauce,Pasta Night,1,3.49,3.49,Cash
+500508,2026-09-08 20:56:00,S1,Parmesan,Pasta Night,1,5.49,5.49,Cash
+500508,2026-09-08 20:56:00,S1,Salsa,Snacks,1,3.99,3.99,Cash
+500508,2026-09-08 20:56:00,S1,Guacamole,Snacks,1,4.49,4.49,Cash
+500508,2026-09-08 20:56:00,S1,Soda 12pk,Snacks,1,6.99,6.99,Cash
+500509,2026-09-08 18:52:00,S2,Creamer,Breakfast,2,3.29,6.58,Mobile
+500509,2026-09-08 18:52:00,S2,Spaghetti,Pasta Night,1,1.99,1.99,Mobile
+500509,2026-09-08 18:52:00,S2,Marinara Sauce,Pasta Night,3,3.49,10.47,Mobile
+500509,2026-09-08 18:52:00,S2,Parmesan,Pasta Night,1,5.49,5.49,Mobile
+500509,2026-09-08 18:52:00,S2,Garlic Bread,Pasta Night,1,2.99,2.99,Mobile
+500510,2026-09-09 13:27:00,S4,Salsa,Snacks,1,3.99,3.99,Card
+500510,2026-09-09 13:27:00,S4,Guacamole,Snacks,3,4.49,13.47,Card
+500511,2026-09-09 14:08:00,S1,Apples,Produce,1,3.99,3.99,Card
+500511,2026-09-09 14:08:00,S1,Spinach,Produce,2,2.99,5.98,Card
+500511,2026-09-09 14:08:00,S1,Avocado,Produce,2,1.49,2.98,Card
+500511,2026-09-09 14:08:00,S1,Salsa,Snacks,1,3.99,3.99,Card
+500512,2026-09-09 16:30:00,S1,Bananas,Produce,1,1.59,1.59,Card
+500512,2026-09-09 16:30:00,S1,Apples,Produce,1,3.99,3.99,Card
+500512,2026-09-09 16:30:00,S1,Coffee,Breakfast,1,8.99,8.99,Card
+500512,2026-09-09 16:30:00,S1,Creamer,Breakfast,1,3.29,3.29,Card
+500512,2026-09-09 16:30:00,S1,Cream Cheese,Breakfast,1,2.79,2.79,Card
+500512,2026-09-09 16:30:00,S1,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500513,2026-09-09 20:11:00,S2,Paper Towels,Cleaning,1,7.99,7.99,Mobile
+500513,2026-09-09 20:11:00,S2,Trash Bags,Cleaning,1,8.99,8.99,Mobile
+500514,2026-09-10 00:12:00,S4,Bananas,Produce,1,1.59,1.59,Card
+500514,2026-09-10 00:12:00,S4,Apples,Produce,1,3.99,3.99,Card
+500514,2026-09-10 00:12:00,S4,Cheese Slices,Grilling,1,3.99,3.99,Card
+500515,2026-09-09 17:05:00,S1,Diapers,Baby,3,24.99,74.97,Mobile
+500515,2026-09-09 17:05:00,S1,Baby Food,Baby,1,1.29,1.29,Mobile
+500515,2026-09-09 17:05:00,S1,Marinara Sauce,Pasta Night,1,3.49,3.49,Mobile
+500515,2026-09-09 17:05:00,S1,Parmesan,Pasta Night,2,5.49,10.98,Mobile
+500515,2026-09-09 17:05:00,S1,Garlic Bread,Pasta Night,1,2.99,2.99,Mobile
+500515,2026-09-09 17:05:00,S1,Sponges,Cleaning,1,2.49,2.49,Mobile
+500516,2026-09-09 16:01:00,S3,Creamer,Breakfast,1,3.29,3.29,Card
+500516,2026-09-09 16:01:00,S3,Cream Cheese,Breakfast,1,2.79,2.79,Card
+500516,2026-09-09 16:01:00,S3,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500517,2026-09-09 15:56:00,S1,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500517,2026-09-09 15:56:00,S1,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500518,2026-09-09 21:34:00,S2,Guacamole,Snacks,1,4.49,4.49,Card
+500518,2026-09-09 21:34:00,S2,Bananas,Produce,3,1.59,4.77,Card
+500518,2026-09-09 21:34:00,S2,Spinach,Produce,3,2.99,8.97,Card
+500518,2026-09-09 21:34:00,S2,Avocado,Produce,1,1.49,1.49,Card
+500519,2026-09-09 22:30:00,S2,Creamer,Breakfast,1,3.29,3.29,Card
+500519,2026-09-09 22:30:00,S2,Bagels,Breakfast,1,3.99,3.99,Card
+500519,2026-09-09 22:30:00,S2,Bananas,Produce,3,1.59,4.77,Card
+500519,2026-09-09 22:30:00,S2,Spinach,Produce,3,2.99,8.97,Card
+500519,2026-09-09 22:30:00,S2,Avocado,Produce,1,1.49,1.49,Card
+500520,2026-09-09 15:59:00,S3,Bananas,Produce,2,1.59,3.18,Mobile
+500520,2026-09-09 15:59:00,S3,Apples,Produce,1,3.99,3.99,Mobile
+500520,2026-09-09 15:59:00,S3,Spinach,Produce,1,2.99,2.99,Mobile
+500520,2026-09-09 15:59:00,S3,Avocado,Produce,2,1.49,2.98,Mobile
+500521,2026-09-10 21:20:00,S2,Salsa,Snacks,3,3.99,11.97,Card
+500521,2026-09-10 21:20:00,S2,Soda 12pk,Snacks,1,6.99,6.99,Card
+500522,2026-09-10 19:34:00,S1,Burger Patties,Grilling,1,9.99,9.99,Card
+500522,2026-09-10 19:34:00,S1,Cheese Slices,Grilling,2,3.99,7.98,Card
+500522,2026-09-10 19:34:00,S1,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500522,2026-09-10 19:34:00,S1,Marinara Sauce,Pasta Night,2,3.49,6.98,Card
+500522,2026-09-10 19:34:00,S1,Parmesan,Pasta Night,1,5.49,5.49,Card
+500522,2026-09-10 19:34:00,S1,Garlic Bread,Pasta Night,1,2.99,2.99,Card
+500523,2026-09-10 16:24:00,S1,Bananas,Produce,1,1.59,1.59,Cash
+500523,2026-09-10 16:24:00,S1,Spinach,Produce,3,2.99,8.97,Cash
+500523,2026-09-10 16:24:00,S1,Avocado,Produce,1,1.49,1.49,Cash
+500524,2026-09-10 13:04:00,S2,Diapers,Baby,1,24.99,24.99,Mobile
+500524,2026-09-10 13:04:00,S2,Baby Wipes,Baby,1,6.49,6.49,Mobile
+500524,2026-09-10 13:04:00,S2,Baby Food,Baby,1,1.29,1.29,Mobile
+500524,2026-09-10 13:04:00,S2,Lotion,Baby,1,5.99,5.99,Mobile
+500525,2026-09-10 14:53:00,S2,Tortilla Chips,Snacks,3,3.49,10.47,Card
+500525,2026-09-10 14:53:00,S2,Salsa,Snacks,3,3.99,11.97,Card
+500525,2026-09-10 14:53:00,S2,Guacamole,Snacks,1,4.49,4.49,Card
+500525,2026-09-10 14:53:00,S2,Soda 12pk,Snacks,1,6.99,6.99,Card
+500525,2026-09-10 14:53:00,S2,Spinach,Produce,2,2.99,5.98,Card
+500526,2026-09-10 17:41:00,S4,Paper Towels,Cleaning,1,7.99,7.99,Card
+500526,2026-09-10 17:41:00,S4,Trash Bags,Cleaning,1,8.99,8.99,Card
+500526,2026-09-10 17:41:00,S4,Marinara Sauce,Pasta Night,3,3.49,10.47,Card
+500526,2026-09-10 17:41:00,S4,Garlic Bread,Pasta Night,1,2.99,2.99,Card
+500527,2026-09-10 14:34:00,S3,Burger Patties,Grilling,1,9.99,9.99,Mobile
+500527,2026-09-10 14:34:00,S3,Buns,Grilling,1,2.49,2.49,Mobile
+500527,2026-09-10 14:34:00,S3,Ketchup,Grilling,1,2.99,2.99,Mobile
+500528,2026-09-10 18:35:00,S3,Guacamole,Snacks,1,4.49,4.49,Card
+500528,2026-09-10 18:35:00,S3,Soda 12pk,Snacks,1,6.99,6.99,Card
+500528,2026-09-10 18:35:00,S3,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500529,2026-09-10 22:05:00,S2,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500529,2026-09-10 22:05:00,S2,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500530,2026-09-10 14:26:00,S2,Burger Patties,Grilling,1,9.99,9.99,Mobile
+500530,2026-09-10 14:26:00,S2,Buns,Grilling,1,2.49,2.49,Mobile
+500530,2026-09-10 14:26:00,S2,Cheese Slices,Grilling,1,3.99,3.99,Mobile
+500530,2026-09-10 14:26:00,S2,Coffee,Breakfast,2,8.99,17.98,Mobile
+500530,2026-09-10 14:26:00,S2,Creamer,Breakfast,1,3.29,3.29,Mobile
+500531,2026-09-10 16:56:00,S4,Spaghetti,Pasta Night,1,1.99,1.99,Mobile
+500531,2026-09-10 16:56:00,S4,Marinara Sauce,Pasta Night,3,3.49,10.47,Mobile
+500531,2026-09-10 16:56:00,S4,Parmesan,Pasta Night,1,5.49,5.49,Mobile
+500531,2026-09-10 16:56:00,S4,Garlic Bread,Pasta Night,1,2.99,2.99,Mobile
+500532,2026-09-10 20:06:00,S1,Diapers,Baby,1,24.99,24.99,Cash
+500532,2026-09-10 20:06:00,S1,Baby Food,Baby,1,1.29,1.29,Cash
+500533,2026-09-10 22:48:00,S3,Coffee,Breakfast,1,8.99,8.99,Card
+500533,2026-09-10 22:48:00,S3,Creamer,Breakfast,1,3.29,3.29,Card
+500533,2026-09-10 22:48:00,S3,Bagels,Breakfast,1,3.99,3.99,Card
+500533,2026-09-10 22:48:00,S3,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500534,2026-09-10 16:39:00,S2,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500534,2026-09-10 16:39:00,S2,Guacamole,Snacks,1,4.49,4.49,Card
+500534,2026-09-10 16:39:00,S2,Soda 12pk,Snacks,1,6.99,6.99,Card
+500535,2026-09-11 00:44:00,S1,Tortilla Chips,Snacks,1,3.49,3.49,Cash
+500535,2026-09-11 00:44:00,S1,Soda 12pk,Snacks,1,6.99,6.99,Cash
+500535,2026-09-11 00:44:00,S1,Marinara Sauce,Pasta Night,1,3.49,3.49,Cash
+500535,2026-09-11 00:44:00,S1,Dish Soap,Cleaning,1,3.49,3.49,Cash
+500536,2026-09-10 14:11:00,S3,Burger Patties,Grilling,1,9.99,9.99,Card
+500536,2026-09-10 14:11:00,S3,Buns,Grilling,1,2.49,2.49,Card
+500536,2026-09-10 14:11:00,S3,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500537,2026-09-10 20:55:00,S2,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500537,2026-09-10 20:55:00,S2,Salsa,Snacks,1,3.99,3.99,Card
+500537,2026-09-10 20:55:00,S2,Lotion,Baby,1,5.99,5.99,Card
+500538,2026-09-10 17:39:00,S2,Baby Food,Baby,1,1.29,1.29,Card
+500538,2026-09-10 17:39:00,S2,Lotion,Baby,2,5.99,11.98,Card
+500538,2026-09-10 17:39:00,S2,Bananas,Produce,1,1.59,1.59,Card
+500538,2026-09-10 17:39:00,S2,Avocado,Produce,1,1.49,1.49,Card
+500539,2026-09-11 17:17:00,S2,Buns,Grilling,2,2.49,4.98,Card
+500539,2026-09-11 17:17:00,S2,Cheese Slices,Grilling,1,3.99,3.99,Card
+500540,2026-09-11 19:24:00,S3,Spinach,Produce,1,2.99,2.99,Card
+500540,2026-09-11 19:24:00,S3,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500541,2026-09-11 22:25:00,S4,Paper Towels,Cleaning,1,7.99,7.99,Card
+500541,2026-09-11 22:25:00,S4,Sponges,Cleaning,1,2.49,2.49,Card
+500541,2026-09-11 22:25:00,S4,Trash Bags,Cleaning,1,8.99,8.99,Card
+500542,2026-09-11 16:00:00,S1,Marinara Sauce,Pasta Night,1,3.49,3.49,Cash
+500542,2026-09-11 16:00:00,S1,Garlic Bread,Pasta Night,1,2.99,2.99,Cash
+500542,2026-09-11 16:00:00,S1,Apples,Produce,3,3.99,11.97,Cash
+500543,2026-09-11 22:45:00,S4,Buns,Grilling,1,2.49,2.49,Card
+500543,2026-09-11 22:45:00,S4,Ketchup,Grilling,1,2.99,2.99,Card
+500544,2026-09-11 13:24:00,S2,Burger Patties,Grilling,2,9.99,19.98,Cash
+500545,2026-09-11 13:48:00,S3,Burger Patties,Grilling,1,9.99,9.99,Mobile
+500545,2026-09-11 13:48:00,S3,Buns,Grilling,1,2.49,2.49,Mobile
+500546,2026-09-11 20:06:00,S4,Creamer,Breakfast,1,3.29,3.29,Card
+500547,2026-09-11 14:26:00,S1,Baby Wipes,Baby,1,6.49,6.49,Card
+500547,2026-09-11 14:26:00,S1,Baby Food,Baby,1,1.29,1.29,Card
+500547,2026-09-11 14:26:00,S1,Lotion,Baby,1,5.99,5.99,Card
+500547,2026-09-11 14:26:00,S1,Apples,Produce,2,3.99,7.98,Card
+500548,2026-09-12 00:29:00,S4,Burger Patties,Grilling,1,9.99,9.99,Card
+500548,2026-09-12 00:29:00,S4,Buns,Grilling,1,2.49,2.49,Card
+500548,2026-09-12 00:29:00,S4,Cheese Slices,Grilling,1,3.99,3.99,Card
+500548,2026-09-12 00:29:00,S4,Creamer,Breakfast,1,3.29,3.29,Card
+500548,2026-09-12 00:29:00,S4,Bagels,Breakfast,1,3.99,3.99,Card
+500548,2026-09-12 00:29:00,S4,Cream Cheese,Breakfast,1,2.79,2.79,Card
+500549,2026-09-11 18:09:00,S2,Bananas,Produce,1,1.59,1.59,Card
+500549,2026-09-11 18:09:00,S2,Apples,Produce,1,3.99,3.99,Card
+500549,2026-09-11 18:09:00,S2,Tortilla Chips,Snacks,2,3.49,6.98,Card
+500549,2026-09-11 18:09:00,S2,Soda 12pk,Snacks,1,6.99,6.99,Card
+500550,2026-09-11 22:38:00,S1,Burger Patties,Grilling,1,9.99,9.99,Card
+500550,2026-09-11 22:38:00,S1,Buns,Grilling,2,2.49,4.98,Card
+500550,2026-09-11 22:38:00,S1,Ketchup,Grilling,1,2.99,2.99,Card
+500551,2026-09-12 16:58:00,S3,Coffee,Breakfast,2,8.99,17.98,Card
+500551,2026-09-12 16:58:00,S3,Creamer,Breakfast,1,3.29,3.29,Card
+500551,2026-09-12 16:58:00,S3,Bagels,Breakfast,1,3.99,3.99,Card
+500551,2026-09-12 16:58:00,S3,Cream Cheese,Breakfast,1,2.79,2.79,Card
+500552,2026-09-12 18:11:00,S4,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500552,2026-09-12 18:11:00,S4,Guacamole,Snacks,1,4.49,4.49,Card
+500552,2026-09-12 18:11:00,S4,Soda 12pk,Snacks,1,6.99,6.99,Card
+500552,2026-09-12 18:11:00,S4,Diapers,Baby,1,24.99,24.99,Card
+500552,2026-09-12 18:11:00,S4,Baby Food,Baby,1,1.29,1.29,Card
+500552,2026-09-12 18:11:00,S4,Lotion,Baby,1,5.99,5.99,Card
+500553,2026-09-12 23:34:00,S1,Bananas,Produce,1,1.59,1.59,Card
+500553,2026-09-12 23:34:00,S1,Spinach,Produce,1,2.99,2.99,Card
+500553,2026-09-12 23:34:00,S1,Buns,Grilling,3,2.49,7.47,Card
+500553,2026-09-12 23:34:00,S1,Ketchup,Grilling,1,2.99,2.99,Card
+500553,2026-09-12 23:34:00,S1,Paper Towels,Cleaning,1,7.99,7.99,Card
+500554,2026-09-12 17:15:00,S3,Coffee,Breakfast,3,8.99,26.97,Mobile
+500554,2026-09-12 17:15:00,S3,Creamer,Breakfast,1,3.29,3.29,Mobile
+500554,2026-09-12 17:15:00,S3,Cream Cheese,Breakfast,1,2.79,2.79,Mobile
+500554,2026-09-12 17:15:00,S3,Spaghetti,Pasta Night,1,1.99,1.99,Mobile
+500554,2026-09-12 17:15:00,S3,Marinara Sauce,Pasta Night,1,3.49,3.49,Mobile
+500554,2026-09-12 17:15:00,S3,Garlic Bread,Pasta Night,3,2.99,8.97,Mobile
+500555,2026-09-12 19:18:00,S3,Apples,Produce,2,3.99,7.98,Mobile
+500555,2026-09-12 19:18:00,S3,Spinach,Produce,1,2.99,2.99,Mobile
+500555,2026-09-12 19:18:00,S3,Avocado,Produce,1,1.49,1.49,Mobile
+500556,2026-09-12 18:37:00,S3,Paper Towels,Cleaning,2,7.99,15.98,Card
+500556,2026-09-12 18:37:00,S3,Dish Soap,Cleaning,1,3.49,3.49,Card
+500556,2026-09-12 18:37:00,S3,Avocado,Produce,3,1.49,4.47,Card
+500557,2026-09-12 19:59:00,S1,Buns,Grilling,1,2.49,2.49,Card
+500557,2026-09-12 19:59:00,S1,Cheese Slices,Grilling,1,3.99,3.99,Card
+500558,2026-09-12 23:01:00,S1,Spaghetti,Pasta Night,1,1.99,1.99,Cash
+500559,2026-09-12 17:13:00,S4,Burger Patties,Grilling,1,9.99,9.99,Card
+500559,2026-09-12 17:13:00,S4,Cheese Slices,Grilling,1,3.99,3.99,Card
+500559,2026-09-12 17:13:00,S4,Ketchup,Grilling,1,2.99,2.99,Card
+500559,2026-09-12 17:13:00,S4,Spinach,Produce,1,2.99,2.99,Card
+500560,2026-09-12 18:39:00,S4,Paper Towels,Cleaning,1,7.99,7.99,Card
+500560,2026-09-12 18:39:00,S4,Dish Soap,Cleaning,1,3.49,3.49,Card
+500560,2026-09-12 18:39:00,S4,Sponges,Cleaning,1,2.49,2.49,Card
+500560,2026-09-12 18:39:00,S4,Trash Bags,Cleaning,1,8.99,8.99,Card
+500561,2026-09-12 15:58:00,S1,Salsa,Snacks,1,3.99,3.99,Card
+500561,2026-09-12 15:58:00,S1,Guacamole,Snacks,2,4.49,8.98,Card
+500562,2026-09-12 20:54:00,S3,Coffee,Breakfast,2,8.99,17.98,Mobile
+500562,2026-09-12 20:54:00,S3,Creamer,Breakfast,1,3.29,3.29,Mobile
+500562,2026-09-12 20:54:00,S3,Cream Cheese,Breakfast,1,2.79,2.79,Mobile
+500562,2026-09-12 20:54:00,S3,Sponges,Cleaning,1,2.49,2.49,Mobile
+500563,2026-09-12 22:32:00,S3,Paper Towels,Cleaning,1,7.99,7.99,Cash
+500564,2026-09-13 23:02:00,S4,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500564,2026-09-13 23:02:00,S4,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500564,2026-09-13 23:02:00,S4,Parmesan,Pasta Night,1,5.49,5.49,Card
+500564,2026-09-13 23:02:00,S4,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500564,2026-09-13 23:02:00,S4,Guacamole,Snacks,2,4.49,8.98,Card
+500564,2026-09-13 23:02:00,S4,Soda 12pk,Snacks,1,6.99,6.99,Card
+500565,2026-09-13 18:22:00,S4,Dish Soap,Cleaning,1,3.49,3.49,Card
+500565,2026-09-13 18:22:00,S4,Sponges,Cleaning,1,2.49,2.49,Card
+500565,2026-09-13 18:22:00,S4,Trash Bags,Cleaning,1,8.99,8.99,Card
+500566,2026-09-13 12:12:00,S1,Buns,Grilling,1,2.49,2.49,Card
+500566,2026-09-13 12:12:00,S1,Cheese Slices,Grilling,1,3.99,3.99,Card
+500566,2026-09-13 12:12:00,S1,Spaghetti,Pasta Night,1,1.99,1.99,Card
+500566,2026-09-13 12:12:00,S1,Marinara Sauce,Pasta Night,1,3.49,3.49,Card
+500567,2026-09-13 18:32:00,S1,Coffee,Breakfast,1,8.99,8.99,Card
+500567,2026-09-13 18:32:00,S1,Cream Cheese,Breakfast,1,2.79,2.79,Card
+500568,2026-09-13 16:18:00,S4,Guacamole,Snacks,1,4.49,4.49,Mobile
+500568,2026-09-13 16:18:00,S4,Soda 12pk,Snacks,1,6.99,6.99,Mobile
+500569,2026-09-13 15:54:00,S3,Burger Patties,Grilling,1,9.99,9.99,Cash
+500569,2026-09-13 15:54:00,S3,Buns,Grilling,1,2.49,2.49,Cash
+500569,2026-09-13 15:54:00,S3,Creamer,Breakfast,1,3.29,3.29,Cash
+500570,2026-09-13 15:50:00,S2,Salsa,Snacks,1,3.99,3.99,Card
+500570,2026-09-13 15:50:00,S2,Guacamole,Snacks,1,4.49,4.49,Card
+500570,2026-09-13 15:50:00,S2,Soda 12pk,Snacks,1,6.99,6.99,Card
+500570,2026-09-13 15:50:00,S2,Lotion,Baby,1,5.99,5.99,Card
+500571,2026-09-13 15:57:00,S4,Dish Soap,Cleaning,1,3.49,3.49,Card
+500572,2026-09-13 16:29:00,S2,Tortilla Chips,Snacks,1,3.49,3.49,Card
+500572,2026-09-13 16:29:00,S2,Salsa,Snacks,1,3.99,3.99,Card
+500572,2026-09-13 16:29:00,S2,Guacamole,Snacks,1,4.49,4.49,Card
+500572,2026-09-13 16:29:00,S2,Soda 12pk,Snacks,2,6.99,13.98,Card
+500573,2026-09-13 20:08:00,S4,Marinara Sauce,Pasta Night,1,3.49,3.49,Mobile
+500574,2026-09-13 16:32:00,S4,Bananas,Produce,1,1.59,1.59,Card
+500574,2026-09-13 16:32:00,S4,Avocado,Produce,2,1.49,2.98,Card
+500575,2026-09-13 17:26:00,S2,Coffee,Breakfast,1,8.99,8.99,Card
+500575,2026-09-13 17:26:00,S2,Bagels,Breakfast,1,3.99,3.99,Card
+500575,2026-09-13 17:26:00,S2,Salsa,Snacks,1,3.99,3.99,Card
+500576,2026-09-13 15:04:00,S3,Burger Patties,Grilling,1,9.99,9.99,Card
+500576,2026-09-13 15:04:00,S3,Buns,Grilling,2,2.49,4.98,Card
+500576,2026-09-13 15:04:00,S3,Cheese Slices,Grilling,1,3.99,3.99,Card
+500576,2026-09-13 15:04:00,S3,Ketchup,Grilling,1,2.99,2.99,Card
+500576,2026-09-13 15:04:00,S3,Parmesan,Pasta Night,2,5.49,10.98,Card
+500577,2026-09-13 21:57:00,S4,Coffee,Breakfast,1,8.99,8.99,Cash
+500577,2026-09-13 21:57:00,S4,Creamer,Breakfast,1,3.29,3.29,Cash
+500577,2026-09-13 21:57:00,S4,Bagels,Breakfast,1,3.99,3.99,Cash
+500577,2026-09-13 21:57:00,S4,Cream Cheese,Breakfast,1,2.79,2.79,Cash
+500578,2026-09-13 16:38:00,S4,Spaghetti,Pasta Night,3,1.99,5.97,Cash
+500578,2026-09-13 16:38:00,S4,Marinara Sauce,Pasta Night,1,3.49,3.49,Cash
+500578,2026-09-13 16:38:00,S4,Garlic Bread,Pasta Night,1,2.99,2.99,Cash
+500578,2026-09-13 16:38:00,S4,Cheese Slices,Grilling,3,3.99,11.97,Cash
+500578,2026-09-13 16:38:00,S4,Ketchup,Grilling,1,2.99,2.99,Cash
+500578,2026-09-13 16:38:00,S4,Apples,Produce,1,3.99,3.99,Cash
+500579,2026-09-13 18:47:00,S3,Coffee,Breakfast,1,8.99,8.99,Cash
+500579,2026-09-13 18:47:00,S3,Creamer,Breakfast,1,3.29,3.29,Cash
+500580,2026-09-13 16:43:00,S1,Paper Towels,Cleaning,2,7.99,15.98,Mobile
+500580,2026-09-13 16:43:00,S1,Dish Soap,Cleaning,1,3.49,3.49,Mobile
+500580,2026-09-13 16:43:00,S1,Sponges,Cleaning,1,2.49,2.49,Mobile
+500580,2026-09-13 16:43:00,S1,Trash Bags,Cleaning,1,8.99,8.99,Mobile
+500581,2026-09-13 19:13:00,S2,Paper Towels,Cleaning,3,7.99,23.97,Card
+500581,2026-09-13 19:13:00,S2,Trash Bags,Cleaning,1,8.99,8.99,Card
+500581,2026-09-13 19:13:00,S2,Salsa,Snacks,1,3.99,3.99,Card
+500581,2026-09-13 19:13:00,S2,Guacamole,Snacks,1,4.49,4.49,Card
+500581,2026-09-13 19:13:00,S2,Soda 12pk,Snacks,1,6.99,6.99,Card
+500582,2026-09-14 12:59:00,S3,Baby Food,Baby,1,1.29,1.29,Card
+500582,2026-09-14 12:59:00,S3,Coffee,Breakfast,1,8.99,8.99,Card
+500582,2026-09-14 12:59:00,S3,Bagels,Breakfast,1,3.99,3.99,Card
+500582,2026-09-14 12:59:00,S3,Parmesan,Pasta Night,1,5.49,5.49,Card
+500583,2026-09-14 18:27:00,S3,Spaghetti,Pasta Night,2,1.99,3.98,Cash
+500583,2026-09-14 18:27:00,S3,Marinara Sauce,Pasta Night,2,3.49,6.98,Cash
+500583,2026-09-14 18:27:00,S3,Parmesan,Pasta Night,1,5.49,5.49,Cash
+500584,2026-09-14 22:17:00,S1,Cheese Slices,Grilling,1,3.99,3.99,Card
+500584,2026-09-14 22:17:00,S1,Coffee,Breakfast,3,8.99,26.97,Card
+500584,2026-09-14 22:17:00,S1,Creamer,Breakfast,1,3.29,3.29,Card
+500584,2026-09-14 22:17:00,S1,Bagels,Breakfast,1,3.99,3.99,Card
+500585,2026-09-14 23:23:00,S1,Guacamole,Snacks,3,4.49,13.47,Cash
+500585,2026-09-14 23:23:00,S1,Soda 12pk,Snacks,1,6.99,6.99,Cash
+500586,2026-09-14 13:00:00,S1,Creamer,Breakfast,2,3.29,6.58,Cash
+500586,2026-09-14 13:00:00,S1,Bagels,Breakfast,1,3.99,3.99,Cash
+500586,2026-09-14 13:00:00,S1,Cream Cheese,Breakfast,2,2.79,5.58,Cash
+500587,2026-09-14 17:26:00,S3,Bananas,Produce,1,1.59,1.59,Card
