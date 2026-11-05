@@ -1,5 +1,5 @@
-## Programming in Scala for Big Data Systems, Fall 2025
-Scala Project for Harvard Extension course CSCI E-88C, Fall, 2025. See course details at [Scala for Big Data](https://courses.dce.harvard.edu/?details&srcdb=202601&crn=16769).
+## Programming in Scala for Big Data Systems, Fall 2026
+Scala Project for Harvard Extension course CSCI E-88C, Fall, 2026. See course details at [Scala for Big Data](https://courses.dce.harvard.edu/?details&srcdb=202601&crn=16769).
 
 
 This project is a multi-module setup for Scala applications that integrate with big data frameworks like Spark, Beam, and Kafka. It is designed to facilitate development in a structured manner, allowing for modular code organization and easy dependency management.
