@@ -1,7 +1,10 @@
 *.class
 *.log
 mainrepo
+docker/output
 docker/beam/stream_in/
+cloud_gs
+cloud_s3
 
 # sbt specific
 .cache
