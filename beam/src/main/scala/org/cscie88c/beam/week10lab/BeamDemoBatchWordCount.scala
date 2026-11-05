@@ -57,6 +57,7 @@ object BeamDemoBatchWordCount extends LazyLogging {
       .top(numWords)            // SCollection[Iterable[(Long, String)]], iterable of top n
       .map { iter =>
         iter.map {
+          //get timestamp in here
           case (count, word) => s"($count, $word)"
         }.mkString("\n")
       }
