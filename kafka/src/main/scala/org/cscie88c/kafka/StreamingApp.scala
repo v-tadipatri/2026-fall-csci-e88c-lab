@@ -17,14 +17,12 @@ import scala.util.Try
 
 object StreamingApp extends LazyLogging {
 
-  def getSystemProperty(propName: String, defaultValue: String): String = 
-    System.getProperty(propName,defaultValue)
 
   def createStreamsConfig: Properties = {
-    val applicationId = getSystemProperty(StreamsConfig.APPLICATION_ID_CONFIG, "kafka-streams-app")
+    val applicationId = System.getProperty(StreamsConfig.APPLICATION_ID_CONFIG, "kafka-streams-app")
     val config = new Properties()
-    val bootstrapServers = getSystemProperty(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092")
-    val clientId = getSystemProperty(StreamsConfig.CLIENT_ID_CONFIG, "kafka-streams-client-0")
+    val bootstrapServers = System.getProperty(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092")
+    val clientId = System.getProperty(StreamsConfig.CLIENT_ID_CONFIG, "kafka-streams-client-0")
     config.setProperty(StreamsConfig.APPLICATION_ID_CONFIG, applicationId)
     config.setProperty(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers)
     config.setProperty(StreamsConfig.CLIENT_ID_CONFIG, clientId)
@@ -34,7 +32,7 @@ object StreamingApp extends LazyLogging {
     )
     config.setProperty(
       StreamsConfig.COMMIT_INTERVAL_MS_CONFIG,
-      10000.toString()
+      10000.toString
     )
     config
   }
@@ -47,8 +45,8 @@ object StreamingApp extends LazyLogging {
     */  
   def main(args: Array[String]): Unit = {
     // read input and output topics
-    val inputTopic = getSystemProperty("input.topic", "input_topic")
-    val outputTopic = getSystemProperty("output.topic", "output_topic")
+    val inputTopic = System.getProperty("input.topic", "input_txn")
+    val outputTopic = System.getProperty("output.topic", "output_txn")
     logger.info(s"using input topic: $inputTopic")
     logger.info(s"using output topic: $outputTopic")
     lazy val props = createStreamsConfig
@@ -94,7 +92,7 @@ object StreamingApp extends LazyLogging {
 
     // write the processed stream to output topic
     processedTransactions
-      .mapValues( transaction => transaction.toString() )
+      .mapValues( transaction => transaction.toString )
       .to(outputTopic)
 
     // build topology and start streams application
