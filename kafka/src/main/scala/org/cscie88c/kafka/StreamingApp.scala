@@ -1,7 +1,8 @@
 package org.cscie88c.kafka
 
-import com.typesafe.scalalogging.{ LazyLogging }
-import org.apache.kafka.streams.{ KafkaStreams, Topology }
+import com.typesafe.scalalogging.LazyLogging
+import org.apache.kafka.streams.{KafkaStreams, Topology}
+
 import java.time.Duration
 import java.util.Properties
 import org.apache.kafka.streams.StreamsConfig
@@ -10,6 +11,8 @@ import org.apache.kafka.streams.scala._
 import org.apache.kafka.streams.scala.kstream._
 import com.goyeau.kafka.streams.circe.CirceSerdes
 import io.circe.generic.auto._
+
+import scala.util.Try
 
 
 object StreamingApp extends LazyLogging {
@@ -72,14 +75,17 @@ object StreamingApp extends LazyLogging {
     val processedTransactions: KStream[String, Transaction] = 
       // first, convert each CSV row to Transaction case class
       transactions.mapValues { transaction =>
-        Transaction(transaction)
+        Try(Transaction(transaction)).toOption
       }
       // filter out any failed conversions
-      .filter {(_, transactionOpt) => transactionOpt.isDefined }
-      .mapValues { transactionOpt => transactionOpt.get }
-      // increase amount by 10%
+      .filter {(_, transactionOpt) => transactionOpt.isDefined  && transactionOpt.get.isDefined}
+      .mapValues { transactionOpt => transactionOpt.get.get }
+      // increase amount by 200% and shorten number
       .mapValues { transaction =>
-        transaction.copy(amount = transaction.amount * 1.1)
+        transaction.copy(
+          amount = transaction.amount * 200,
+          number = "T"+transaction.number.substring(0,4)+"..."
+        )
       }
       // log each processed transaction
       .peek((key, transaction) => 
