@@ -34,6 +34,7 @@ object StreamingApp extends LazyLogging {
       StreamsConfig.COMMIT_INTERVAL_MS_CONFIG,
       10000.toString
     )
+    KafkaSharedUtils.checkAws(config,logger)
     config
   }
 
@@ -47,10 +48,10 @@ object StreamingApp extends LazyLogging {
     // read input and output topics
     val inputTopic = System.getProperty("input.topic", "input_txn")
     val outputTopic = System.getProperty("output.topic", "output_txn")
-    logger.info(s"using input topic: $inputTopic")
-    logger.info(s"using output topic: $outputTopic")
-    lazy val props = createStreamsConfig
-    logger.info(s"using bootstrap servers: ${props.getProperty(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG)}")
+    logger.info(s"now using input topic: $inputTopic")
+    logger.info(s"now using output topic: $outputTopic")
+    val props = createStreamsConfig
+    logger.info(s"now using bootstrap servers: ${props.getProperty(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG)}")
     runStreamingApp(inputTopic, outputTopic, props)
   }
 
