@@ -6,6 +6,7 @@ libraryDependencies ++= Seq(
     // kafka streams
     "org.apache.kafka" %% "kafka-streams-scala" % kafkaClientVersion,
     "com.goyeau" %% "kafka-streams-circe" % "0.6.3",
+    "software.amazon.msk" % "aws-msk-iam-auth" % "2.2.0"
 )
 dependencyOverrides += "com.fasterxml.jackson.core" % "jackson-databind" % "2.14.2"
 
