@@ -11,6 +11,7 @@ import org.apache.kafka.streams.scala._
 import org.apache.kafka.streams.scala.kstream._
 import com.goyeau.kafka.streams.circe.CirceSerdes
 import io.circe.generic.auto._
+import org.cscie88c.kafka.model.Transaction
 
 import scala.util.Try
 

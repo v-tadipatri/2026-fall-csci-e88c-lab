@@ -5,6 +5,7 @@ import java.util.Properties
 import org.apache.kafka.streams.{KafkaStreams, StreamsBuilder, StreamsConfig}
 import org.apache.kafka.streams.kstream.{KStream, KTable, Produced}
 import org.apache.kafka.common.serialization.Serdes
+import org.cscie88c.kafka.model.WordPosJoiner
 
 import scala.jdk.CollectionConverters._
 
@@ -13,7 +14,8 @@ import scala.jdk.CollectionConverters._
  */
 object WordCountJava extends App with LazyLogging{
 
-  val inputTopic = System.getProperty("input.topic", "input_word")
+  val inputWordTopic = System.getProperty("input_word.topic", "input_word")
+  val inputPosTopic = System.getProperty("input_pos.topic", "input_pos")
   val outputTopic = System.getProperty("output.topic", "output_word")
   val bootstrapServers = System.getProperty(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092")
   val props = new Properties()
@@ -26,12 +28,15 @@ object WordCountJava extends App with LazyLogging{
 
 
   val builder = new StreamsBuilder  // Java StreamsBuilder
-  val textLines = builder.stream[String, String](inputTopic)
+  val textLines = builder.stream[String, String](inputWordTopic)
+  //val partOfSpeech = builder.stream[String, String](inputPosTopic).toTable
 
+  val joiner = new WordPosJoiner();
   //uses the Java API, so convert to Java list
   val wordCounts = textLines
     .flatMapValues(_.toLowerCase.split("\\W+").toList.asJava)
-    .groupBy((_, word) => word)
+    //.leftJoin(partOfSpeech, joiner)
+    .groupBy((_, word) => word.toString)
     .count()
 
   wordCounts.toStream.to(outputTopic, Produced.`with`(Serdes.String(), Serdes.Long()))
