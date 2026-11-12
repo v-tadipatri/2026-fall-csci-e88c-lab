@@ -1,22 +1,19 @@
 package org.cscie88c.kafka
 
 import com.typesafe.scalalogging.LazyLogging
-import org.apache.kafka.streams.{KafkaStreams, Topology}
+import org.apache.kafka.streams.errors.LogAndContinueExceptionHandler
+import org.apache.kafka.streams.kstream.GlobalKTable
+import org.apache.kafka.streams.scala._
+import org.apache.kafka.streams.scala.kstream._
+import org.apache.kafka.streams.{KafkaStreams, StreamsConfig, Topology}
+import org.cscie88c.kafka.model.{AccountJoiner, Transaction}
 
 import java.time.Duration
 import java.util.Properties
-import org.apache.kafka.streams.StreamsConfig
-import org.apache.kafka.streams.errors.LogAndContinueExceptionHandler
-import org.apache.kafka.streams.scala._
-import org.apache.kafka.streams.scala.kstream._
-import com.goyeau.kafka.streams.circe.CirceSerdes
-import io.circe.generic.auto._
-import org.cscie88c.kafka.model.Transaction
-
 import scala.util.Try
 
 
-object StreamingApp extends LazyLogging {
+object TransactionApp extends LazyLogging {
 
 
   def createStreamsConfig: Properties = {
@@ -24,9 +21,13 @@ object StreamingApp extends LazyLogging {
     val config = new Properties()
     val bootstrapServers = System.getProperty(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092")
     val clientId = System.getProperty(StreamsConfig.CLIENT_ID_CONFIG, "kafka-streams-client-0")
-    config.setProperty(StreamsConfig.APPLICATION_ID_CONFIG, applicationId)
+    val appSuffix = System.getProperty("app.suffix", "1")
+    config.setProperty(StreamsConfig.APPLICATION_ID_CONFIG, applicationId+appSuffix)
     config.setProperty(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers)
     config.setProperty(StreamsConfig.CLIENT_ID_CONFIG, clientId)
+    //needed for serde
+    config.put(StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG, org.apache.kafka.common.serialization.Serdes.String().getClass.getName)
+    config.put(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG, org.apache.kafka.common.serialization.Serdes.String().getClass.getName)
     config.setProperty(
       StreamsConfig.DEFAULT_DESERIALIZATION_EXCEPTION_HANDLER_CLASS_CONFIG,
       classOf[LogAndContinueExceptionHandler].getName
@@ -47,17 +48,18 @@ object StreamingApp extends LazyLogging {
     */  
   def main(args: Array[String]): Unit = {
     // read input and output topics
-    val inputTopic = System.getProperty("input.topic", "input_txn")
+    val inputTxnTopic = System.getProperty("input-txn.topic", "input_txn")
+    val inputCustTopic = System.getProperty("input-cust.topic", "input_cust")
     val outputTopic = System.getProperty("output.topic", "output_txn")
-    logger.info(s"now using input topic: $inputTopic")
     logger.info(s"now using output topic: $outputTopic")
     val props = createStreamsConfig
     logger.info(s"now using bootstrap servers: ${props.getProperty(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG)}")
-    runStreamingApp(inputTopic, outputTopic, props)
+    runStreamingApp(inputTxnTopic, inputCustTopic, outputTopic, props)
   }
 
   def runStreamingApp(
-    inputTopic: String,
+    inputTxnTopic: String,
+    inputCustTopic: String,
     outputTopic: String,
     props: Properties
   ): Unit = {
@@ -68,8 +70,9 @@ object StreamingApp extends LazyLogging {
 
     // create builder and stream
     val builder: StreamsBuilder = new StreamsBuilder()
-    val transactions: KStream[String, String] = 
-      builder.stream[String, String](inputTopic)
+    val transactions: KStream[String, String] = builder.stream[String, String](inputTxnTopic)
+    //The customers is a global KTable, which means it does not need to be copied and serialized
+    val customers: GlobalKTable[String, String] = builder.globalTable[String, String](inputCustTopic)
 
     // process the stream (example: increase amount by 10%)
     val processedTransactions: KStream[String, Transaction] = 
@@ -77,24 +80,32 @@ object StreamingApp extends LazyLogging {
       transactions.mapValues { transaction =>
         Try(Transaction(transaction)).toOption
       }
-      // filter out any failed conversions
-      .filter {(_, transactionOpt) => transactionOpt.isDefined  && transactionOpt.get.isDefined}
+      // filter out any failed conversions, got a nested Option
+      .filter {(_, transactionOpt) => transactionOpt.flatten.isDefined}
       .mapValues { transactionOpt => transactionOpt.get.get }
-      // increase amount by 200% and shorten number
+      // increase amount by 200% , shorten number, change acct # to be 0 - 9
       .mapValues { transaction =>
         transaction.copy(
           amount = transaction.amount * 200,
-          number = "T"+transaction.number.substring(0,4)+"..."
+          number = "T"+transaction.number.substring(0,4)+"...",
+          accountNumber = "000"+transaction.accountNumber.toLong % 9
         )
       }
-      // log each processed transaction
-      .peek((key, transaction) => 
-        logger.info(s"processed transaction: key=$key, transaction=$transaction")
-      )
 
+    val joiner = new AccountJoiner();
     // write the processed stream to output topic
     processedTransactions
-      .mapValues( transaction => transaction.toString )
+      .join(customers)(
+        (_, txn) => txn.accountNumber,
+        (txn, acct) => joiner.apply(txn, acct)
+      )
+      //change the key when outputting
+      .selectKey((_,wrap)=> wrap.txn.accountNumber)
+      .mapValues( _.toString )
+      // log each processed transaction
+      .peek((key, transaction) =>
+        logger.info(s"processed transaction: key=$key, transaction=$transaction")
+      )
       .to(outputTopic)
 
     // build topology and start streams application
