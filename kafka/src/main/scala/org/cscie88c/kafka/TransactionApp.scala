@@ -21,11 +21,12 @@ object TransactionApp extends LazyLogging {
     val config = new Properties()
     val bootstrapServers = System.getProperty(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092")
     val clientId = System.getProperty(StreamsConfig.CLIENT_ID_CONFIG, "kafka-streams-client-0")
+    //default app suffix, which can be overridden
     val appSuffix = System.getProperty("app.suffix", "1")
     config.setProperty(StreamsConfig.APPLICATION_ID_CONFIG, applicationId+appSuffix)
     config.setProperty(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers)
     config.setProperty(StreamsConfig.CLIENT_ID_CONFIG, clientId)
-    //needed for serde
+    //needed for serialization and deserialization
     config.put(StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG, org.apache.kafka.common.serialization.Serdes.String().getClass.getName)
     config.put(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG, org.apache.kafka.common.serialization.Serdes.String().getClass.getName)
     config.setProperty(
@@ -36,6 +37,7 @@ object TransactionApp extends LazyLogging {
       StreamsConfig.COMMIT_INTERVAL_MS_CONFIG,
       10000.toString
     )
+    //configure for AWS if needed
     KafkaSharedUtils.checkAws(config,logger)
     config
   }
@@ -48,6 +50,7 @@ object TransactionApp extends LazyLogging {
     */  
   def main(args: Array[String]): Unit = {
     // read input and output topics
+    // here, we have 2 topics, one with customers and another with transactions
     val inputTxnTopic = System.getProperty("input-txn.topic", "input_txn")
     val inputCustTopic = System.getProperty("input-cust.topic", "input_cust")
     val outputTopic = System.getProperty("output.topic", "output_txn")
@@ -74,13 +77,13 @@ object TransactionApp extends LazyLogging {
     //The customers is a global KTable, which means it does not need to be copied and serialized
     val customers: GlobalKTable[String, String] = builder.globalTable[String, String](inputCustTopic)
 
-    // process the stream (example: increase amount by 10%)
+    // process the stream, change some of the transactions
     val processedTransactions: KStream[String, Transaction] = 
       // first, convert each CSV row to Transaction case class
       transactions.mapValues { transaction =>
         Try(Transaction(transaction)).toOption
       }
-      // filter out any failed conversions, got a nested Option
+      // filter out any failed conversions, handling a nested Option
       .filter {(_, transactionOpt) => transactionOpt.flatten.isDefined}
       .mapValues { transactionOpt => transactionOpt.get.get }
       // increase amount by 200% , shorten number, change acct # to be 0 - 9
@@ -88,6 +91,7 @@ object TransactionApp extends LazyLogging {
         transaction.copy(
           amount = transaction.amount * 200,
           number = "T"+transaction.number.substring(0,4)+"...",
+          //for demo only, we change the account number because there are only 10 customers
           accountNumber = "000"+transaction.accountNumber.toLong % 9
         )
       }

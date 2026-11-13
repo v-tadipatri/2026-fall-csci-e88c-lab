@@ -1,16 +1,15 @@
 package org.cscie88c.kafka
 
-class ProducerExample extends App {
-
-
-}
 import com.typesafe.scalalogging.LazyLogging
 import org.apache.kafka.clients.producer.{KafkaProducer, ProducerConfig, ProducerRecord}
 import org.apache.kafka.streams.StreamsConfig
 
 import java.util.{Date, Properties}
 
-class KafkaProducerExample extends App with LazyLogging{
+/**
+ * Example of a producer using the send API
+ */
+object ProducerExample extends App with LazyLogging{
     val outputTopic = System.getProperty("output.topic", "output_timestamp")
     val bootstrapServers = System.getProperty(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092")
 
