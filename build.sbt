@@ -1,7 +1,6 @@
 ThisBuild / organization := "org.cscie88c"
 ThisBuild / scalaVersion := "2.13.16"
 ThisBuild / version := "0.1.0-SNAPSHOT"
-ThisBuild / versionScheme := Some("semver-spec")
 
 val circeVersion = "0.13.0"
 val pureconfigVersion = "0.15.0"
@@ -49,7 +48,7 @@ lazy val commonSettings = Seq(
       "-Yrangepos"
     ),
     Compile / run / fork := true, // cleaner to run programs in a JVM different from sbt
-    // Compile / discoveredMainClasses := Seq(), // ignore discovered main classes
+    Compile / discoveredMainClasses := Seq(), // ignore discovered main classes
     // needed to run Spark with Java 17
     run / javaOptions ++= Seq(
       "--add-exports=java.base/sun.nio.ch=ALL-UNNAMED",
@@ -58,12 +57,7 @@ lazy val commonSettings = Seq(
       "--add-opens=java.base/java.lang.invoke=ALL-UNNAMED"
     ),
     libraryDependencies ++= commonDependencies,
-    libraryDependencies ++= scalaTest,
-)
-
-lazy val dockerSettings = Seq(
-  dockerBaseImage := "docker.io/library/eclipse-temurin:17-jre",
-  Docker / version := "latest",
+    libraryDependencies ++= scalaTest
 )
 
 lazy val core = project
@@ -75,7 +69,7 @@ lazy val core = project
 
 lazy val cli = project
   .in(file("cli"))
-  .settings(commonSettings, dockerSettings)
+  .settings(commonSettings)
   .dependsOn(core)
   .enablePlugins(JavaAppPackaging)
 
@@ -97,8 +91,17 @@ lazy val beam = project
   .dependsOn(core)
   .enablePlugins(JavaAppPackaging)
 
+lazy val kafka = project
+  .in(file("kafka"))
+  .settings(
+    commonSettings,
+    // Kafka module settings
+  )
+  .dependsOn(core)
+  .enablePlugins(JavaAppPackaging)
+  
 lazy val root = (project in file("."))
-  .aggregate(core, cli, spark, beam)
+  .aggregate(core, cli, spark, beam, kafka)
   .settings(
     commonSettings,
     name := "multi-module-project",
@@ -125,3 +128,9 @@ zipHomework := {
     None
   )
 }
+
+// docker settings for packaging the application as a Docker container
+ThisBuild / dockerBaseImage := "eclipse-temurin:17-jdk"
+//When running the tests, disabling parallel execution & buffering the output makes debugging easier
+Test / parallelExecution := false
+Test / logBuffered := true
